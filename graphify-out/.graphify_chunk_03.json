@@ -1,0 +1,334 @@
+{
+  "nodes": [
+    {
+      "id": "github_funding_platforms",
+      "label": "GitHub Funding Platforms (Sponsors: obra)",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\FUNDING.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "github_issue_template_bug_report_template",
+      "label": "Bug Report Issue Template",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\bug_report.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "github_issue_template_config_contact_links",
+      "label": "Issue Templates Config (blank issues disabled, Discord contact link)",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\config.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "github_issue_template_diagnosis_report_template",
+      "label": "Session Diagnosis Report Issue Template",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\diagnosis_report.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "github_issue_template_feature_request_template",
+      "label": "Feature Request Issue Template",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\feature_request.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "github_issue_template_platform_support_template",
+      "label": "IDE / Platform Support Request Issue Template",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\platform_support.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "github_pull_request_template_checklist",
+      "label": "Pull Request Template (dev-branch, agent-attribution, eval rigor)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\PULL_REQUEST_TEMPLATE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "hermes_plugin_plugin_manifest",
+      "label": "Hermes Plugin Manifest (superpowers v6.4.1, pre_llm_call hook)",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.hermes-plugin\\plugin.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_install_guide",
+      "label": "OpenCode Installation Guide (V1/V2 plugin config, migration, tool mapping)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.opencode\\INSTALL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pre_commit_config_hooks",
+      "label": "Pre-commit Evals Quality Hooks (ruff check/format, ty check on evals/*.py)",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.pre-commit-config.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "using_superpowers_bootstrap",
+      "label": "using-superpowers session bootstrap (auto-triggers skills at session start)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\PULL_REQUEST_TEMPLATE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brainstorming_skill",
+      "label": "brainstorming skill (must auto-trigger before code is written)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\PULL_REQUEST_TEMPLATE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "writing_skills_skill",
+      "label": "writing-skills skill (superpowers:writing-skills, adversarial pressure testing)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\PULL_REQUEST_TEMPLATE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "diagnosing_superpowers_skill",
+      "label": "diagnosing-superpowers skill (produces session diagnosis reports from transcripts)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\diagnosis_report.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ai_coding_harness",
+      "label": "AI coding harness (Claude Code, Cursor, etc.) — agent attribution context",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\bug_report.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "github_issue_template_diagnosis_report_template",
+      "target": "github_issue_template_bug_report_template",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\diagnosis_report.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "github_issue_template_diagnosis_report_template",
+      "target": "diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\diagnosis_report.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "github_pull_request_template_checklist",
+      "target": "using_superpowers_bootstrap",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\PULL_REQUEST_TEMPLATE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "github_pull_request_template_checklist",
+      "target": "brainstorming_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\PULL_REQUEST_TEMPLATE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "github_pull_request_template_checklist",
+      "target": "writing_skills_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\PULL_REQUEST_TEMPLATE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "hermes_plugin_plugin_manifest",
+      "target": "using_superpowers_bootstrap",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.hermes-plugin\\plugin.yaml",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_install_guide",
+      "target": "hermes_plugin_plugin_manifest",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.opencode\\INSTALL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pre_commit_config_hooks",
+      "target": "github_pull_request_template_checklist",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.pre-commit-config.yaml",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "github_funding_platforms",
+      "target": "hermes_plugin_plugin_manifest",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\FUNDING.yml",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "github_issue_template_bug_report_template",
+      "target": "ai_coding_harness",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\bug_report.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "github_issue_template_feature_request_template",
+      "target": "ai_coding_harness",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\feature_request.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "github_issue_template_platform_support_template",
+      "target": "ai_coding_harness",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\platform_support.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "github_pull_request_template_checklist",
+      "target": "ai_coding_harness",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\PULL_REQUEST_TEMPLATE.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "issue_triage_workflow",
+      "label": "GitHub Issue Triage Workflow (templates + blank-issue routing to Discord)",
+      "nodes": [
+        "github_issue_template_bug_report_template",
+        "github_issue_template_diagnosis_report_template",
+        "github_issue_template_feature_request_template",
+        "github_issue_template_platform_support_template",
+        "github_issue_template_config_contact_links"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\config.yml"
+    },
+    {
+      "id": "agent_environment_accountability",
+      "label": "Agent Environment Accountability Tables (harness/model/plugin attribution required)",
+      "nodes": [
+        "github_issue_template_bug_report_template",
+        "github_issue_template_feature_request_template",
+        "github_issue_template_platform_support_template",
+        "github_pull_request_template_checklist"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\bug_report.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

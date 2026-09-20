@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "id": "skills_diagnosing_superpowers_templates_case",
+      "label": "Case Template (Diagnosing Superpowers)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\case.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_diagnosing_superpowers_templates_issue",
+      "label": "Issue Template (Diagnosing Superpowers)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\issue.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_diagnosing_superpowers_templates_report",
+      "label": "Report Template (Diagnosing Superpowers)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\report.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_dispatching_parallel_agents_skill",
+      "label": "Dispatching Parallel Agents Skill",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\dispatching-parallel-agents\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "skills_diagnosing_superpowers_templates_report",
+      "target": "skills_diagnosing_superpowers_templates_case",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\report.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_templates_issue",
+      "target": "skills_diagnosing_superpowers_templates_report",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\issue.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_templates_case",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\case.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_templates_report",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\report.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_templates_issue",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\issue.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_templates_case",
+      "target": "skills_diagnosing_superpowers_references_context_safety",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\case.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_dispatching_parallel_agents_skill",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.55,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\dispatching-parallel-agents\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "diagnosing_superpowers_diagnosis_artifacts",
+      "label": "Diagnosing Superpowers Diagnosis Artifacts",
+      "nodes": [
+        "skills_diagnosing_superpowers_templates_case",
+        "skills_diagnosing_superpowers_templates_report",
+        "skills_diagnosing_superpowers_templates_issue"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\report.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

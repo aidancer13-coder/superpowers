@@ -1,0 +1,320 @@
+{
+  "nodes": [
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "label": "Visual Companion Auth Hardening Implementation Plan",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_bootstrap_keyed_root_loads",
+      "label": "Bootstrap Keyed Root Loads (Task 1)",
+      "file_type": "concept",
+      "rationale": "Keyed root loads become a bootstrap step that stores the session key in tab-scoped sessionStorage and navigates to a bare / screen URL, so the secret key is not left exposed in the final URL and the screen HTML is not served at the keyed URL.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_websocket_origin_enforcement",
+      "label": "WebSocket Origin Enforcement (Task 2)",
+      "file_type": "concept",
+      "rationale": "WebSockets require valid auth plus a browser same-origin Origin header, so a cross-origin attacker page on another localhost port cannot open a socket with a stolen cookie and inject state/events.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_helper_stored_key_reconnect",
+      "label": "Helper Uses Stored Key For Reconnect (Task 3)",
+      "file_type": "concept",
+      "rationale": "The browser helper reads the sessionStorage session key and appends it to the WebSocket URL so that an open tab can automatically reconnect after a same-port server restart without manual URL reload.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_headers",
+      "label": "Shared Security Headers Helper (Task 4)",
+      "file_type": "concept",
+      "rationale": "All responses (200, 403, 404) get shared leak-reduction and anti-framing headers (no-referrer, no-store, X-Frame-Options DENY, CSP frame-ancestors none, CORP same-origin) to reduce key leakage and clickjacking.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_files_realpath_containment",
+      "label": "/files/* Realpath Containment (Task 5)",
+      "file_type": "concept",
+      "rationale": "The /files/* route uses lstat/realpath containment and rejects symlinks so a symlink inside the content directory cannot escape to serve state files like server-info.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_restart_reconnect_regression",
+      "label": "Restart Reconnect Regression Test (Task 6)",
+      "file_type": "concept",
+      "rationale": "An integration test verifies the stored key can authenticate a WebSocket on the same port after a server restart, guarding the automatic-reconnect behavior end to end.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_lifecycle_hang_shell_lint",
+      "label": "Lifecycle Hang Fix And Shell Lint (Task 7)",
+      "file_type": "concept",
+      "rationale": "Fix shellcheck failures in start-server.sh/stop-server.sh and force background mode in the start-server timeout test so the lifecycle suite does not hang when CODEX_CI triggers foreground mode.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_gitignore_companion_state",
+      "label": "Gitignore Durable Companion State (Task 8)",
+      "file_type": "concept",
+      "rationale": "Add .superpowers/ to .gitignore so durable companion state files (e.g. .last-token) are not committed to the repository.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_full_automated_verification",
+      "label": "Full Automated Verification (Task 9)",
+      "file_type": "concept",
+      "rationale": "Run the focused brainstorm-server suites, the full npm test suite three times for lifecycle/watch flakes, and the repo shell lint, all expected to exit 0 before any manual verification.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_probes",
+      "label": "Re-run Security Probes (Task 10)",
+      "file_type": "concept",
+      "rationale": "Re-run the cross-origin attacker probe (keyed URL in headless Chrome plus an attacker page on another localhost port) and the manual browser flow only after automated probes pass, confirming 403s, no cross-origin WS, no symlink escapes, and clean reconnect.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_bootstrap_keyed_root_loads",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_websocket_origin_enforcement",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_helper_stored_key_reconnect",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_headers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_files_realpath_containment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_restart_reconnect_regression",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_lifecycle_hang_shell_lint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_gitignore_companion_state",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_full_automated_verification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_probes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_bootstrap_keyed_root_loads",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_headers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 1, Step 3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_restart_reconnect_regression",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_websocket_origin_enforcement",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 6, Step 1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_restart_reconnect_regression",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_helper_stored_key_reconnect",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 6, Step 1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_probes",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_websocket_origin_enforcement",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": "Task 10, Step 1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_helper_stored_key_reconnect",
+      "target": "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_websocket_origin_enforcement",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "visual_companion_auth_hardening_changes",
+      "label": "Visual Companion Auth Hardening Changes",
+      "nodes": [
+        "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_bootstrap_keyed_root_loads",
+        "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_websocket_origin_enforcement",
+        "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_helper_stored_key_reconnect",
+        "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_headers",
+        "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_files_realpath_containment"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md"
+    },
+    {
+      "id": "visual_companion_auth_hardening_verification_suite",
+      "label": "Auth Hardening Verification Suite",
+      "nodes": [
+        "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_restart_reconnect_regression",
+        "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_lifecycle_hang_shell_lint",
+        "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_full_automated_verification",
+        "docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_probes"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

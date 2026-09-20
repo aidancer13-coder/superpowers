@@ -1,0 +1,4 @@
+C:\Users\Comp\superpowers\AGENTS.md
+C:\Users\Comp\superpowers\CLAUDE.md
+C:\Users\Comp\superpowers\CODE_OF_CONDUCT.md
+C:\Users\Comp\superpowers\GEMINI.md

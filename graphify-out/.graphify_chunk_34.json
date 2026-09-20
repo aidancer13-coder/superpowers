@@ -1,0 +1,334 @@
+{
+  "nodes": [
+    {
+      "id": "docs_testing",
+      "label": "Testing Superpowers",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_testing_plugin_tests",
+      "label": "Plugin tests (tests/ suite)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Non-LLM code tests: bash/node/python integration tests for brainstorm-server JS, OpenCode plugin loading, codex-plugin sync, and analysis utilities."
+    },
+    {
+      "id": "docs_testing_skill_behavior_evals",
+      "label": "Skill behavior evals (evals/ quorum harness)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Python harness driving real tmux sessions of Claude Code / Codex / Gemini CLI with an LLM actor and verifier judging skill compliance; quorum is the harness CLI."
+    },
+    {
+      "id": "docs_windows_polyglot_hooks",
+      "label": "Cross-Platform Polyglot Hooks for Claude Code",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\windows\\polyglot-hooks.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_windows_polyglot_hooks_run_hook_cmd",
+      "label": "run-hook.cmd polyglot dispatcher",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\windows\\polyglot-hooks.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Single generic dispatcher that is a polyglot script: Windows parses the first block as batch, Unix treats it as a no-op heredoc and continues, so one file works on Windows/macOS/Linux."
+    },
+    {
+      "id": "docs_windows_polyglot_hooks_extensionless_scripts",
+      "label": "Extensionless hook scripts",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\windows\\polyglot-hooks.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Hook scripts are extensionless (session-start, not session-start.sh) so Claude Code's Windows .sh auto-prepend does not inject 'bash' and break the dispatcher."
+    },
+    {
+      "id": "skills_brainstorming_skill",
+      "label": "Brainstorming Ideas Into Designs (skill)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_brainstorming_hard_gate",
+      "label": "Brainstorming HARD-GATE",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Before any implementation action, the human partner must approve the selected path's design artifact (spike probe, in-chat design, or written spec + plan); a reply approves only the stage presented."
+    },
+    {
+      "id": "skills_brainstorming_three_paths",
+      "label": "Spike / Bounded / Architectural paths",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The request is classified into one of three paths up front; when in doubt take the heavier one and hidden complexity only upgrades the path mid-task, never downgrades."
+    },
+    {
+      "id": "skills_brainstorming_visual_companion",
+      "label": "Visual Companion (browser mockup tool)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A just-in-time browser-based companion offered only when a question is clearer shown than told; per-question it decides browser vs terminal."
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_testing",
+      "target": "docs_testing_plugin_tests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_testing",
+      "target": "docs_testing_skill_behavior_evals",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_testing",
+      "target": "tests_brainstorm_server",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_testing",
+      "target": "tests_opencode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_testing",
+      "target": "tests_codex_plugin_sync",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_testing",
+      "target": "tests_kimi",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_testing",
+      "target": "evals_readme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_windows_polyglot_hooks",
+      "target": "docs_windows_polyglot_hooks_run_hook_cmd",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\windows\\polyglot-hooks.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_windows_polyglot_hooks_run_hook_cmd",
+      "target": "hooks_run_hook",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\windows\\polyglot-hooks.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_windows_polyglot_hooks",
+      "target": "docs_windows_polyglot_hooks_extensionless_scripts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\windows\\polyglot-hooks.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_windows_polyglot_hooks_run_hook_cmd",
+      "target": "docs_windows_polyglot_hooks_extensionless_scripts",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\windows\\polyglot-hooks.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_brainstorming_skill",
+      "target": "skills_brainstorming_hard_gate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_brainstorming_skill",
+      "target": "skills_brainstorming_three_paths",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_brainstorming_skill",
+      "target": "skills_brainstorming_visual_companion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_brainstorming_skill",
+      "target": "skills_writing_plans_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_brainstorming_three_paths",
+      "target": "skills_brainstorming_hard_gate",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_brainstorming_skill",
+      "target": "skills_spike_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_brainstorming_skill",
+      "target": "skills_brainstorming_visual_companion_guide",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "testing_systems",
+      "label": "Superpowers testing systems",
+      "nodes": ["docs_testing", "docs_testing_plugin_tests", "docs_testing_skill_behavior_evals"],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\testing.md"
+    },
+    {
+      "id": "polyglot_hook_dispatch",
+      "label": "Cross-platform hook dispatch mechanism",
+      "nodes": ["docs_windows_polyglot_hooks", "docs_windows_polyglot_hooks_run_hook_cmd", "docs_windows_polyglot_hooks_extensionless_scripts"],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\windows\\polyglot-hooks.md"
+    },
+    {
+      "id": "brainstorming_process",
+      "label": "Brainstorming skill process",
+      "nodes": ["skills_brainstorming_skill", "skills_brainstorming_three_paths", "skills_brainstorming_hard_gate", "skills_brainstorming_visual_companion"],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

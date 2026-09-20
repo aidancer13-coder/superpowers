@@ -1,0 +1,16 @@
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\analyst-common.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\cost-and-time.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\plan-adherence.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\quality-evidence.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\repeated-work.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\request-conflicts.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\scrub-audit.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\scrub.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\similar-session.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\skill-timeline.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\prompts\stumbles.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\references\context-safety.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\references\github-issues.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\references\redaction-policy.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\references\session-discovery.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\templates\bundle-README.md

@@ -1,0 +1,503 @@
+{
+  "nodes": [
+    {
+      "id": "readme",
+      "label": "Superpowers README",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_readme_kimi",
+      "label": "Superpowers for Kimi Code README",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_readme_opencode",
+      "label": "Superpowers for OpenCode README",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.opencode.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_how_it_works",
+      "label": "Superpowers core workflow (spec -> plan -> subagent implementation)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The agent steps back and asks what you are really trying to do before writing code, so work starts from an approved spec and plan instead of jumping straight into implementation; skills trigger automatically so nothing special is needed."
+    },
+    {
+      "id": "readme_subagent_driven_development",
+      "label": "subagent-driven-development",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Dispatches a fresh subagent per task with a review after each (most thorough option) so the agent can work autonomously for hours without deviating from the plan."
+    },
+    {
+      "id": "readme_test_driven_development",
+      "label": "test-driven-development (RED-GREEN-REFACTOR)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Enforces true red/green TDD: write a failing test, watch it fail, write minimal code, watch it pass, commit; code written before tests is deleted to keep tests honest."
+    },
+    {
+      "id": "readme_brainstorming",
+      "label": "brainstorming skill (Socratic design refinement)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Activates before writing code and refines rough ideas through questions, exploring alternatives and presenting the design in digestible sections for validation, saving a design document."
+    },
+    {
+      "id": "readme_writing_plans",
+      "label": "writing-plans skill",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Breaks work into bite-sized 2-5 minute tasks with exact file paths, complete code and verification steps so the plan is followable by an enthusiastic junior engineer with no project context."
+    },
+    {
+      "id": "readme_executing_plans",
+      "label": "executing-plans skill",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Inline plan execution alternative: one context, one final review of the whole branch at the end; the cheapest execution mode versus per-task subagents."
+    },
+    {
+      "id": "readme_using_git_worktrees",
+      "label": "using-git-worktrees skill",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Creates an isolated workspace on a new branch after design approval and verifies a clean test baseline so implementation does not disturb the main checkout."
+    },
+    {
+      "id": "readme_requesting_code_review",
+      "label": "requesting-code-review skill",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Reviews work against the plan between tasks and reports issues by severity, with critical issues blocking progress."
+    },
+    {
+      "id": "readme_finishing_a_development_branch",
+      "label": "finishing-a-development-branch skill",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Verifies tests when tasks complete, then presents merge/PR/keep/discard options and cleans up the worktree."
+    },
+    {
+      "id": "readme_diagnosing_superpowers",
+      "label": "diagnosing-superpowers skill",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Reads the session transcript and reports what happened with line-level evidence when a session misbehaves, and can package a scrubbed bundle for a bug report."
+    },
+    {
+      "id": "readme_using_superpowers",
+      "label": "using-superpowers bootstrap skill",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Injects the bootstrap that makes the skills system active at session start; without it (e.g. Hermes sessions compacted past the first turn, or missing hooks) skills stop triggering."
+    },
+    {
+      "id": "docs_readme_kimi_plugin_manifest",
+      "label": "Kimi Code plugin manifest (.kimi-plugin/plugin.json)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The manifest points Kimi Code at the existing skills/ directory, loads using-superpowers at session start via sessionStart.skill, and provides Kimi-specific tool mapping via skillInstructions; skills are read in place with no copies, symlinks, hooks or extra runtime dependencies."
+    },
+    {
+      "id": "docs_readme_kimi_tool_mapping",
+      "label": "Kimi Code tool mapping (AskUserQuestion, TodoList, Agent, Skill, Read/Write/Edit, Bash, Grep, Glob, FetchURL, WebSearch)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Skills describe actions instead of hard-coding one runtime's tool names, so on Kimi Code the abstract actions resolve to Kimi's native tool names."
+    },
+    {
+      "id": "docs_readme_opencode_bootstrap_injection",
+      "label": "OpenCode bootstrap injection (controller session, compaction handling)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.opencode.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Controller sessions receive the using-superpowers bootstrap in transient model context; delegated child sessions keep native skills but not the controller bootstrap; when V2 compaction removes all user messages the plugin appends a transient bootstrap after the checkpoint so skills keep triggering in long sessions."
+    },
+    {
+      "id": "docs_readme_opencode_tool_mapping",
+      "label": "OpenCode V1/V2 tool mapping (task->subagent, apply_patch->patch, bash->shell, todo dropped in V2)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.opencode.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Skills speak in actions rather than naming any one runtime's tools, so the bootstrap maps them to the tools each OpenCode flavor actually exposes; V2 renamed task to subagent, apply_patch to patch, bash to shell, and dropped the todo tool entirely."
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme",
+      "target": "docs_readme_kimi",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "docs_readme_opencode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_how_it_works",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_subagent_driven_development",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_test_driven_development",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_brainstorming",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_writing_plans",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_executing_plans",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_using_git_worktrees",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_requesting_code_review",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_finishing_a_development_branch",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_diagnosing_superpowers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_using_superpowers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_kimi",
+      "target": "readme",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_opencode",
+      "target": "readme",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.opencode.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_kimi",
+      "target": "docs_readme_opencode",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_kimi",
+      "target": "docs_readme_kimi_plugin_manifest",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_kimi",
+      "target": "docs_readme_kimi_tool_mapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_kimi",
+      "target": "readme_using_superpowers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_kimi",
+      "target": "readme_brainstorming",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_opencode",
+      "target": "docs_readme_opencode_bootstrap_injection",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.opencode.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_opencode",
+      "target": "docs_readme_opencode_tool_mapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.opencode.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_opencode",
+      "target": "readme_using_superpowers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.opencode.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_opencode",
+      "target": "readme_brainstorming",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.opencode.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_readme_kimi_tool_mapping",
+      "target": "docs_readme_opencode_tool_mapping",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "basic_workflow",
+      "label": "Superpowers Basic Workflow Pipeline",
+      "nodes": [
+        "readme_brainstorming",
+        "readme_using_git_worktrees",
+        "readme_writing_plans",
+        "readme_subagent_driven_development",
+        "readme_test_driven_development",
+        "readme_requesting_code_review",
+        "readme_finishing_a_development_branch"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md"
+    },
+    {
+      "id": "harness_readme_variants",
+      "label": "Harness-Specific Superpowers README Variants",
+      "nodes": [
+        "readme",
+        "docs_readme_kimi",
+        "docs_readme_opencode"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\README.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

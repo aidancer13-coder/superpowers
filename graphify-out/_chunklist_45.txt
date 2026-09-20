@@ -1,0 +1,4 @@
+C:\Users\Comp\superpowers\skills\using-superpowers\references\pi-tools.md
+C:\Users\Comp\superpowers\skills\verification-before-completion\SKILL.md
+C:\Users\Comp\superpowers\skills\writing-plans\SKILL.md
+C:\Users\Comp\superpowers\skills\writing-plans\plan-document-reviewer-prompt.md

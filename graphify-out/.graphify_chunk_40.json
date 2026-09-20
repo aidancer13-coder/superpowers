@@ -1,0 +1,326 @@
+{
+  "nodes": [
+    {
+      "id": "skills_subagent_driven_development_skill",
+      "label": "Subagent-Driven Development skill",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_subagent_driven_development_skill_task_loop",
+      "label": "SDD per-task loop (dispatch implementer, report, review)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "The Task Loop",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_subagent_driven_development_skill_fix_loop",
+      "label": "SDD fix loop (5 rounds, escalation, breaker adjudication)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "4. The fix loop",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_subagent_driven_development_skill_ledger",
+      "label": "SDD plan-scoped progress ledger (progress.md)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Setup",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_subagent_driven_development_skill_model_selection",
+      "label": "SDD model selection per role (cheapest sufficient tier)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Model Selection",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_subagent_driven_development_skill_rulings",
+      "label": "SDD rulings-not-stalls decision protocol (ledger-recorded rulings)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Rulings, not stalls",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_subagent_driven_development_skill_final_review",
+      "label": "SDD final whole-branch review (one fix wave, scoped re-review, adjudicate residuals)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Final Review",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_subagent_driven_development_skill_why_subagents",
+      "label": "Why subagents: isolated context, constructed instructions, controller context preserved",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Why subagents",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_skill_task_loop",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "The Task Loop",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_skill_fix_loop",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "4. The fix loop",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_skill_ledger",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Setup",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_skill_model_selection",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Model Selection",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_skill_rulings",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Rulings, not stalls",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_skill_final_review",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Final Review",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill_why_subagents",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Why subagents",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_executing_plans_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "When to Use; vs. Executing Plans (inline)",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_requesting_code_review_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Final Review",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_writing_plans_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Setup (consumes implementation plans)",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "relation": "cites",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Setup (plan-scoped workspace under .superpowers/sdd/)",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "relation": "cites",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "4. The fix loop (5-round cap, escalation, breaker)",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill_fix_loop",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "relation": "cites",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "4. The fix loop",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill_ledger",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "relation": "cites",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Setup (ledger in plan-scoped workspace)",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_implementer_prompt",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "1. Dispatch the implementer",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_task_reviewer_prompt",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "3. Review the task",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_re_review_prompt",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "4. The fix loop",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_scripts_task_brief",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "1. Dispatch the implementer (bash scripts/task-brief PLAN_FILE N)",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_scripts_review_package",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "2. Handle the report (bash scripts/review-package PLAN_FILE BASE HEAD)",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_subagent_driven_development_scripts_sdd_workspace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md",
+      "source_location": "Setup (bash scripts/sdd-workspace PLAN_FILE)",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "sdd_process_stages",
+      "label": "SDD end-to-end process: task loop, fix loop, final review, ledger",
+      "nodes": [
+        "skills_subagent_driven_development_skill",
+        "skills_subagent_driven_development_skill_task_loop",
+        "skills_subagent_driven_development_skill_fix_loop",
+        "skills_subagent_driven_development_skill_final_review",
+        "skills_subagent_driven_development_skill_ledger"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md"
+    },
+    {
+      "id": "sdd_fix_loop_redesign",
+      "label": "Fix loop implementation of the 2026-07-15 redesign spec",
+      "nodes": [
+        "skills_subagent_driven_development_skill_fix_loop",
+        "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+        "skills_subagent_driven_development_skill"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "id": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_document",
+      "label": "Pi Extension and Evals Implementation Plan",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_1_pi_package_manifest_and_extension_tests",
+      "label": "Task 1: Pi package manifest and extension tests",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_2_pi_tool_mapping_reference",
+      "label": "Task 2: Pi tool mapping reference",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_3_drill_pi_backend_and_session_log_normalization",
+      "label": "Task 3: Drill Pi backend and session log normalization",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_4_documentation_and_full_verification",
+      "label": "Task 4: Documentation and full verification",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_superpowers_ts_extension",
+      "label": "extensions/superpowers.ts Pi extension",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_pi_tools_md",
+      "label": "skills/using-superpowers/references/pi-tools.md Pi tool mapping reference doc",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_pi_yaml_backend",
+      "label": "evals/backends/pi.yaml Drill Pi backend config",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_bootstrap_injection",
+      "label": "using-superpowers bootstrap injection on session start and after compaction",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The Pi extension injects the using-superpowers bootstrap into provider context as a user-role message on session startup and after compaction, with Pi-specific tool mapping, so agents get Superpowers skill context in Pi sessions; injection is pending-marked on session_start/session_compact, inserted after leading compactionSummary messages, and cleared on agent_end to avoid duplication."
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_document",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_1_pi_package_manifest_and_extension_tests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_document",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_2_pi_tool_mapping_reference",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_document",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_3_drill_pi_backend_and_session_log_normalization",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_document",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_4_documentation_and_full_verification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_1_pi_package_manifest_and_extension_tests",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_superpowers_ts_extension",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_2_pi_tool_mapping_reference",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_pi_tools_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_3_drill_pi_backend_and_session_log_normalization",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_pi_yaml_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_superpowers_ts_extension",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_bootstrap_injection",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_bootstrap_injection",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_superpowers_ts_extension",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_pi_tools_md",
+      "target": "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_bootstrap_injection",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pi_package_and_extension_implementation",
+      "label": "Pi package and extension implementation (Task 1)",
+      "nodes": [
+        "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_1_pi_package_manifest_and_extension_tests",
+        "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_superpowers_ts_extension",
+        "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_bootstrap_injection"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md"
+    },
+    {
+      "id": "drill_pi_eval_backend_implementation",
+      "label": "Drill Pi eval backend and log normalization (Task 3)",
+      "nodes": [
+        "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_3_drill_pi_backend_and_session_log_normalization",
+        "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_pi_yaml_backend",
+        "docs_superpowers_plans_2026_05_07_pi_extension_and_evals_document"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md"
+    }
+  ],
+  "input_tokens": 1400,
+  "output_tokens": 1500
+}

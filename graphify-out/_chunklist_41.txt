@@ -1,0 +1,4 @@
+C:\Users\Comp\superpowers\skills\subagent-driven-development\implementer-prompt.md
+C:\Users\Comp\superpowers\skills\subagent-driven-development\re-review-prompt.md
+C:\Users\Comp\superpowers\skills\subagent-driven-development\task-reviewer-prompt.md
+C:\Users\Comp\superpowers\skills\systematic-debugging\CREATION-LOG.md

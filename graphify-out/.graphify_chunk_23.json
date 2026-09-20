@@ -1,0 +1,509 @@
+{
+  "nodes": [
+    {
+      "id": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+      "label": "Hermes Version-Bump Wiring Implementation Plan",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_manifest_format_dispatch",
+      "label": "Manifest Format Dispatch (jq for JSON, yq for YAML)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Extension-based dispatcher routes manifest reads/writes by file extension: JSON continues through jq while .yaml uses Mike Farah yq v4, with field names and values passed as environment data rather than interpolated into expressions."
+    },
+    {
+      "id": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_preflight_manifests",
+      "label": "Bump-Only Manifest Preflight",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Reads every present declared manifest through the dispatcher before the first write of the mutating bump loop, so a deterministic YAML format or field failure cannot leave earlier JSON manifests partially updated; no rollback or transactional writes are added."
+    },
+    {
+      "id": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_hermes_yaml_manifest",
+      "label": "Hermes YAML Manifest Registration (.hermes-plugin/plugin.yaml)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Registers the top-level version field of .hermes-plugin/plugin.yaml in .version-bump.json so the Hermes YAML manifest version stays synchronized with every other declared release manifest."
+    },
+    {
+      "id": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+      "label": "Document Review System Design Spec",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec_document_reviewer",
+      "label": "Spec Document Reviewer Stage",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Verifies after brainstorming and before writing-plans that the spec is complete, consistent, and ready for planning; checks completeness, coverage, consistency, clarity, and YAGNI, dispatching via the Task tool with subagent_type general-purpose."
+    },
+    {
+      "id": "docs_superpowers_specs_2026_01_22_document_review_system_design_plan_document_reviewer",
+      "label": "Plan Document Reviewer Stage",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Verifies after writing-plans and before implementation that the plan is complete, matches the spec (reviewer receives both plan and spec path for requirements comparison), and has proper atomic task decomposition with checkbox syntax."
+    },
+    {
+      "id": "docs_superpowers_specs_2026_01_22_document_review_system_design_iterative_review_loop",
+      "label": "Iterative Review Loop Pattern",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Issues found -> agent fixes -> re-review until approved, mirroring implementation reviews; no hard iteration limit, but the controller surfaces loops exceeding 5 iterations and persistent disagreement after 3 iterations on the same issue to the human, and reviewers remain advisory rather than blocking."
+    },
+    {
+      "id": "docs_superpowers_specs_2026_01_22_document_review_system_design_chunk_review",
+      "label": "Chunk-by-Chunk Plan Review with Spec Alignment",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Plans are split into chunks delimited by '## Chunk N: <name>' headings (each under 1000 lines, self-contained); each chunk is reviewed independently against the spec before proceeding to the next, so review verdicts stay scoped and actionable."
+    },
+    {
+      "id": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec",
+      "label": "Visual Brainstorming Refactor Design Spec (Browser Displays, Terminal Commands)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_events_file",
+      "label": ".events Per-Screen Interaction Event Stream",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Server appends user interaction events (JSONL, one object per line) to $SCREEN_DIR/.events, giving Claude the user's full exploration path (clicked A, then B, settled on C) rather than just the final selection; file is cleared when a new HTML screen is detected and its absence means terminal-only feedback."
+    },
+    {
+      "id": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_terminal_channel",
+      "label": "Browser as Display, Terminal as Conversation Channel",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Claude Code's execution model is turn-based, so it cannot listen on two channels within one turn; the old blocking TaskOutput(wait-for-feedback.sh) pattern simulated event-driven behavior the platform doesn't support and seized the TUI, so the browser becomes an interactive display while the terminal is the always-unblocked conversation channel."
+    },
+    {
+      "id": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_non_blocking_loop",
+      "label": "Non-Blocking Brainstorming Loop (Write HTML, End Turn, Read .events)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Loop is: Claude writes HTML to the session directory, server pushes a WebSocket reload via chokidar, Claude ends its turn, user clicks in the browser and types feedback in the terminal, then Claude reads .events and merges it with terminal text on the next turn; no background tasks, no TaskOutput blocking, no polling scripts."
+    },
+    {
+      "id": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_wait_for_feedback_deletion",
+      "label": "Deletion of wait-for-feedback.sh",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "wait-for-feedback.sh existed only to bridge server-stdout events to Claude; the .events file replaces it because the server writes user interaction events directly and Claude reads them with whatever file-reading mechanism the platform provides, keeping the server code platform-agnostic."
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+      "target": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_manifest_format_dispatch",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+      "target": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_preflight_manifests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+      "target": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_hermes_yaml_manifest",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+      "target": "skills_executing_plans_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+      "target": "docs_superpowers_specs_2026_08_05_hermes_version_bump_wiring_design",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+      "target": "scripts_bump_version_sh",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_preflight_manifests",
+      "target": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_manifest_format_dispatch",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_preflight_manifests",
+      "target": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_hermes_yaml_manifest",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+      "target": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec_document_reviewer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+      "target": "docs_superpowers_specs_2026_01_22_document_review_system_design_plan_document_reviewer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+      "target": "docs_superpowers_specs_2026_01_22_document_review_system_design_iterative_review_loop",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+      "target": "docs_superpowers_specs_2026_01_22_document_review_system_design_chunk_review",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+      "target": "skills_brainstorming_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+      "target": "skills_writing_plans_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec_document_reviewer",
+      "target": "skills_brainstorming_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_plan_document_reviewer",
+      "target": "skills_writing_plans_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_plan_document_reviewer",
+      "target": "docs_superpowers_specs_2026_01_22_document_review_system_design_chunk_review",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec_document_reviewer",
+      "target": "docs_superpowers_specs_2026_01_22_document_review_system_design_plan_document_reviewer",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+      "target": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec",
+      "target": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_events_file",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec",
+      "target": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_terminal_channel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec",
+      "target": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_non_blocking_loop",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec",
+      "target": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_wait_for_feedback_deletion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec",
+      "target": "skills_brainstorming_visual_companion_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_events_file",
+      "target": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_wait_for_feedback_deletion",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_non_blocking_loop",
+      "target": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_terminal_channel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec",
+      "target": "skills_brainstorming_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec",
+      "target": "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "hermes_version_bump_wiring_implementation",
+      "label": "Hermes Version-Bump Wiring Implementation Components",
+      "nodes": [
+        "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan",
+        "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_manifest_format_dispatch",
+        "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_preflight_manifests",
+        "docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_hermes_yaml_manifest"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md"
+    },
+    {
+      "id": "document_review_system_stages",
+      "label": "Document Review System Review Stages",
+      "nodes": [
+        "docs_superpowers_specs_2026_01_22_document_review_system_design_spec",
+        "docs_superpowers_specs_2026_01_22_document_review_system_design_spec_document_reviewer",
+        "docs_superpowers_specs_2026_01_22_document_review_system_design_plan_document_reviewer",
+        "docs_superpowers_specs_2026_01_22_document_review_system_design_iterative_review_loop",
+        "docs_superpowers_specs_2026_01_22_document_review_system_design_chunk_review"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md"
+    },
+    {
+      "id": "visual_brainstorming_refactor_model",
+      "label": "Visual Brainstorming Non-Blocking Refactor Model",
+      "nodes": [
+        "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec",
+        "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_events_file",
+        "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_non_blocking_loop",
+        "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_terminal_channel",
+        "docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_wait_for_feedback_deletion"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

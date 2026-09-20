@@ -1,0 +1,277 @@
+{
+  "nodes": [
+    {
+      "id": "tests_claude_code_readme",
+      "label": "Claude Code Skills Tests (README)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\claude-code\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tests_explicit_skill_requests_prompts_action_oriented",
+      "label": "Fixture: action-oriented subagent-driven-development request",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\action-oriented.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tests_explicit_skill_requests_prompts_after_planning_flow",
+      "label": "Fixture: SDD request after the planning flow",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\after-planning-flow.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tests_explicit_skill_requests_prompts_claude_suggested_it",
+      "label": "Fixture: user picks SDD from Claude-suggested options",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\claude-suggested-it.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tests_explicit_skill_requests_prompts_i_know_what_sdd_means",
+      "label": "Fixture: user states they know what SDD means (explicit SDD request)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\i-know-what-sdd-means.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tests_explicit_skill_requests_prompts_mid_conversation_execute_plan",
+      "label": "Fixture: mid-conversation SDD execute-plan request",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\mid-conversation-execute-plan.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tests_explicit_skill_requests_prompts_please_use_brainstorming",
+      "label": "Fixture: explicit brainstorming skill request",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\please-use-brainstorming.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tests_explicit_skill_requests_prompts_skip_formalities",
+      "label": "Fixture: urgency-framed SDD request (skip formalities)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\skip-formalities.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tests_explicit_skill_requests_prompts_subagent_driven_development_please",
+      "label": "Fixture: minimal explicit SDD request",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\subagent-driven-development-please.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tests_explicit_skill_requests_prompts_use_systematic_debugging",
+      "label": "Fixture: explicit systematic-debugging request",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\use-systematic-debugging.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "tests_claude_code_readme",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\claude-code\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_claude_code_readme",
+      "target": "skills_using_git_worktrees_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\claude-code\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_claude_code_readme",
+      "target": "skills_writing_skills_testing_skills_with_subagents",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\claude-code\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_action_oriented",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\action-oriented.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_after_planning_flow",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\after-planning-flow.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_claude_suggested_it",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\claude-suggested-it.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_i_know_what_sdd_means",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\i-know-what-sdd-means.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_mid_conversation_execute_plan",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\mid-conversation-execute-plan.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_skip_formalities",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\skip-formalities.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_subagent_driven_development_please",
+      "target": "skills_subagent_driven_development_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\subagent-driven-development-please.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_after_planning_flow",
+      "target": "skills_writing_plans_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\after-planning-flow.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_claude_suggested_it",
+      "target": "skills_executing_plans_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\claude-suggested-it.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_please_use_brainstorming",
+      "target": "skills_brainstorming_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\please-use-brainstorming.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tests_explicit_skill_requests_prompts_use_systematic_debugging",
+      "target": "skills_systematic_debugging_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\use-systematic-debugging.txt",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "sdd_explicit_trigger_prompt_battery",
+      "label": "Explicit subagent-driven-development trigger prompt battery (tests/explicit-skill-requests)",
+      "nodes": [
+        "tests_explicit_skill_requests_prompts_action_oriented",
+        "tests_explicit_skill_requests_prompts_after_planning_flow",
+        "tests_explicit_skill_requests_prompts_claude_suggested_it",
+        "tests_explicit_skill_requests_prompts_i_know_what_sdd_means",
+        "tests_explicit_skill_requests_prompts_mid_conversation_execute_plan",
+        "tests_explicit_skill_requests_prompts_skip_formalities",
+        "tests_explicit_skill_requests_prompts_subagent_driven_development_please"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\subagent-driven-development-please.txt"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

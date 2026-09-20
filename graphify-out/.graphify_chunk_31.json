@@ -1,0 +1,383 @@
+{
+  "nodes": [
+    {
+      "id": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "label": "SDD plan-scoped workspace design spec",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_root_cause",
+      "label": "Root cause: identity lives nowhere in the data",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "## Problem / ### Root cause",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_per_plan_workspace_directory",
+      "label": "Per-plan workspace directory (.superpowers/sdd/<plan-slug>/)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "## Design / ### 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_plan_slug",
+      "label": "Plan-slug (plan basename without .md)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "## Design / ### 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_ledger_plan_line",
+      "label": "Ledger plan line (progress.md first line names the plan)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "## Design / ### 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_workspace_end_of_life",
+      "label": "Workspace end-of-life (rm -rf plan workspace on clean final review)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "## Design / ### 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "label": "SDD Fix-Loop Redesign design spec",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_fix_loop",
+      "label": "Convergent fix loop (resume implementer, scoped re-reviews)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "## The Fix Loop",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_circuit_breaker",
+      "label": "Circuit breaker at five fix rounds",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "## Design Decisions / #3, ## The Fix Loop",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_adjudication_at_trip",
+      "label": "Controller adjudication at trip",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "### Adjudication at Trip",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_implementer_fixes_own_findings",
+      "label": "Design decision: original implementer fixes its own findings (resume in place)",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "## Design Decisions / #1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_document_restructure",
+      "label": "SKILL.md restructure by lifecycle (10-section skeleton)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "## Document Restructure",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_rationalization_table",
+      "label": "Red Flags rationalization table (| Excuse | Reality |)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "## Rationalization Table",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_root_cause",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_per_plan_workspace_directory",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_plan_slug",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_ledger_plan_line",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_workspace_end_of_life",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_per_plan_workspace_directory",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_plan_slug",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "## Design / ### 1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_root_cause",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_per_plan_workspace_directory",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "### Root cause",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_per_plan_workspace_directory",
+      "target": "skills_subagent_driven_development_scripts_sdd_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "## Design / ### 1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_eval_results",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "## Testing / ### Evaluation",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_fix_loop",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_circuit_breaker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_adjudication_at_trip",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_implementer_fixes_own_findings",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_document_restructure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_rationalization_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_fix_loop",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_circuit_breaker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "## The Fix Loop",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_circuit_breaker",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_adjudication_at_trip",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "### Adjudication at Trip",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_implementer_fixes_own_findings",
+      "target": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_fix_loop",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "## Design Decisions / #1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+      "target": "docs_superpowers_specs_2026_06_10_strict_cost_sdd_design",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md",
+      "source_location": "## Problems / 1",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "sdd_plan_scoped_workspace_design",
+      "label": "SDD plan-scoped workspace design (structural identity + ledger guard + end-of-life)",
+      "nodes": [
+        "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace",
+        "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_per_plan_workspace_directory",
+        "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_plan_slug",
+        "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_ledger_plan_line",
+        "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_workspace_end_of_life",
+        "docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_root_cause"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md"
+    },
+    {
+      "id": "sdd_fix_loop_redesign",
+      "label": "SDD convergent fix loop (resume-based, five-round breaker, adjudication)",
+      "nodes": [
+        "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design",
+        "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_fix_loop",
+        "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_circuit_breaker",
+        "docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_adjudication_at_trip"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md"
+    }
+  ],
+  "input_tokens": 4900,
+  "output_tokens": 1700
+}

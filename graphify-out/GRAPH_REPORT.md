@@ -1,0 +1,613 @@
+# Graph Report - superpowers  (2026-09-20)
+
+## Corpus Check
+- 225 files · ~252,998 words
+- Verdict: corpus is large enough that graph structure adds value.
+- Unclassified: 5 file(s) not represented in the graph (top: (none) 3, .cmd 1, .dot 1)
+
+## Summary
+- 1361 nodes · 2333 edges · 108 communities (84 shown, 24 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 184 edges (avg confidence: 0.82)
+- Token cost: 0 input · 0 output
+
+## Community Hubs (Navigation)
+- Companion Server Tests
+- Hermes Plugin Tests
+- Hermes Bootstrap Tests
+- Hermes Bootstrap Content Tests
+- Hermes Plugin Layout Tests
+- Brainstorm Server Core
+- Companion Branding Tests
+- Companion Auth Tests
+- OpenCode Bootstrap Caching Tests
+- Pi Extension Bootstrap
+- OpenCode Plugin Module
+- Skill Registration Tests
+- Token Usage Analyzer
+- WebSocket Protocol Tests
+- Companion Helper Tests
+- Hermes Plugin Registration
+- Companion Helper Reconnect
+- Hermes Pytest Fixtures
+- Brainstorm Server Lifecycle Tests
+- Graph Rendering Script
+- Condition-Based Waiting Example
+- Browser Launcher Tests
+- Multiturn Test Runner
+- Kimi Test Runner
+- Plugin Manifest Tests
+- OpenCode Test Runner
+- Session-Bootstrap Script Tests
+- OpenCode Plugin Tests
+- Codex Plugin Sync Script
+- Version Bump Wiring
+- SDD Plan-Scoped Workspace
+- Shell Lint Script
+- Review Prompt Templates
+- Codex Plugin Packaging Tests
+- Shell Lint Tests
+- Pi Extension Manifest
+- Windows Lifecycle Tests
+- Codex Plugin Sync Tests
+- Stop-Server Script Tests
+- Codex Plugin Packaging Script
+- Find-Polluter Script Tests
+- Stop-Server Script
+- Session-Start Hook Tests
+- Graph Rendering Tests
+- Start-Server Script Tests
+- Executing-Plans Script Tests
+- SDD Workspace Script Tests
+- Worktree Skill Testing
+- Version Bump Script Tests
+- Worktree Path Policy Tests
+- Skill Structure Tests
+- Explicit Skill Request Runners
+- Session-Start Hook Script
+- Start-Server Wrapper Script
+- Antigravity Tool Tests
+- Devin Plugin Tests
+- Task-Done Hook
+- Task-Start Hook
+- Find-Polluter Script
+- Antigravity Test Runner
+- Skill Tests Runner
+- Marketplace Manifest Tests
+- Extended Multiturn Test Runner
+- Haiku Test Runner
+- OpenCode Support Design
+- Diagnosis Design and Templates
+- Visual Brainstorming Companion
+- Opencode OpCodes Constant
+- Issue Templates Config
+- Skill Feedback Improvements
+- Task-Scoped Review Dispatch
+- Positive-Instruction Redesign
+- Skill Authoring Best Practices
+- Plan Execution and Review
+- Codex Efficiency Fixes
+- SDD Fix-Loop Redesign
+- Persuasion and Pressure Testing
+- Hermes Manifest and Issue Templates
+- OpenCode Shared Core
+- Zero-Dep Server Plan
+- Codex App Worktree Compatibility
+- Writing Skills Meta-Skill
+- Porting to New Harness
+- Document Review System
+- Lift Drill Into Evals
+- Strict-Cost SDD Design
+- Diagnosing Superpowers Skill
+- Systematic Debugging Skill
+- Contributor Guidelines and Entry
+- Release Notes and Branding
+- Companion Auth Hardening Plan
+- SDD Workspace Implementation
+- Branch Finishing and Code Review
+- SDD Skill and Fixtures
+- Platform-Neutral Prose Phases
+- Companion Auth Hardening Design
+- Pi Extension Plan
+- Visual Companion Components
+- Worktree Detection Strategy
+- SDD Fix-Loop Design
+- Zero-Dep Server Design
+- Code of Conduct
+- Codex Worktree Compatibility Spec
+- Superpowers Tool Mappings
+- WebSocket Frame Protocol
+- Polyglot Hook Dispatch
+- README and Platform Testing
+
+## God Nodes (most connected - your core abstractions)
+1. `subagent-driven-development SKILL.md` - 43 edges
+2. `Codex Efficiency Fixes Implementation Plan` - 39 edges
+3. `Visual Brainstorming Companion — Issue & Change Catalog` - 29 edges
+4. `main()` - 27 edges
+5. `Skill authoring best practices` - 24 edges
+6. `Diagnosing Superpowers Skill` - 23 edges
+7. `Skills Improvements from User Feedback (plan)` - 20 edges
+8. `SDD Task-Scoped Review Dispatch Implementation Plan` - 20 edges
+9. `Worktree Rototill Implementation Plan` - 19 edges
+10. `diagnosing-superpowers skill` - 17 edges
+
+## Surprising Connections (you probably didn't know these)
+- `GitHub Funding Platforms (Sponsors: obra)` --semantically_similar_to--> `Hermes Plugin Manifest (superpowers v6.4.1, pre_llm_call hook)`  [INFERRED] [semantically similar]
+  .github/FUNDING.yml → .hermes-plugin/plugin.yaml
+- `Superpowers Project` --references--> `Superpowers App Icon (black line-art glyph on white)`  [INFERRED]
+  RELEASE-NOTES.md → assets/app-icon.png
+- `Superpowers Project` --references--> `Superpowers Small Logo (two-blade pinwheel mark with center dot)`  [INFERRED]
+  RELEASE-NOTES.md → assets/superpowers-small.svg
+- `Superpowers for Kimi Code README` --semantically_similar_to--> `Superpowers README`  [INFERRED] [semantically similar]
+  docs/README.kimi.md → README.md
+- `Superpowers for OpenCode README` --semantically_similar_to--> `Superpowers README`  [INFERRED] [semantically similar]
+  docs/README.opencode.md → README.md
+
+## Import Cycles
+- None detected.
+
+## Hyperedges (group relationships)
+- **Drill Pi eval backend and log normalization (Task 3)** — docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_3_drill_pi_backend_and_session_log_normalization, docs_superpowers_plans_2026_05_07_pi_extension_and_evals_pi_yaml_backend, docs_superpowers_plans_2026_05_07_pi_extension_and_evals_document [EXTRACTED 0.75]
+- **Pi package and extension implementation (Task 1)** — docs_superpowers_plans_2026_05_07_pi_extension_and_evals_task_1_pi_package_manifest_and_extension_tests, docs_superpowers_plans_2026_05_07_pi_extension_and_evals_superpowers_ts_extension, docs_superpowers_plans_2026_05_07_pi_extension_and_evals_bootstrap_injection [EXTRACTED 0.75]
+- **HTTP Server + File Watching + Browser Serving** — docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_server_js, docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_http_server, docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_file_watching, docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_frame_template, docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_helper_js [EXTRACTED 0.85]
+- **WebSocket Protocol Layer (RFC 6455)** — docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_server_js, docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_websocket_protocol, docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_compute_accept_key, docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_encode_frame, docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_decode_frame, docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_opcodes [EXTRACTED 0.90]
+- **Brainstorming skill process** — skills_brainstorming_skill, skills_brainstorming_three_paths, skills_brainstorming_hard_gate, skills_brainstorming_visual_companion [EXTRACTED 0.90]
+- **Document Review System Components** — docs_superpowers_plans_2026_01_22_document_review_system, docs_superpowers_plans_2026_01_22_document_review_system_spec_review_loop, docs_superpowers_plans_2026_01_22_document_review_system_plan_review_loop, docs_superpowers_plans_2026_01_22_document_review_system_spec_document_reviewer_prompt, docs_superpowers_plans_2026_01_22_document_review_system_plan_document_reviewer_prompt [EXTRACTED 0.90]
+- **Lifted eval harness (drill as evals/)** — docs_superpowers_plans_2026_05_06_lift_drill_into_evals_drill_benchmark, docs_superpowers_plans_2026_05_06_lift_drill_into_evals_evals_directory, docs_superpowers_plans_2026_05_06_lift_drill_into_evals_set_superpowers_root_default [EXTRACTED 0.95]
+- **OpenCode Native Plugin Integration** — docs_plans_2025_11_22_opencode_support_design_opencode_plugin_module, docs_plans_2025_11_22_opencode_support_design_use_skill_tool, docs_plans_2025_11_22_opencode_support_design_find_skills_tool, docs_plans_2025_11_22_opencode_support_design_session_startup_hook [EXTRACTED 0.95]
+- **SDD plan-scoped workspace eval round — RED baseline + GREEN arms on fixture v3** — docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_eval_results, docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_eval_results_scenario_s1, docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_eval_results_scenario_s2, docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_eval_results_fixture_generator_v3 [EXTRACTED 0.95]
+- **Supporting Techniques of Systematic Debugging** — skills_systematic_debugging_condition_based_waiting, skills_systematic_debugging_defense_in_depth, skills_systematic_debugging_root_cause_tracing [EXTRACTED 0.95]
+- **Superpowers testing systems** — docs_testing, docs_testing_plugin_tests, docs_testing_skill_behavior_evals [EXTRACTED 0.95]
+- **Visual Companion Auth Hardening Changes** — docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_bootstrap_keyed_root_loads, docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_websocket_origin_enforcement, docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_helper_stored_key_reconnect, docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_headers, docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_files_realpath_containment [EXTRACTED 0.95]
+- **Superpowers Basic Workflow Pipeline** — readme_brainstorming, readme_using_git_worktrees, readme_writing_plans, readme_subagent_driven_development, readme_test_driven_development, readme_requesting_code_review, readme_finishing_a_development_branch [EXTRACTED 1.00]
+- **PRI-823 Codex App compatibility change set** — docs_superpowers_plans_2026_03_23_codex_app_compatibility_step_zero_workspace_detection, docs_superpowers_plans_2026_03_23_codex_app_compatibility_sandbox_fallback, docs_superpowers_plans_2026_03_23_codex_app_compatibility_step_1_5_handoff_payload, docs_superpowers_plans_2026_03_23_codex_app_compatibility_cleanup_guard [EXTRACTED 1.00]
+- **Codex App compatibility change set across 5 files** — docs_superpowers_specs_2026_03_23_codex_app_compatibility_design [EXTRACTED 1.00]
+- **Codex efficiency phase-1 treatments (T1-T5)** — docs_superpowers_specs_2026_07_30_codex_efficiency_fixes_design_t1_worker_review_prohibition, docs_superpowers_specs_2026_07_30_codex_efficiency_fixes_design_t2_event_driven_waiting, docs_superpowers_specs_2026_07_30_codex_efficiency_fixes_design_t3_codex_tools_corrections, docs_superpowers_specs_2026_07_30_codex_efficiency_fixes_design_t4_brainstorming_three_path_router, docs_superpowers_specs_2026_07_30_codex_efficiency_fixes_design_t5_explicit_model_child_spawns [EXTRACTED 1.00]
+- **Diagnosing Superpowers Diagnosis Artifacts** — skills_diagnosing_superpowers_templates_case, skills_diagnosing_superpowers_templates_report, skills_diagnosing_superpowers_templates_issue [EXTRACTED 1.00]
+- **Export, issue filing, and similar-session follow-up flow** — docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_bundle_export, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_github_issue_filing, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_similar_sessions, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_report_structure [EXTRACTED 1.00]
+- **Bundle export and scrubbing pipeline** — docs_superpowers_plans_2026_08_27_diagnosing_superpowers_bundle_readme_template, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_scrub_prompt, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_scrub_audit_prompt, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_redaction_placeholders [EXTRACTED 1.00]
+- **Seven analyst dimensions of parallel triage** — docs_superpowers_plans_2026_08_27_diagnosing_superpowers_skill_timeline_dimension, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_plan_adherence_dimension, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_repeated_work_dimension, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_stumbles_dimension, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_quality_evidence_dimension, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_request_conflicts_dimension, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_cost_and_time_dimension [EXTRACTED 1.00]
+- **Proposed diagnosing-superpowers skill file layout** — docs_superpowers_plans_2026_08_27_diagnosing_superpowers_skill_file_structure, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_case_template, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_report_template, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_bundle_readme_template, docs_superpowers_plans_2026_08_27_diagnosing_superpowers_issue_template [EXTRACTED 1.00]
+- **diagnosing-superpowers core workflow with discipline rules** — docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_skill, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_problem_intake, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_report_structure, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_context_safety [EXTRACTED 1.00]
+- **Triage analyst dimensions dispatched in parallel by the controller** — docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_skill_timeline, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_plan_adherence, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_repeated_work, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_stumbles, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_quality_evidence, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_request_conflicts, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_cost_and_time [EXTRACTED 1.00]
+- **Migration of drill into superpowers/evals with verified bash-test deletion** — docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design, docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_evals_harness, docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_deletion_gate, docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_verification_protocol [EXTRACTED 1.00]
+- **Fixup behaviors requiring focused RED/GREEN regression evidence** — docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_test_hardening, docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_root_screen_containment, docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_fallback_token_isolation, docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_stop_server_ownership_proof [EXTRACTED 1.00]
+- **Guidance-Phrasing Doctrine (five measured rules for classifying negative instructions)** — docs_superpowers_specs_2026_06_10_positive_instruction_redesign_design_doctrine_tripwires_work, docs_superpowers_specs_2026_06_10_positive_instruction_redesign_design_doctrine_recognition_tables_work, docs_superpowers_specs_2026_06_10_positive_instruction_redesign_design_doctrine_discrete_directive_prohibitions_work, docs_superpowers_specs_2026_06_10_positive_instruction_redesign_design_doctrine_composition_prohibitions_backfire, docs_superpowers_specs_2026_06_10_positive_instruction_redesign_design_doctrine_ties_go_to_shorter_phrasing [EXTRACTED 1.00]
+- **OpenCode Plugin Tool and Hook Surface** — docs_plans_2025_11_22_opencode_support_implementation_opencode_plugin, docs_plans_2025_11_22_opencode_support_implementation_use_skill_tool, docs_plans_2025_11_22_opencode_support_implementation_find_skills_tool, docs_plans_2025_11_22_opencode_support_implementation_session_started_hook [EXTRACTED 1.00]
+- **Platform-neutral instruction-file substitution rules** — docs_superpowers_specs_2026_05_05_platform_neutral_config_refs_design, docs_superpowers_specs_2026_05_05_platform_neutral_config_refs_design_instructions_file_terminology, docs_superpowers_specs_2026_05_05_platform_neutral_config_refs_design_rule1_conventions_location, docs_superpowers_specs_2026_05_05_platform_neutral_config_refs_design_rule2_violation_parenthetical [EXTRACTED 1.00]
+- **Platform-neutral prose effort (phase-sliced: A prose, B config refs, C README ordering, D/E later)** — docs_superpowers_specs_2026_05_05_platform_neutral_prose_design, docs_superpowers_specs_2026_05_05_platform_neutral_readme_design, docs_superpowers_specs_2026_05_05_platform_neutral_prose_design_phase_a, docs_superpowers_specs_2026_05_05_platform_neutral_readme_design_alphabetical_ordering [EXTRACTED 1.00]
+- **Robustness implementation pass (B1 dotfiles + B2 stale PID + B3 reconnect backoff)** — docs_superpowers_plans_2026_06_09_visual_companion_issues_b1_dotfile_screens, docs_superpowers_plans_2026_06_09_visual_companion_issues_b2_stale_pid_kill, docs_superpowers_plans_2026_06_09_visual_companion_issues_b3_ws_reconnect_backoff [EXTRACTED 1.00]
+- **SDD fix-loop redesign core mechanism** — docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_resume_implementer_fix_rounds, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_fix_loop_escalation, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_five_round_breaker, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_scoped_rereview, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_load_bearing_finding [EXTRACTED 1.00]
+- **SDD fix-loop eval validation suite** — docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_sdd_fix_loop_resumes_implementer_scenario, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_sdd_breaker_adjudicates_at_cap_scenario, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_sdd_breaker_structural_blocks_scenario, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_midloop_fixture_helpers, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_live_eval_campaign [EXTRACTED 1.00]
+- **Shared rule across all three SDD prompts: subagents never dispatch subagents** — skills_subagent_driven_development_implementer_prompt, skills_subagent_driven_development_task_reviewer_prompt, skills_subagent_driven_development_re_review_prompt [EXTRACTED 1.00]
+- **Plan-scoped workspace shell scripts** — docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_workspace, docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_task_brief, docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_review_package [EXTRACTED 1.00]
+- **SDD end-to-end process: task loop, fix loop, final review, ledger** — skills_subagent_driven_development_skill, skills_subagent_driven_development_skill_task_loop, skills_subagent_driven_development_skill_fix_loop, skills_subagent_driven_development_skill_final_review, skills_subagent_driven_development_skill_ledger [EXTRACTED 1.00]
+- **SDD controller dispatches implementer, task reviewer, and re-reviewer prompts** — skills_subagent_driven_development_skill, skills_subagent_driven_development_implementer_prompt, skills_subagent_driven_development_task_reviewer_prompt, skills_subagent_driven_development_re_review_prompt [EXTRACTED 1.00]
+- **SKILL.md lifecycle restructure components** — docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_skill_lifecycle_restructure, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_rereview_prompt_template, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_common_rationalizations_table, docs_superpowers_plans_2026_07_15_sdd_fix_loop_redesign_verbatim_move_rule [EXTRACTED 1.00]
+- **SDD Task-Scoped Review Redesign (scoped per-task reviewer + broad final review)** — docs_superpowers_specs_2026_06_09_sdd_task_scoped_review_dispatch_design_task_scoped_review, skills_subagent_driven_development_skill [EXTRACTED 1.00]
+- **Test-Rerun-Principle Placement Across SDD Prompts (both reviewer prompts, implementer prompt, controller guidance)** — docs_superpowers_specs_2026_06_09_sdd_task_scoped_review_dispatch_design_test_rerun_principle, skills_subagent_driven_development_implementer_prompt, skills_subagent_driven_development_skill [EXTRACTED 1.00]
+- **Security implementation pass (A1 key supersedes A2 + A3 null-crash guard + verify/close A4)** — docs_superpowers_plans_2026_06_09_visual_companion_issues_a1_per_session_secret_key, docs_superpowers_plans_2026_06_09_visual_companion_issues_a2_host_allowlist_dropped, docs_superpowers_plans_2026_06_09_visual_companion_issues_a3_null_ws_payload_crash, docs_superpowers_plans_2026_06_09_visual_companion_issues_a4_frame_length_bound [EXTRACTED 1.00]
+- **Shared SDD battery grades T1, T2, T5** — docs_superpowers_specs_2026_07_30_codex_efficiency_fixes_design, docs_superpowers_specs_2026_07_30_codex_efficiency_fixes_design_t1_worker_review_prohibition, docs_superpowers_specs_2026_07_30_codex_efficiency_fixes_design_t2_event_driven_waiting, docs_superpowers_specs_2026_07_30_codex_efficiency_fixes_design_t5_explicit_model_child_spawns [EXTRACTED 1.00]
+- **Shared skills-core.js Function Set** — docs_plans_2025_11_22_opencode_support_implementation_skills_core_module, docs_plans_2025_11_22_opencode_support_implementation_extract_frontmatter_function, docs_plans_2025_11_22_opencode_support_implementation_find_skills_in_dir_function, docs_plans_2025_11_22_opencode_support_implementation_resolve_skill_path_function, docs_plans_2025_11_22_opencode_support_implementation_check_for_updates_function [EXTRACTED 1.00]
+- **RED-GREEN-REFACTOR cycle applied to skill authoring** — skills_writing_skills_skill, skills_writing_skills_tdd_mapping, skills_writing_skills_iron_law, skills_writing_skills_testing_skills_with_subagents [EXTRACTED 1.00]
+- **Creation of the systematic-debugging skill: framework, bulletproofing, and validation** — skills_systematic_debugging_creation_log, skills_systematic_debugging_skill, skills_systematic_debugging_creation_log_4_phase_framework, skills_systematic_debugging_creation_log_bulletproofing, skills_systematic_debugging_creation_log_test_validation [EXTRACTED 1.00]
+- **Fixup design sections form PR #1720 review readiness** — docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design, docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_rebase_onto_dev, docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_root_screen_containment, docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_fallback_token_isolation, docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_stop_server_ownership_proof, docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_test_hardening, docs_superpowers_specs_2026_06_11_visual_companion_final_hardening_fixup_design_docs_pr_consistency [EXTRACTED 1.00]
+- **Worktree Rototill detect-and-defer design** — docs_superpowers_specs_2026_04_06_worktree_rototill_design, docs_superpowers_specs_2026_04_06_worktree_rototill_design_detect_and_defer, docs_superpowers_specs_2026_04_06_worktree_rototill_design_step_1a_native_tools, docs_superpowers_specs_2026_04_06_worktree_rototill_design_step_1b_git_fallback [EXTRACTED 1.00]
+- **Zero-dependency brainstorm server component design** — docs_superpowers_specs_2026_03_11_zero_dep_brainstorm_server_design, docs_superpowers_specs_2026_03_11_zero_dep_brainstorm_server_design_server_js, docs_superpowers_specs_2026_03_11_zero_dep_brainstorm_server_design_websocket_protocol, docs_superpowers_specs_2026_03_11_zero_dep_brainstorm_server_design_http_routes, docs_superpowers_specs_2026_03_11_zero_dep_brainstorm_server_design_file_watching, docs_superpowers_specs_2026_03_11_zero_dep_brainstorm_server_design_env_config [EXTRACTED 1.00]
+- **Agent Environment Accountability Tables (harness/model/plugin attribution required)** — github_issue_template_bug_report_template, github_issue_template_feature_request_template, github_issue_template_platform_support_template, github_pull_request_template_checklist [INFERRED 0.75]
+- **Bash test retirement phase (Tasks 10-11)** — docs_superpowers_plans_2026_05_06_lift_drill_into_evals_subagent_deletion_gate, docs_superpowers_plans_2026_05_06_lift_drill_into_evals_bash_test_deletions, docs_superpowers_plans_2026_05_06_lift_drill_into_evals_stale_reference_scrub [INFERRED 0.75]
+- **CoC reporting-to-enforcement flow** — code_of_conduct, code_of_conduct_reporting, code_of_conduct_enforcement_ladder [INFERRED 0.75]
+- **Code review lifecycle** — skills_requesting_code_review_skill, skills_requesting_code_review_code_reviewer, skills_receiving_code_review_skill, skills_requesting_code_review_code_reviewer_severity_calibration [INFERRED 0.75]
+- **Dev branch completion workflow** — skills_finishing_a_development_branch_skill, skills_finishing_a_development_branch_skill_integration_options_menu, skills_finishing_a_development_branch_skill_worktree_cleanup [INFERRED 0.75]
+- **Case-file protocol: discovery writes the record, analysts read it, context-safety applies throughout** — skills_diagnosing_superpowers_references_session_discovery, skills_diagnosing_superpowers_prompts_analyst_common, skills_diagnosing_superpowers_references_context_safety [INFERRED 0.75]
+- **Diagnosing-Superpowers Workflow** — skills_diagnosing_superpowers_skill, skills_diagnosing_superpowers_seven_analysts, skills_diagnosing_superpowers_citation_rule, docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_spec [INFERRED 0.75]
+- **Document Review System Review Stages** — docs_superpowers_specs_2026_01_22_document_review_system_design_spec, docs_superpowers_specs_2026_01_22_document_review_system_design_spec_document_reviewer, docs_superpowers_specs_2026_01_22_document_review_system_design_plan_document_reviewer, docs_superpowers_specs_2026_01_22_document_review_system_design_iterative_review_loop, docs_superpowers_specs_2026_01_22_document_review_system_design_chunk_review [INFERRED 0.75]
+- **Fallback Token Isolation (token source tracking + lifecycle regressions)** — docs_superpowers_plans_2026_06_11_visual_companion_final_hardening_fixup_fallback_token_isolation, skills_brainstorming_scripts_server_cjs, tests_brainstorm_server_lifecycle_test_js [INFERRED 0.75]
+- **Hermes Version-Bump Wiring Implementation Components** — docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_plan, docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_manifest_format_dispatch, docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_preflight_manifests, docs_superpowers_plans_2026_08_06_hermes_version_bump_wiring_hermes_yaml_manifest [INFERRED 0.75]
+- **GitHub Issue Triage Workflow (templates + blank-issue routing to Discord)** — github_issue_template_bug_report_template, github_issue_template_diagnosis_report_template, github_issue_template_feature_request_template, github_issue_template_platform_support_template, github_issue_template_config_contact_links [INFERRED 0.75]
+- **Root Screen Containment Hardening (guard + regression tests)** — docs_superpowers_plans_2026_06_11_visual_companion_final_hardening_fixup_root_screen_containment, skills_brainstorming_scripts_server_cjs, tests_brainstorm_server_server_test_js [INFERRED 0.75]
+- **SDD plan-scoped execution and shared workspace** — skills_executing_plans_skill, skills_subagent_driven_development_skill, docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace [INFERRED 0.75]
+- **Review-fix loop with implementer-carried test evidence** — docs_superpowers_plans_2026_06_09_sdd_task_scoped_review_dispatch_task_3_implementer_rerun_tests_after_fix, docs_superpowers_plans_2026_06_09_sdd_task_scoped_review_dispatch_concept_rerun_tests_after_review_fix, docs_superpowers_plans_2026_06_09_sdd_task_scoped_review_dispatch_task_5_planted_dry_defect_eval_scenario [INFERRED 0.75]
+- **Stop-Server Instance-Id Ownership Proof (generate id, pass argv, require proof)** — docs_superpowers_plans_2026_06_11_visual_companion_final_hardening_fixup_instance_id_ownership, skills_brainstorming_scripts_start_server_sh, skills_brainstorming_scripts_stop_server_sh [INFERRED 0.75]
+- **Improvements to the subagent-driven-development skill** — docs_plans_2025_11_28_skills_improvements_from_user_feedback_skill_subagent_driven_development, docs_plans_2025_11_28_skills_improvements_from_user_feedback_improvement_e2e_process_hygiene, docs_plans_2025_11_28_skills_improvements_from_user_feedback_improvement_lean_context_option, docs_plans_2025_11_28_skills_improvements_from_user_feedback_improvement_self_reflection_step, docs_plans_2025_11_28_skills_improvements_from_user_feedback_improvement_skills_reading_requirement, docs_plans_2025_11_28_skills_improvements_from_user_feedback_improvement_implementer_self_fix [INFERRED 0.75]
+- **Validation Scenarios for Systematic Debugging Skill** — skills_systematic_debugging_test_academic, skills_systematic_debugging_test_pressure_1, skills_systematic_debugging_test_pressure_2 [INFERRED 0.75]
+- **TDD Test Discipline Cluster** — skills_test_driven_development_skill, skills_test_driven_development_writing_good_tests, skills_subagent_driven_development_skill [INFERRED 0.75]
+- **Testing and verification skill improvements** — docs_plans_2025_11_28_skills_improvements_from_user_feedback_skill_verification_before_completion, docs_plans_2025_11_28_skills_improvements_from_user_feedback_skill_testing_anti_patterns, docs_plans_2025_11_28_skills_improvements_from_user_feedback_improvement_config_change_verification, docs_plans_2025_11_28_skills_improvements_from_user_feedback_improvement_mock_interface_drift [INFERRED 0.75]
+- **User feedback problem themes from development sessions** — docs_plans_2025_11_28_skills_improvements_from_user_feedback_theme_verification_gap, docs_plans_2025_11_28_skills_improvements_from_user_feedback_theme_background_process_accumulation, docs_plans_2025_11_28_skills_improvements_from_user_feedback_theme_context_bloat, docs_plans_2025_11_28_skills_improvements_from_user_feedback_theme_missing_self_reflection, docs_plans_2025_11_28_skills_improvements_from_user_feedback_theme_mock_safety, docs_plans_2025_11_28_skills_improvements_from_user_feedback_theme_skill_activation, docs_plans_2025_11_28_skills_improvements_from_user_feedback_theme_reviewer_file_access, docs_plans_2025_11_28_skills_improvements_from_user_feedback_theme_fix_workflow_latency [INFERRED 0.75]
+- **using-superpowers platform adaptation reference set** — skills_using_superpowers_references_antigravity_tools, skills_using_superpowers_references_claude_code_tools, skills_using_superpowers_references_codex_tools, skills_using_superpowers_references_gemini_tools, skills_using_superpowers_references_hermes_tools, skills_using_superpowers_references_muse_tools [INFERRED 0.75]
+- **Visual Brainstorming Non-Blocking Refactor Model** — docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_spec, docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_events_file, docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_non_blocking_loop, docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_terminal_channel, docs_superpowers_specs_2026_02_19_visual_brainstorming_refactor_design_wait_for_feedback_deletion [INFERRED 0.75]
+- **Visual Brainstorming Companion System** — docs_plans_2026_01_17_visual_brainstorming_brainstorm_server, docs_plans_2026_01_17_visual_brainstorming_helper_library, docs_plans_2026_01_17_visual_brainstorming_screen_file [INFERRED 0.75]
+- **Auth Hardening Verification Suite** — docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_restart_reconnect_regression, docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_lifecycle_hang_shell_lint, docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_full_automated_verification, docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening_security_probes [INFERRED 0.75]
+- **Two Invariant Rules That Make Cross-Harness Porting Work** — docs_porting_to_a_new_harness, docs_porting_to_a_new_harness_rule_skills_name_actions, docs_porting_to_a_new_harness_rule_ship_via_install_mechanism [INFERRED 0.85]
+- **Seven analyst dimensions sharing the common analyst prompt** — skills_diagnosing_superpowers_prompts_analyst_common, skills_diagnosing_superpowers_prompts_cost_and_time, skills_diagnosing_superpowers_prompts_plan_adherence, skills_diagnosing_superpowers_prompts_quality_evidence, skills_diagnosing_superpowers_prompts_repeated_work, skills_diagnosing_superpowers_prompts_request_conflicts, skills_diagnosing_superpowers_prompts_skill_timeline, skills_diagnosing_superpowers_prompts_stumbles [INFERRED 0.85]
+- **git-dir/git-common-dir detection signal consumers** — docs_superpowers_plans_2026_03_23_codex_app_compatibility_git_dir_git_common_dir_detection, docs_superpowers_plans_2026_03_23_codex_app_compatibility_step_zero_workspace_detection, docs_superpowers_plans_2026_03_23_codex_app_compatibility_step_1_5_handoff_payload, docs_superpowers_plans_2026_03_23_codex_app_compatibility_cleanup_guard, docs_superpowers_plans_2026_03_23_codex_app_compatibility_codex_tools_reference [INFERRED 0.85]
+- **Per-harness agent instruction docs (AGENTS/CLAUDE/GEMINI)** — agents, claude, gemini [INFERRED 0.85]
+- **Harness-Specific Superpowers README Variants** — readme, docs_readme_kimi, docs_readme_opencode [INFERRED 0.85]
+- **The Three Integration Shapes** — docs_porting_to_a_new_harness_shape_a_shell_hook, docs_porting_to_a_new_harness_shape_b_in_process_plugin, docs_porting_to_a_new_harness_shape_c_instructions_file [INFERRED 0.85]
+- **Non-Blocking Brainstorming Architecture Components** — docs_superpowers_plans_2026_02_19_visual_brainstorming_refactor_nonblocking_architecture, docs_superpowers_plans_2026_02_19_visual_brainstorming_refactor_events_file, docs_superpowers_plans_2026_02_19_visual_brainstorming_refactor_helper_js, docs_superpowers_plans_2026_02_19_visual_brainstorming_refactor_frame_template, docs_superpowers_plans_2026_02_19_visual_brainstorming_refactor_visual_companion_rewrite [INFERRED 0.85]
+- **Plan authoring and execution pipeline** — skills_writing_plans_skill, skills_subagent_driven_development_skill, skills_executing_plans_skill [INFERRED 0.85]
+- **Cross-platform hook dispatch mechanism** — docs_windows_polyglot_hooks, docs_windows_polyglot_hooks_run_hook_cmd, docs_windows_polyglot_hooks_extensionless_scripts [INFERRED 0.85]
+- **End-to-End Porting and Acceptance Workflow** — docs_porting_to_a_new_harness, docs_porting_to_a_new_harness_porting_procedure, docs_porting_to_a_new_harness_acceptance_test, docs_porting_to_a_new_harness_definition_of_done [INFERRED 0.85]
+- **Explicit subagent-driven-development trigger prompt battery (tests/explicit-skill-requests)** — tests_explicit_skill_requests_prompts_action_oriented, tests_explicit_skill_requests_prompts_after_planning_flow, tests_explicit_skill_requests_prompts_claude_suggested_it, tests_explicit_skill_requests_prompts_i_know_what_sdd_means, tests_explicit_skill_requests_prompts_mid_conversation_execute_plan, tests_explicit_skill_requests_prompts_skip_formalities, tests_explicit_skill_requests_prompts_subagent_driven_development_please [INFERRED 0.85]
+- **Fix loop implementation of the 2026-07-15 redesign spec** — skills_subagent_driven_development_skill_fix_loop, docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design, skills_subagent_driven_development_skill [INFERRED 0.85]
+- **SDD convergent fix loop (resume-based, five-round breaker, adjudication)** — docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design, docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_fix_loop, docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_circuit_breaker, docs_superpowers_specs_2026_07_15_sdd_fix_loop_redesign_design_adjudication_at_trip [INFERRED 0.85]
+- **SDD plan-scoped workspace design (structural identity + ledger guard + end-of-life)** — docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace, docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_per_plan_workspace_directory, docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_plan_slug, docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_ledger_plan_line, docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_workspace_end_of_life, docs_superpowers_specs_2026_07_06_sdd_plan_scoped_workspace_root_cause [INFERRED 0.85]
+- **SDD plan-scoped workspace eval program (RED then GREEN)** — docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_red_baseline, docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_green_eval, docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_plan_scoped_workspace [INFERRED 0.85]
+- **SDD two-stage review pipeline: per-task gates plus final broad review** — docs_superpowers_plans_2026_06_09_sdd_task_scoped_review_dispatch_spec_reviewer_prompt, docs_superpowers_plans_2026_06_09_sdd_task_scoped_review_dispatch_code_quality_reviewer_prompt, docs_superpowers_plans_2026_06_09_sdd_task_scoped_review_dispatch_implementer_prompt, docs_superpowers_plans_2026_06_09_sdd_task_scoped_review_dispatch_requesting_code_reviewer_template [INFERRED 0.85]
+- **Superpowers core skill pipeline (brainstorm -> plan -> execute)** — using_superpowers, brainstorming, writing_plans, executing_plans, subagent_driven_development [INFERRED 0.85]
+- **T1 treatment cycle: no-subagents contract across all dispatched roles with battery verification** — docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task1_t1_sdd_worker_review_prohibition, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task15_t1_ext_reviewer_contracts, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_no_subagents_contract, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task8_shared_sdd_battery, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task8b_sdd_battery_rerun, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task8c_sdd_battery_round3 [INFERRED 0.85]
+- **T2 treatment cycle: from event-wait docs to controller wait discipline to bounded stretches and non-blocking preference** — docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task3_t2_event_driven_waiting, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task16_t2_strong_controller_wait, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task17_t2_round3_bounded_waits, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task19_nonblocking_delivery, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_event_subscription_wait, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_bounded_wait_stretches [INFERRED 0.85]
+- **T4 treatment cycle: three-path router design, micro validation, ceremony batteries, cross-harness regression, and triggering checks** — docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task5_t4_three_path_router, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task7_ceremony_path_micro, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task9_codex_ceremony_battery, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task9b_ceremony_battery_round2, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task11_global_regression_battery, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task12_triggering_acceptance_check, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task12b_triggering_rerun, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task18_t4_round2_approval_teeth, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_task20_router_tightening, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_three_paths_spike_bounded_architectural, docs_superpowers_plans_2026_07_30_codex_efficiency_fixes_approval_gate_invariant [INFERRED 0.85]
+- **Visual Companion Subsystem** — skills_brainstorming_visual_companion_guide, skills_brainstorming_scripts_frame_template, skills_brainstorming_visual_companion_loop, skills_brainstorming_visual_companion [INFERRED 0.85]
+- **Detect-and-defer worktree skill rewrite (Tasks 2-4)** — docs_superpowers_plans_2026_04_06_worktree_rototill_rewritten_using_git_worktrees_skill, docs_superpowers_plans_2026_04_06_worktree_rototill_rewritten_finishing_skill, docs_superpowers_plans_2026_04_06_worktree_rototill_integration_updates [INFERRED 0.85]
+- **Step 1a native-preference gate and E2E validation chain** — docs_superpowers_plans_2026_04_06_worktree_rototill_red_green_gate_test, docs_superpowers_plans_2026_04_06_worktree_rototill_native_tool_preference, docs_superpowers_plans_2026_04_06_worktree_rototill_e2e_validation [INFERRED 0.85]
+- **Visual Companion Auth Hardening Design Components** — docs_superpowers_specs_2026_06_10_visual_companion_auth_hardening_design, docs_superpowers_specs_2026_06_10_visual_companion_auth_hardening_design_bootstrap_keyed_loads, docs_superpowers_specs_2026_06_10_visual_companion_auth_hardening_design_websocket_same_origin_enforcement, docs_superpowers_specs_2026_06_10_visual_companion_auth_hardening_design_files_containment, docs_superpowers_specs_2026_06_10_visual_companion_auth_hardening_design_leak_reduction_headers [INFERRED 0.90]
+- **Scrubbing and audit pipeline governed by the redaction policy** — skills_diagnosing_superpowers_prompts_scrub, skills_diagnosing_superpowers_prompts_scrub_audit, skills_diagnosing_superpowers_references_redaction_policy [INFERRED 0.95]
+- **SDD Cost-Reduction Experiment Ladder (L1-L5 rungs)** — docs_superpowers_specs_2026_06_10_strict_cost_sdd_design_experiment_ladder, docs_superpowers_specs_2026_06_10_strict_cost_sdd_design_l1_plan_crispness, docs_superpowers_specs_2026_06_10_strict_cost_sdd_design_l2_controller_tier, docs_superpowers_specs_2026_06_10_strict_cost_sdd_design_l3_reviewer_tier, docs_superpowers_specs_2026_06_10_strict_cost_sdd_design_l4_resident_context_diet, docs_superpowers_specs_2026_06_10_strict_cost_sdd_design_l5_re_litigations [INFERRED 0.95]
+- **Progressive disclosure enabled by the filesystem runtime** — skills_writing_skills_anthropic_best_practices_progressive_disclosure, skills_writing_skills_anthropic_best_practices_one_level_deep_references, skills_writing_skills_anthropic_best_practices_runtime_environment_filesystem [INFERRED]
+- **** — skills_writing_skills_examples_claude_md_testing, skills_writing_skills_examples_claude_md_testing_test_scenarios, skills_writing_skills_examples_claude_md_testing_documentation_variants, skills_writing_skills_testing_skills_with_subagents_pressure_scenarios [INFERRED]
+- **** — skills_writing_skills_persuasion_principles_authority, skills_writing_skills_persuasion_principles_commitment, skills_writing_skills_persuasion_principles_social_proof [INFERRED]
+- **** — skills_writing_skills_testing_skills_with_subagents, skills_writing_skills_testing_skills_with_subagents_tdd_mapping, skills_writing_skills_testing_skills_with_subagents_pressure_scenarios, skills_writing_skills_testing_skills_with_subagents_rationalization_table [INFERRED]
+
+## Communities (108 total, 24 thin omitted)
+
+### Community 13 - "Companion Server Tests"
+Cohesion: 0.15
+Nodes (21): assert, assertStartedOnExpectedPort(), cleanup(), CONTENT_DIR, ensureSymlinkWorks(), fetch(), fs, http (+13 more)
+
+### Community 29 - "Hermes Plugin Tests"
+Cohesion: 0.32
+Nodes (7): importlib_util, shutil, _fire_pre_llm(), _load_plugin(), Re-import plugin module fresh., TestBootstrapInjection, TestPluginRegistration
+
+### Community 53 - "Hermes Bootstrap Tests"
+Cohesion: 0.38
+Nodes (5): importlib, sys, _load(), TestSkillsDirResolution, TestStripFrontmatter
+
+### Community 0 - "Brainstorm Server Core"
+Cohesion: 0.06
+Nodes (60): ref_child_process, bootstrapPage(), brandMarkup(), broadcast(), browserLauncherForPlatform(), chmodOwnerOnly(), RFC-6455, clients (+52 more)
+
+### Community 10 - "Companion Branding Tests"
+Cohesion: 0.19
+Nodes (24): assert, assertBrandedFallbackText(), assertBrandedWithLogo(), assertFramedLogoSupportsDarkTheme(), assertFramedScreenUsesBrandHeader(), assertHeaderAvoidsNarrowOverlap(), assertLogoKeepsTransparentBackground(), assertTelemetryImage() (+16 more)
+
+### Community 12 - "Companion Auth Tests"
+Cohesion: 0.15
+Nodes (22): ref_http, assert, assertSecurityHeaders(), assertStartedOnExpectedPort(), cleanup(), CONTENT_DIR, EXPECTED_SECURITY_HEADERS, fs (+14 more)
+
+### Community 22 - "OpenCode Bootstrap Caching Tests"
+Cohesion: 0.23
+Nodes (15): afterFirst, afterSecond, assertMappingConstants(), assertMissingBootstrap(), assertPresentBootstrap(), assertV2Bootstrap(), bootstrapText(), countBootstrapParts() (+7 more)
+
+### Community 3 - "Pi Extension Bootstrap"
+Cohesion: 0.07
+Nodes (40): bootstrapSkillPath, extensionDir, firstNonCompactionSummaryIndex(), getBootstrapContent(), messageContainsBootstrap(), packageRoot, piToolMapping(), skillsDir (+32 more)
+
+### Community 30 - "OpenCode Plugin Module"
+Cohesion: 0.22
+Nodes (12): _bootstrapCache, _cacheChildSession(), _childSessionCache, __dirname, extractAndStripFrontmatter(), getBootstrapContent(), isChildSession(), setup() (+4 more)
+
+### Community 39 - "Skill Registration Tests"
+Cohesion: 0.27
+Nodes (11): ref_os, ref_url, added, failures, fixtureRoot, frontmatterFixtures, makeCtx(), pluginPath (+3 more)
+
+### Community 43 - "Token Usage Analyzer"
+Cohesion: 0.29
+Nodes (10): collections, json, analyze_main_session(), calculate_cost(), format_tokens(), main(), Analyze a session file and return token usage broken down by agent., Analyze token usage from Claude Code session transcripts. Breaks down usage by… (+2 more)
+
+### Community 46 - "WebSocket Protocol Tests"
+Cohesion: 0.24
+Nodes (10): ref_crypto, ref_path, assert, crypto, RFC-6455, path, runTests(), makeClientFrame() (+2 more)
+
+### Community 55 - "Companion Helper Tests"
+Cohesion: 0.20
+Nodes (7): ref_fs, assert, fs, HELPER, moduleShim, path, src
+
+### Community 58 - "Hermes Plugin Registration"
+Cohesion: 0.40
+Nodes (8): _build_bootstrap(), Locate the stock skills/ tree for either supported install layout. - git-clone…, register(), pre_llm_call(), _skills_dir(), _strip_frontmatter(), os, re
+
+### Community 59 - "Companion Helper Reconnect"
+Cohesion: 0.42
+Nodes (7): connect(), nextReconnectDelay(), reloadAfterRecovery(), sessionKey(), setStatus(), showTombstone(), websocketUrl()
+
+### Community 64 - "Hermes Pytest Fixtures"
+Cohesion: 0.32
+Nodes (7): fixture, pathlib, pytest, mock_ctx(), register_hook(), register_skill(), unittest_mock
+
+### Community 7 - "Brainstorm Server Lifecycle Tests"
+Cohesion: 0.11
+Nodes (29): ws, assert, firstServerStarted(), fs, httpStatus(), isWindowsLikeShell(), killAndWait(), makeShellTempDir() (+21 more)
+
+### Community 76 - "Graph Rendering Script"
+Cohesion: 0.60
+Nodes (5): combineGraphs(), extractDotBlocks(), extractGraphBody(), main(), renderToSvg()
+
+### Community 82 - "Browser Launcher Tests"
+Cohesion: 0.40
+Nodes (3): ref_assert, assert, {
+  browserLauncherForPlatform
+}
+
+### Community 11 - "OpenCode Plugin Tests"
+Cohesion: 0.11
+Nodes (17): HOME, OPENCODE_CONFIG_DIR, setup.sh script, XDG_CONFIG_HOME, run_missing_file_check(), run_present_file_check(), test-bootstrap-caching.sh script, test-plugin-loading.sh script (+9 more)
+
+### Community 18 - "Codex Plugin Sync Script"
+Cohesion: 0.21
+Nodes (17): append_git_ignored_directory_excludes(), append_git_ignored_file_excludes(), apply_to_preview_checkout(), confirm(), copy_local_destination_overlay(), copy_preserved_destination_metadata(), die(), ignored_directory_has_tracked_descendants() (+9 more)
+
+### Community 21 - "Version Bump Wiring"
+Cohesion: 0.24
+Nodes (14): Hermes Version-Bump Wiring Design, Read-only preflight for version bump, cmd_audit(), cmd_bump(), cmd_check(), preflight_manifests(), read_json_field(), read_manifest_field() (+6 more)
+
+### Community 28 - "SDD Plan-Scoped Workspace"
+Cohesion: 0.21
+Nodes (13): SDD plan-scoped workspace design spec, SDD plan-scoped workspace — eval results, Fixture generator v3 (make-fixture.sh, Appendix A), Scenario S1 — stale ledger from a different plan, Scenario S2 — same-plan resume, Ledger plan line (progress.md first line names the plan), Per-plan workspace directory (.superpowers/sdd/<plan-slug>/), Plan-slug (plan basename without .md) (+5 more)
+
+### Community 34 - "Shell Lint Script"
+Cohesion: 0.38
+Nodes (12): add_shell_file(), collect_all_shell_files(), collect_changed_shell_files(), collect_requested_shell_files(), die(), ensure_git_work_tree(), is_shell_file(), require_tool() (+4 more)
+
+### Community 35 - "Review Prompt Templates"
+Cohesion: 0.17
+Nodes (11): Scoped Re-Review Prompt Template, Scoped re-review: verify findings addressed, inspect fix diff only, review-package script, task-brief script, Task Reviewer Prompt Template, Severity calibration rubric (Critical / Important / Minor), Diff-only, read-only review discipline, Do-not-trust-the-report principle: treat report as unverified claims (+3 more)
+
+### Community 36 - "Codex Plugin Packaging Tests"
+Cohesion: 0.36
+Nodes (11): assert_contains(), assert_equals(), assert_not_matches(), extract_archive(), fail(), list_archive(), normalize_archive_paths(), pass() (+3 more)
+
+### Community 49 - "Shell Lint Tests"
+Cohesion: 0.40
+Nodes (9): assert_contains(), assert_not_contains(), configure_git_identity(), fail(), make_fixture_repo(), pass(), run_lint_shell(), test-lint-shell.sh script (+1 more)
+
+### Community 54 - "Pi Extension Manifest"
+Cohesion: 0.24
+Nodes (9): description, keywords, main, name, pi, extensions, skills, type (+1 more)
+
+### Community 56 - "Windows Lifecycle Tests"
+Cohesion: 0.36
+Nodes (8): fail(), get_key_from_info(), get_port_from_info(), http_check(), pass(), windows-lifecycle.test.sh script, skip(), wait_for_server_info()
+
+### Community 6 - "Codex Plugin Sync Tests"
+Cohesion: 0.15
+Nodes (31): add_openai_agent_metadata_fixture(), assert_branch_absent(), assert_contains(), assert_current_branch(), assert_equals(), assert_file_equals(), assert_matches(), assert_not_contains() (+23 more)
+
+### Community 60 - "Stop-Server Script Tests"
+Cohesion: 0.39
+Nodes (7): bad(), new_server_id(), ok(), stop-server.test.sh script, track_dir(), track_pid(), untrack_pid()
+
+### Community 65 - "Codex Plugin Packaging Script"
+Cohesion: 0.46
+Nodes (6): die(), infer_format_from_output(), metadata_root_from_dir(), prepare_metadata_root(), package-codex-plugin.sh script, usage()
+
+### Community 67 - "Find-Polluter Script Tests"
+Cohesion: 0.43
+Nodes (6): assert_contains(), fail(), pass(), run_polluter(), setup_project(), test-find-polluter.sh script
+
+### Community 69 - "Stop-Server Script"
+Cohesion: 0.52
+Nodes (6): command_has_server_id(), command_line_for_pid(), is_brainstorm_server(), mark_stopped(), read_expected_server_id(), stop-server.sh script
+
+### Community 71 - "Session-Start Hook Tests"
+Cohesion: 0.57
+Nodes (5): assert_command_output(), fail(), make_home(), pass(), test-session-start.sh script
+
+### Community 72 - "Graph Rendering Tests"
+Cohesion: 0.67
+Nodes (5): assert_contains(), assert_not_contains(), fail(), pass(), test-render-graphs.sh script
+
+### Community 77 - "Start-Server Script Tests"
+Cohesion: 0.53
+Nodes (4): fail(), make_fake_uname(), pass(), start-server.test.sh script
+
+### Community 78 - "Executing-Plans Script Tests"
+Cohesion: 0.53
+Nodes (4): fail(), main(), pass(), test-executing-plans-scripts.sh script
+
+### Community 79 - "SDD Workspace Script Tests"
+Cohesion: 0.53
+Nodes (4): fail(), main(), pass(), test-sdd-workspace.sh script
+
+### Community 8 - "Worktree Skill Testing"
+Cohesion: 0.11
+Nodes (22): Worktree Rototill Implementation Plan, Task 5: End-to-End Validation, Step 1b Git Worktree Fallback, Hooks Symlink After Manual Worktree Creation, Step 0 Existing Isolation Detection (GIT_DIR != GIT_COMMON), Step 1a Native Worktree Tool Preference, Provenance-Based Worktree Cleanup, Task 1 GATE: RED/GREEN Validation of Native Tool Preference (+14 more)
+
+### Community 83 - "Version Bump Script Tests"
+Cohesion: 0.60
+Nodes (3): fail(), make_fixture(), test-bump-version.sh script
+
+### Community 84 - "Worktree Path Policy Tests"
+Cohesion: 0.83
+Nodes (3): assert_contains(), assert_not_contains(), test-worktree-path-policy.sh script
+
+### Community 85 - "Skill Structure Tests"
+Cohesion: 0.83
+Nodes (3): fail(), pass(), test-skill-structure.sh script
+
+### Community 50 - "OpenCode Support Design"
+Cohesion: 0.36
+Nodes (10): Code Reuse Strategy, Codex CLI Script (.codex/superpowers-codex), find_skills Custom Tool, OpenCode Plugin Module (.opencode/plugin/superpowers.js), OpenCode Support Design, Platform-Specific Wrappers, Session Startup Hook (session.started), Skill Directories (core + personal) (+2 more)
+
+### Community 5 - "Diagnosis Design and Templates"
+Cohesion: 0.07
+Nodes (43): Scrubbed bundle export step, Claude Code session store reference, Codex session store reference, Context safety hard rule, Cost and time analysis dimension, GitHub issue filing step, Other-harness discovery procedure, Plan adherence analysis dimension (+35 more)
+
+### Community 1 - "Visual Brainstorming Companion"
+Cohesion: 0.07
+Nodes (57): Visual Brainstorming Companion — Issue & Change Catalog, A1 — per-session secret key on /, /files/*, and WS (chosen approach; supersedes Host allowlist), A2 — Host allowlist dropped; browser WS Origin check retained after auth, A3 — server crashes on null / non-object WS payload, A4 — frame-length bound in decodeFrame (already fixed; verify/close #1446), B1 — macOS resource-fork dotfiles (._*.html) served as screen content, B2 — stop-server.sh can kill a reused/stale PID, B3 — WS client silent reconnect and stale 'Connected' status (+49 more)
+
+### Community 14 - "Skill Feedback Improvements"
+Cohesion: 0.17
+Nodes (21): Skills Improvements from User Feedback (plan), Improvement 1: verification-before-completion adds configuration change verification, Improvement 2: subagent-driven-development adds process hygiene for E2E tests, Improvement 5: requesting-code-review adds explicit file reading, Improvement 8: subagent-driven-development allows implementer to fix self-identified issues, Improvement 3: subagent-driven-development adds lean context option, Improvement 6: testing-anti-patterns adds mock-interface drift anti-pattern, Improvement 4: subagent-driven-development adds self-reflection step (+13 more)
+
+### Community 15 - "Task-Scoped Review Dispatch"
+Cohesion: 0.17
+Nodes (21): SDD Task-Scoped Review Dispatch Implementation Plan, Component: subagent-driven-development code-quality-reviewer-prompt.md, Concept: diff-first, task-scoped review gate, Concept: implementer re-runs covering tests after fixing review findings, Concept: cannot-verify-from-diff warning verdict channel, Decision: coordinator keeps model judgment, Decision: requesting-code-review skill stays broad and untouched, Decision: full re-reviews stay (+13 more)
+
+### Community 16 - "Positive-Instruction Redesign"
+Cohesion: 0.11
+Nodes (21): SDD Task-Scoped Review Dispatch Design Spec, ⚠️ Cannot-Verify-From-Diff Verdict Channel (controller resolves before task complete), Cost Iterations 1-5 (merged task reviewer, final-review package, progress ledger, positive recipes), Evidence Rule (file:line evidence per What-to-Check item), Scope Budget (git diff first; broaden only for a named concrete risk), Task-Scoped Per-Task Review (diff-first, justified broadening), Test Budget (no package-wide suites/race detectors without a named suspected flake or race), Don't Re-Run Tests on Code That Hasn't Changed (+13 more)
+
+### Community 17 - "Skill Authoring Best Practices"
+Cohesion: 0.11
+Nodes (21): Skill authoring best practices, Set appropriate degrees of freedom, Checklist for effective Skills, Concise is key, Provide a default, don't offer too many options, Writing effective descriptions (third person), Build evaluations first, Implement feedback loops (validate-fix-repeat) (+13 more)
+
+### Community 19 - "Plan Execution and Review"
+Cohesion: 0.15
+Nodes (18): Task 4: One-Line Integration Updates to Three Skills, Hermes YAML Manifest Registration (.hermes-plugin/plugin.yaml), Manifest Format Dispatch (jq for JSON, yq for YAML), Hermes Version-Bump Wiring Implementation Plan, Bump-Only Manifest Preflight, Chunk-by-Chunk Plan Review with Spec Alignment, Iterative Review Loop Pattern, Plan Document Reviewer Stage (+10 more)
+
+### Community 2 - "Codex Efficiency Fixes"
+Cohesion: 0.09
+Nodes (56): Amendment 1 (2026-07-30): first shared battery FAIL response, Amendment 2 (2026-07-30): round-2 battery findings, Amendment 3 (2026-07-30): prefer non-blocking subscriptions, Amendment 4 (2026-07-31): triggering-check findings, Approval-gate invariant (ceremony scales, approval never does), Bounded wait stretches with reconciliation, Event-subscription waiting (wait_agent is a subscription, not a poll), Fix arm worktree (/tmp/sp-arm-fix) (+48 more)
+
+### Community 20 - "SDD Fix-Loop Redesign"
+Cohesion: 0.22
+Nodes (17): Common Rationalizations table in SKILL.md, Make SDD review-fix loop convergent and autonomous, Five-round breaker with controller adjudication at the cap, Fix-loop escalation: rounds 4-5 dispatch a fresh implementer on a more capable model, Live RED/GREEN/regression eval campaign (quorum), Load-bearing vs non-load-bearing finding adjudication (BLOCKED vs parked), scaffoldSddMidloopParked / scaffoldSddMidloopStructural eval fixture helpers, SDD Fix-Loop Redesign Implementation Plan (+9 more)
+
+### Community 23 - "Persuasion and Pressure Testing"
+Cohesion: 0.22
+Nodes (15): Testing CLAUDE.md Skills Documentation, CLAUDE.md Skills Documentation Variants (A-D), CLAUDE.md Test Scenarios (4 pressure scenarios), Persuasion Principles for Skill Design, Authority (Persuasion Principle), Cialdini 2021: Influence - The Psychology of Persuasion (New and Expanded), Commitment (Persuasion Principle), Liking (Persuasion Principle) (+7 more)
+
+### Community 24 - "Hermes Manifest and Issue Templates"
+Cohesion: 0.14
+Nodes (14): AI coding harness (Claude Code, Cursor, etc.) — agent attribution context, brainstorming skill (must auto-trigger before code is written), diagnosing-superpowers skill (produces session diagnosis reports from transcripts), GitHub Funding Platforms (Sponsors: obra), Bug Report Issue Template, Session Diagnosis Report Issue Template, Feature Request Issue Template, IDE / Platform Support Request Issue Template (+6 more)
+
+### Community 25 - "OpenCode Shared Core"
+Cohesion: 0.23
+Nodes (14): checkForUpdates Function, Codex Refactor to Shared Core, extractFrontmatter Function, findSkillsInDir Function, find_skills Tool, OpenCode Installation Guide (.opencode/INSTALL.md), OpenCode Plugin (.opencode/plugin/superpowers.js), OpenCode Plugin API (+6 more)
+
+### Community 26 - "Zero-Dep Server Plan"
+Cohesion: 0.26
+Nodes (14): Zero-Dependency Brainstorm Server Implementation Plan, fs.watch Screen-Dir Watching, frame-template.html (unchanged), Remove .gitignore node_modules exception, helper.js (unchanged, injected), HTTP Server + Request Handler, Delete vendored node_modules (714 files), server.js (zero-dependency replacement) (+6 more)
+
+### Community 27 - "Codex App Worktree Compatibility"
+Cohesion: 0.31
+Nodes (14): finishing-a-development-branch Step 5 cleanup guard, Codex App sandboxed worktree environment, codex-tools.md Codex platform reference, Codex App compatibility design spec, git-dir vs git-common-dir environment detection, Codex App Compatibility Implementation Plan, Sandbox fallback for worktree creation permission errors, executing-plans skill (+6 more)
+
+### Community 31 - "Writing Skills Meta-Skill"
+Cohesion: 0.24
+Nodes (14): Systematic Debugging Skill Creation Log, 4-phase systematic debugging framework (Investigation, Pattern Analysis, Hypothesis, Implementation), Four validation tests under pressure scenarios, Test-Driven Development (TDD) Skill, Writing Good Tests (TDD Reference), Bulletproofing Skills Against Rationalization, The Iron Law — No Skill Without a Failing Test First, Match the Form to the Failure (+6 more)
+
+### Community 32 - "Porting to New Harness"
+Cohesion: 0.28
+Nodes (13): Porting Superpowers to a New Harness, Acceptance Test: brainstorming auto-triggers, Harness Capability Checklist, Definition of Done for a Port, Distribution and Release Channels, Hard Requirement: Automatic Session-Start Injection, Porting Procedure (Steps 1-7), Rule 2: Ship Through the Harness's Own Install Mechanism (+5 more)
+
+### Community 33 - "Document Review System"
+Cohesion: 0.26
+Nodes (13): Document Review System Implementation Plan, Plan Document Reviewer Prompt Template, Plan Review Loop (writing-plans skill), Spec Document Reviewer Prompt Template, Spec Review Loop (brainstorming skill), Visual Brainstorming Refactor Implementation Plan, .events File Mechanism, frame-template.html Selection Indicator Bar (+5 more)
+
+### Community 37 - "Lift Drill Into Evals"
+Cohesion: 0.27
+Nodes (12): Dual adversarial subagent review, Bash test deletion candidates under tests/, Lift drill into superpowers as evals/ — implementation plan, obra/drill skill-compliance benchmark, New top-level evals/ directory, Design spec: lift-drill-into-evals, Rsync lift with explicit excludes + SHA-pinned commit, _set_superpowers_root_default() helper (drill/cli.py) (+4 more)
+
+### Community 38 - "Strict-Cost SDD Design"
+Cohesion: 0.18
+Nodes (12): Strict-Cost SDD Design Spec, Cost Structure (where the dollars are, ~$13/run), SDD Cost-Reduction Experiment Ladder, Judgment Guardrail (cheapen mechanics, never judgment), L1 Plan-side Crispness (writing-plans changes), L2 Controller Tier (mid-tier execution session), L2b Reviewer Tripwire + Controller Escalation Rule, L3 Reviewer Tier (forced-haiku task reviewers) (+4 more)
+
+### Community 4 - "Diagnosing Superpowers Skill"
+Cohesion: 0.08
+Nodes (44): Common analyst subagent header block (read CASE first, context safety, finding return format), Constraint: human approval before archiving or posting, templates/bundle-README.md: README for the export bundle with redaction levels, templates/case.md: case file the controller fills before dispatching analysts, references/claude-code-sessions.md: Claude Code session store field map and safe extraction, references/codex-sessions.md: Codex rollout field map and safe extraction, Commit convention: messages end with the Claude-Session trailer for this branch, Mechanism: context-safety reading of transcripts (counts and line numbers first, then trimmed fields) (+36 more)
+
+### Community 40 - "Systematic Debugging Skill"
+Cohesion: 0.18
+Nodes (12): Question Architecture After 3+ Failed Fixes, Condition-Based Waiting Technique, Defense-in-Depth Validation Technique, Iron Law: No Fixes Without Root Cause Investigation, Root Cause Tracing Technique, Systematic Debugging Skill, Academic Validation Test for Systematic Debugging, Pressure Test 1: Emergency Production Fix (+4 more)
+
+### Community 41 - "Contributor Guidelines and Entry"
+Cohesion: 0.22
+Nodes (11): Superpowers Contributor Guidelines (AGENTS.md), brainstorming skill (must auto-trigger before code is written), dev branch as PR target (main is released), superpowers-evals / Quorum eval harness, New-harness acceptance test (bootstrap auto-triggers brainstorming), "your human partner" terminology (deliberate project voice), PR Template (.github/PULL_REQUEST_TEMPLATE.md), CLAUDE.md (Claude Code entry pointing to AGENTS.md) (+3 more)
+
+### Community 42 - "Release Notes and Branding"
+Cohesion: 0.20
+Nodes (11): Superpowers App Icon (black line-art glyph on white), Superpowers Small Logo (two-blade pinwheel mark with center dot), Brainstorming Skill, Executing Plans Skill, Superpowers Release Notes, Subagent-Driven Development (SDD) Skill, Superpowers Project, Systematic Debugging Skill (+3 more)
+
+### Community 44 - "Companion Auth Hardening Plan"
+Cohesion: 0.27
+Nodes (11): Visual Companion Auth Hardening Implementation Plan, Bootstrap Keyed Root Loads (Task 1), /files/* Realpath Containment (Task 5), Full Automated Verification (Task 9), Gitignore Durable Companion State (Task 8), Helper Uses Stored Key For Reconnect (Task 3), Lifecycle Hang Fix And Shell Lint (Task 7), Restart Reconnect Regression Test (Task 6) (+3 more)
+
+### Community 45 - "SDD Workspace Implementation"
+Cohesion: 0.32
+Nodes (11): SDD Plan-Scoped Workspace Implementation Plan, Durable Progress section (plan-scoped ledger), GREEN eval on truthful v3 fixture (regression + cost delta), Plan-scoped SDD workspace (design), RED baseline eval evidence (25/25 stale-ledger refusals), review-package script, subagent-driven-development SKILL.md, sdd-workspace script (+3 more)
+
+### Community 47 - "Branch Finishing and Code Review"
+Cohesion: 0.20
+Nodes (11): finishing-a-development-branch SKILL.md, Integration options menu, Worktree cleanup logic, Receiving Code Review skill, Verify before implementing, YAGNI feature check, Code Reviewer prompt template, Issue severity calibration (+3 more)
+
+### Community 48 - "SDD Skill and Fixtures"
+Cohesion: 0.18
+Nodes (11): subagent-driven-development SKILL.md, SDD final whole-branch review (one fix wave, scoped re-review, adjudicate residuals), SDD model selection per role (cheapest sufficient tier), SDD rulings-not-stalls decision protocol (ledger-recorded rulings), SDD per-task loop (dispatch implementer, report, review), Why subagents: isolated context, constructed instructions, controller context preserved, Fixture: action-oriented subagent-driven-development request, Fixture: user states they know what SDD means (explicit SDD request) (+3 more)
+
+### Community 51 - "Platform-Neutral Prose Phases"
+Cohesion: 0.31
+Nodes (10): Platform-Neutral Config-File References (Phase B) Design, Generic 'Instructions File' Terminology, Rule 1: Conventions Location to 'your instructions file', Rule 2: 'Instruction-File Violation' Parenthetical, Platform-neutral prose — Phase A design spec, Coined-term rename: Claude Search Optimization (CSO) → Skill Discovery Optimization (SDO), Phase A: neutralize generic Claude prose in skills and README, Replacement style: second/third-person agent phrasing (+2 more)
+
+### Community 52 - "Companion Auth Hardening Design"
+Cohesion: 0.24
+Nodes (10): Visual Companion Auth Hardening Design, Bootstrap Keyed Loads (sessionStorage + location.replace), /files/* Containment (realpath inside CONTENT_DIR), Gitignore Durable Session State (.superpowers/ + .last-token), Helper Reconnect Credential (sessionStorage key in WS URL), Leak-Reduction Headers (no-referrer, no-store, frame-ancestors), Test Stability And Lint (shell lint + lifecycle --background), Testing Strategy (test-first TDD + focused regressions) (+2 more)
+
+### Community 57 - "Pi Extension Plan"
+Cohesion: 0.25
+Nodes (9): using-superpowers bootstrap injection on session start and after compaction, Pi Extension and Evals Implementation Plan, skills/using-superpowers/references/pi-tools.md Pi tool mapping reference doc, evals/backends/pi.yaml Drill Pi backend config, extensions/superpowers.ts Pi extension, Task 1: Pi package manifest and extension tests, Task 2: Pi tool mapping reference, Task 3: Drill Pi backend and session log normalization (+1 more)
+
+### Community 61 - "Visual Companion Components"
+Cohesion: 0.46
+Nodes (8): Visual Brainstorming Companion Implementation Plan, Brainstorm Server (lib/brainstorm-server/index.js), Browser Helper Library (helper.js), Brainstorm Server Integration Tests (tests/brainstorm-server), Screen File (/tmp/brainstorm/screen.html), Tech Stack (Node.js, Express, ws, chokidar), Visual Companion Reference Doc (skills/brainstorming/visual-companion.md), Visual Companion Section (brainstorming skill SKILL.md)
+
+### Community 62 - "Worktree Detection Strategy"
+Cohesion: 0.29
+Nodes (8): Bundled Bug Fixes (#940, #999, #238), Declarative Intent, Prescriptive Fallback, Detect-and-Defer Worktree Strategy, Detect State, Not Platform (GIT_DIR != GIT_COMMON), Opt-In Worktree Consent (Step 0.5), Provenance-Based Worktree Ownership, Step 1a: Native Worktree Tools (preferred), Step 1b: Git Worktree Fallback
+
+### Community 63 - "SDD Fix-Loop Design"
+Cohesion: 0.36
+Nodes (8): SDD Fix-Loop Redesign design spec, Controller adjudication at trip, Circuit breaker at five fix rounds, SKILL.md restructure by lifecycle (10-section skeleton), Convergent fix loop (resume implementer, scoped re-reviews), Design decision: original implementer fixes its own findings (resume in place), Red Flags rationalization table (| Excuse | Reality |), SDD fix loop (5 rounds, escalation, breaker adjudication)
+
+### Community 68 - "Zero-Dep Server Design"
+Cohesion: 0.48
+Nodes (7): Zero-Dependency Brainstorm Server Design Spec, BRAINSTORM_PORT/HOST/URL_HOST/DIR environment configuration, fs.watch-based screen directory file watching, HTTP routes: GET /, GET /files/*, 404 fallback, server.js single-file zero-dependency server, Unit tests (ws-protocol.test.js) and integration tests (server.test.js), RFC 6455 WebSocket protocol implementation (text frames only)
+
+### Community 73 - "Code of Conduct"
+Cohesion: 0.40
+Nodes (6): Prime Radiant Community Code of Conduct, Contributor Covenant v3.0 (source of the CoC), Encouraged behaviors (kindness, responsibility, feedback, repair), Enforcement ladder (warning, cooldown, suspension, ban), Reporting and followup process (24h ack, one-week resolution), Restricted behaviors (harassment, character attacks, spam, etc.)
+
+### Community 74 - "Codex Worktree Compatibility Spec"
+Cohesion: 0.60
+Nodes (6): Codex App Compatibility: Worktree and Finishing Skill Adaptation Design Spec, codex-tools.md environment detection and Codex App finishing docs, Linked-worktree x detached-HEAD decision matrix for skill behavior, Read-only git environment detection (GIT_DIR vs GIT_COMMON, detached HEAD), finishing-a-development-branch Step 1.5: paths A/B/C and Step 5 cleanup guard, using-git-worktrees Step 0: skip worktree creation in linked worktrees
+
+### Community 75 - "Superpowers Tool Mappings"
+Cohesion: 0.33
+Nodes (6): Antigravity CLI Tool Mapping, Claude Code Tool Notes, Hermes Agent Tool Mapping, Muse Tool Mapping, Pi Tool Mapping (using-superpowers reference), Using Superpowers Skill (meta-skill / central index)
+
+### Community 80 - "WebSocket Frame Protocol"
+Cohesion: 0.40
+Nodes (5): broadcast, computeAcceptKey, decodeFrame, encodeFrame, handleUpgrade (WebSocket connection)
+
+### Community 87 - "Polyglot Hook Dispatch"
+Cohesion: 1.00
+Nodes (3): Cross-Platform Polyglot Hooks for Claude Code, Extensionless hook scripts, run-hook.cmd polyglot dispatcher
+
+### Community 9 - "README and Platform Testing"
+Cohesion: 0.10
+Nodes (26): Superpowers for Kimi Code README, Kimi Code plugin manifest (.kimi-plugin/plugin.json), Kimi Code tool mapping (AskUserQuestion, TodoList, Agent, Skill, Read/Write/Edit, Bash, Grep, Glob, FetchURL, WebSearch), Superpowers for OpenCode README, OpenCode bootstrap injection (controller session, compaction handling), OpenCode V1/V2 tool mapping (task->subagent, apply_patch->patch, bash->shell, todo dropped in V2), Lift drill into superpowers as evals/ — design spec, Per-bash-test deletion gate: verifiable drill coverage of every assertion (+18 more)
+
+## Knowledge Gaps
+- **275 isolated node(s):** `clients`, `CONTENT_DIR`, `crypto`, `debounceTimers`, `frameTemplate` (+270 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 356 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **24 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+
+## Suggested Questions
+_Questions this graph is uniquely positioned to answer:_
+
+- **Why does `subagent-driven-development SKILL.md` connect `SDD Skill and Fixtures` to `Codex Efficiency Fixes`, `Review Prompt Templates`, `Worktree Skill Testing`, `Superpowers Tool Mappings`, `SDD Workspace Implementation`, `Writing Skills Meta-Skill`, `Branch Finishing and Code Review`, `Positive-Instruction Redesign`, `Plan Execution and Review`, `SDD Plan-Scoped Workspace`, `SDD Fix-Loop Design`?**
+  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+- **Why does `Visual Brainstorming Refactor Design Spec (Browser Displays, Terminal Commands)` connect `Visual Brainstorming Companion` to `Codex Efficiency Fixes`, `Plan Execution and Review`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Are the 4 inferred relationships involving `subagent-driven-development SKILL.md` (e.g. with `writing-plans SKILL.md` and `SDD Fix-Loop Redesign design spec`) actually correct?**
+  _`subagent-driven-development SKILL.md` has 4 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 3 inferred relationships involving `Skill authoring best practices` (e.g. with `Testing Skills With Subagents (pressure scenarios)` and `Bulletproofing Skills Against Rationalization`) actually correct?**
+  _`Skill authoring best practices` has 3 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `clients`, `CONTENT_DIR`, `crypto` to the rest of the system?**
+  _275 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Brainstorm Server Core` be split into smaller, more focused modules?**
+  _Cohesion score 0.05658381808566896 - nodes in this community are weakly interconnected._
+- **Should `Pi Extension Bootstrap` be split into smaller, more focused modules?**
+  _Cohesion score 0.06648936170212766 - nodes in this community are weakly interconnected._

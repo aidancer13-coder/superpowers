@@ -1,0 +1,3 @@
+C:\Users\Comp\superpowers\skills\systematic-debugging\test-pressure-3.md
+C:\Users\Comp\superpowers\skills\test-driven-development\SKILL.md
+C:\Users\Comp\superpowers\skills\test-driven-development\writing-good-tests.md

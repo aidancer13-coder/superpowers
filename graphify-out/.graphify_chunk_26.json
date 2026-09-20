@@ -1,0 +1,317 @@
+{
+  "nodes": [
+    {
+      "id": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design",
+      "label": "Platform-neutral prose — Phase A design spec",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design_phase_a",
+      "label": "Phase A: neutralize generic Claude prose in skills and README",
+      "file_type": "concept",
+      "rationale": "Avoids the mistake of openai/plugins#217's wholesale rewrite (which altered historical attribution, model names, and install instructions); only genuinely incidental platform-centric prose is removed, in phase-sliced atomic commits with carve-outs for model names, filenames/URLs, and the Claude Code runtime name.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design_cso_sdo_rename",
+      "label": "Coined-term rename: Claude Search Optimization (CSO) → Skill Discovery Optimization (SDO)",
+      "file_type": "concept",
+      "rationale": "The coined term embedded a platform name in a concept that applies to any agent runtime; renaming the heading, acronym, and in-file cross-references in skills/writing-skills/SKILL.md is done first as its own mechanical, easily revertable commit.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design_replacement_style",
+      "label": "Replacement style: second/third-person agent phrasing",
+      "file_type": "concept",
+      "rationale": "A mix of 'your agent' (addressing the skill author) and 'the agent/agents' (generic system behavior) reads naturally in English; consistency is not forced at the cost of awkward phrasing, and pluralization is preferred when natural.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_05_platform_neutral_readme_design",
+      "label": "Platform-neutral README ordering — Phase C design spec",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-readme-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_05_platform_neutral_readme_design_alphabetical_ordering",
+      "label": "Strict alphabetical ordering of README platform listings",
+      "file_type": "concept",
+      "rationale": "After Phases A and B neutralized prose and config references, the remaining platform-leaning signal was layout: Claude Code listed first and other listings not alphabetical. Reordering both the quickstart list and install sub-sections to strict alphabetical order removes that signal with zero prose changes; Claude Code stays first only by alphabetical chance.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-readme-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design",
+      "label": "Lift drill into superpowers as evals/ — design spec",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_evals_harness",
+      "label": "evals/ as the canonical LLM-behavior eval harness",
+      "file_type": "concept",
+      "rationale": "Drill (obra/drill) was already the de facto eval harness — PRI-1397 had lifted ~22 superpowers bash tests into drill scenarios and a recent superpowers commit removed a redundant bash test 'replaced by drill behavioral coverage'; this spec completes the migration by making evals/ the canonical home, with a meaningful documented split between tests/ (plugin infrastructure) and evals/ (LLM actor+verifier behavior).",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_deletion_gate",
+      "label": "Per-bash-test deletion gate: verifiable drill coverage of every assertion",
+      "file_type": "concept",
+      "rationale": "A bash test is deleted only if a drill scenario verifiably covers every assertion it makes (per-assertion table produced by an independent subagent); if any check is unmatched the default is to keep the bash test or extend the scenario, so no coverage is silently lost.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_verification_protocol",
+      "label": "Subagent-gated verification protocol for the migration",
+      "file_type": "concept",
+      "rationale": "Every change category (deletions, verbatim copy with per-file SHA-256 checksums, path-default change, stale-reference scrub, final adversarial review) is cross-checked by an independent subagent before commit, and each subagent's output is summarized in the commit message so the trail is auditable.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_drill",
+      "label": "Drill: Python skill-compliance benchmark (tmux sessions, LLM actor + verifier)",
+      "file_type": "concept",
+      "rationale": "Named external tool being migrated: drives real tmux sessions, runs an LLM actor as simulated user, an LLM verifier on the transcript, reports pass/fail per scenario; supports Claude Code, Codex, Gemini CLI, OpenCode, and Copilot CLI. The Python package keeps its drill name inside evals/ to keep the diff small.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design",
+      "target": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design_phase_a",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design",
+      "target": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design_cso_sdo_rename",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design",
+      "target": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design_replacement_style",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_05_platform_neutral_readme_design",
+      "target": "docs_superpowers_specs_2026_05_05_platform_neutral_readme_design_alphabetical_ordering",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-readme-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_05_platform_neutral_readme_design",
+      "target": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-readme-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_05_platform_neutral_readme_design",
+      "target": "docs_superpowers_specs_2026_05_05_platform_neutral_config_refs_design",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-readme-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design",
+      "target": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_evals_harness",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design",
+      "target": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_deletion_gate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design",
+      "target": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_verification_protocol",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design",
+      "target": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_drill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design",
+      "target": "readme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design",
+      "target": "docs_testing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design",
+      "target": "skills_writing_skills_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design",
+      "target": "skills_writing_skills_anthropic_best_practices",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design_phase_a",
+      "target": "docs_superpowers_specs_2026_05_05_platform_neutral_readme_design_alphabetical_ordering",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-readme-design.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "platform_neutral_prose_program",
+      "label": "Platform-neutral prose effort (phase-sliced: A prose, B config refs, C README ordering, D/E later)",
+      "nodes": [
+        "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design",
+        "docs_superpowers_specs_2026_05_05_platform_neutral_readme_design",
+        "docs_superpowers_specs_2026_05_05_platform_neutral_prose_design_phase_a",
+        "docs_superpowers_specs_2026_05_05_platform_neutral_readme_design_alphabetical_ordering"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-readme-design.md"
+    },
+    {
+      "id": "drill_lift_into_evals_migration",
+      "label": "Migration of drill into superpowers/evals with verified bash-test deletion",
+      "nodes": [
+        "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design",
+        "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_evals_harness",
+        "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_deletion_gate",
+        "docs_superpowers_specs_2026_05_06_lift_drill_into_evals_design_verification_protocol"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

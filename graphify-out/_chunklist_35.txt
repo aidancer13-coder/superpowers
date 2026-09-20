@@ -1,0 +1,4 @@
+C:\Users\Comp\superpowers\skills\brainstorming\scripts\frame-template.html
+C:\Users\Comp\superpowers\skills\brainstorming\spec-document-reviewer-prompt.md
+C:\Users\Comp\superpowers\skills\brainstorming\visual-companion.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\SKILL.md

@@ -1,0 +1,8 @@
+C:\Users\Comp\superpowers\skills\using-git-worktrees\SKILL.md
+C:\Users\Comp\superpowers\skills\using-superpowers\SKILL.md
+C:\Users\Comp\superpowers\skills\using-superpowers\references\antigravity-tools.md
+C:\Users\Comp\superpowers\skills\using-superpowers\references\claude-code-tools.md
+C:\Users\Comp\superpowers\skills\using-superpowers\references\codex-tools.md
+C:\Users\Comp\superpowers\skills\using-superpowers\references\gemini-tools.md
+C:\Users\Comp\superpowers\skills\using-superpowers\references\hermes-tools.md
+C:\Users\Comp\superpowers\skills\using-superpowers\references\muse-tools.md

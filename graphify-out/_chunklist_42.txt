@@ -1,0 +1,7 @@
+C:\Users\Comp\superpowers\skills\systematic-debugging\SKILL.md
+C:\Users\Comp\superpowers\skills\systematic-debugging\condition-based-waiting.md
+C:\Users\Comp\superpowers\skills\systematic-debugging\defense-in-depth.md
+C:\Users\Comp\superpowers\skills\systematic-debugging\root-cause-tracing.md
+C:\Users\Comp\superpowers\skills\systematic-debugging\test-academic.md
+C:\Users\Comp\superpowers\skills\systematic-debugging\test-pressure-1.md
+C:\Users\Comp\superpowers\skills\systematic-debugging\test-pressure-2.md

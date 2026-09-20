@@ -1,0 +1,2 @@
+C:\Users\Comp\superpowers\docs\superpowers\specs\2026-06-10-strict-cost-sdd-design.md
+C:\Users\Comp\superpowers\docs\superpowers\specs\2026-06-10-visual-companion-auth-hardening-design.md

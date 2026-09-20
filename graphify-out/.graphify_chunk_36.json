@@ -1,0 +1,576 @@
+{
+  "nodes": [
+    {
+      "id": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "label": "Analyst common prompt (role, inputs, return format)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\analyst-common.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Single shared role spec for all analyst subagents: read-only, evidence-first (finding + path:line + turns + confidence) so the dispatcher can verify and discard unsupported findings instead of letting the analyst editorialize."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_cost_and_time",
+      "label": "Cost and time analyst dimension",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\cost-and-time.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Accounts for where tokens and wall-clock went: token totals (incremental vs cumulative counter semantics), longest turns, idle gaps, largest tool results, compactions, and associated-session usage."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_plan_adherence",
+      "label": "Plan adherence analyst dimension",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\plan-adherence.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Recovers the agreed plan and maps each step to execution, flagging skipped/out-of-order/silently-changed/invented steps and drift right after structural events like compaction, since drift after context loss is a distinct failure mode."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_quality_evidence",
+      "label": "Quality evidence analyst dimension",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\quality-evidence.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Judges the process against its own claims (tests, verification behind 'done/verified' text, commit messages, review responses, acceptance criteria) rather than reviewing the produced code."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_repeated_work",
+      "label": "Repeated work analyst dimension",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\repeated-work.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Detects duplicated tool work by (tool, key) grouping with per-category thresholds, distinguishing benign re-reads-after-edit from re-reads-after-compaction or re-derived decisions, which indicate context loss."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_request_conflicts",
+      "label": "Request conflicts analyst dimension",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\request-conflicts.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Surfaces mutually unsatisfiable human instructions, conflicts with loaded instruction files, and skip/override instructions, reporting the conflict and resolution without judging the human."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_scrub_audit",
+      "label": "Scrub auditor prompt",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\scrub-audit.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Independent privacy pass over an already-scrubbed bundle: find missed redactions and unresolved classifications, return CLEAN or MISSED lines, never the sensitive value itself, and never comment on scrub quality."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_scrub",
+      "label": "Scrubber prompt",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\scrub.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Rewrites every file under BUNDLE to safe placeholders (stable value-to-placeholder mapping assigned in first-appearance order) so the bundle can leave the machine, with a scrub-log table that never leaks original values."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_similar_session",
+      "label": "Similar-session matcher prompt",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\similar-session.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Decides whether a candidate transcript shows the same behavior as a diagnosed session by checking typed signature markers (skill-sequence, error-string, repeated-command/file, compaction-then, missed-trigger, free) and scoring yes/partial/no on path:line evidence."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_skill_timeline",
+      "label": "Skill timeline analyst dimension",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\skill-timeline.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Builds a per-human-turn record of skill/plugin/MCP/hook use and reports invoked skills, missed triggers (request matched a trigger description with no invocation), and late invocations, without judging whether the miss was wrong."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_prompts_stumbles",
+      "label": "Stumbles analyst dimension",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\stumbles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Finds every point where the session stopped going forward (errors, failed shell, retries, reverted edits, backtracking text, human corrections, denials, compactions) and reports recovery status for each, since stumble density is a core signal of how the session went wrong."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_references_context_safety",
+      "label": "Context-safety rules for reading session transcripts",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\context-safety.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A single transcript record can exceed a megabyte or embed a whole history, so readers measure before reading, extract small fields from specific lines, narrow anything over 500 characters, and stay read-only to avoid overflowing the diagnosing session's own context."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_references_github_issues",
+      "label": "GitHub issue search and filing workflow",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\github-issues.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Provides a degraded fallback chain (gh CLI -> unauthenticated API -> prefilled URL) for searching and filing issues in obra/superpowers, including label-landing caveats and the 8000-character URL limit, so issue reporting works in restricted environments."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_references_redaction_policy",
+      "label": "Redaction policy and placeholder categories",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\redaction-policy.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Keeps exported bundles publishable without losing evidentiary value: redact emails, people, orgs, secrets, hosts, home paths, repos, and proprietary terms to stable placeholders while preserving session ids, tool/skill names, line numbers, and the safe command/result/source structure needed to verify findings."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_references_session_discovery",
+      "label": "Session discovery procedure",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\session-discovery.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Resolves and confirms the named session from actual history (identity, not recency), establishes record meanings and counter semantics from observed records, and records everything in the case file so subsequent readers do not repeat discovery."
+    },
+    {
+      "id": "skills_diagnosing_superpowers_templates_bundle_readme",
+      "label": "Diagnosis bundle README template",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\bundle-README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Defines the exportable bundle (report, case, environment.json, timeline, per-dimension findings, condensed transcripts, scrub-log) with three redaction levels, and requires producer-side evidence re-verification plus a separate privacy audit, because the bundle deliberately contains no diagnosis or fix - that is the reader's job."
+    }
+  ],
+  "edges": [
+    {
+      "source": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "target": "skills_diagnosing_superpowers_references_context_safety",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\analyst-common.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\analyst-common.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_cost_and_time",
+      "target": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\cost-and-time.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_cost_and_time",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\cost-and-time.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_plan_adherence",
+      "target": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\plan-adherence.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_plan_adherence",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\plan-adherence.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_quality_evidence",
+      "target": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\quality-evidence.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_quality_evidence",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\quality-evidence.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_repeated_work",
+      "target": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\repeated-work.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_repeated_work",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\repeated-work.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_request_conflicts",
+      "target": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\request-conflicts.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_request_conflicts",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\request-conflicts.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_skill_timeline",
+      "target": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\skill-timeline.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_skill_timeline",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\skill-timeline.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_stumbles",
+      "target": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\stumbles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_stumbles",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\stumbles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_scrub",
+      "target": "skills_diagnosing_superpowers_references_redaction_policy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\scrub.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_scrub",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\scrub.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_scrub_audit",
+      "target": "skills_diagnosing_superpowers_references_redaction_policy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\scrub-audit.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_scrub_audit",
+      "target": "skills_diagnosing_superpowers_prompts_scrub",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\scrub-audit.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_scrub_audit",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\scrub-audit.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_similar_session",
+      "target": "skills_diagnosing_superpowers_references_context_safety",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\similar-session.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_prompts_similar_session",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\similar-session.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_references_context_safety",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\context-safety.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_references_github_issues",
+      "target": "skills_diagnosing_superpowers_templates_issue",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\github-issues.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_references_github_issues",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\github-issues.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_references_redaction_policy",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\redaction-policy.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_references_session_discovery",
+      "target": "skills_diagnosing_superpowers_references_context_safety",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\session-discovery.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_references_session_discovery",
+      "target": "skills_diagnosing_superpowers_prompts_analyst_common",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\session-discovery.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_references_session_discovery",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\session-discovery.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_templates_bundle_readme",
+      "target": "skills_diagnosing_superpowers_references_redaction_policy",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\bundle-README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_templates_bundle_readme",
+      "target": "skills_diagnosing_superpowers_prompts_scrub_audit",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\bundle-README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_diagnosing_superpowers_templates_bundle_readme",
+      "target": "skills_diagnosing_superpowers_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\bundle-README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "diagnosing_superpowers_analyst_dimensions",
+      "label": "Seven analyst dimensions sharing the common analyst prompt",
+      "nodes": [
+        "skills_diagnosing_superpowers_prompts_analyst_common",
+        "skills_diagnosing_superpowers_prompts_cost_and_time",
+        "skills_diagnosing_superpowers_prompts_plan_adherence",
+        "skills_diagnosing_superpowers_prompts_quality_evidence",
+        "skills_diagnosing_superpowers_prompts_repeated_work",
+        "skills_diagnosing_superpowers_prompts_request_conflicts",
+        "skills_diagnosing_superpowers_prompts_skill_timeline",
+        "skills_diagnosing_superpowers_prompts_stumbles"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\plan-adherence.md"
+    },
+    {
+      "id": "diagnosing_superpowers_scrub_pipeline",
+      "label": "Scrubbing and audit pipeline governed by the redaction policy",
+      "nodes": [
+        "skills_diagnosing_superpowers_prompts_scrub",
+        "skills_diagnosing_superpowers_prompts_scrub_audit",
+        "skills_diagnosing_superpowers_references_redaction_policy"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\redaction-policy.md"
+    },
+    {
+      "id": "diagnosing_superpowers_case_file_protocol",
+      "label": "Case-file protocol: discovery writes the record, analysts read it, context-safety applies throughout",
+      "nodes": [
+        "skills_diagnosing_superpowers_references_session_discovery",
+        "skills_diagnosing_superpowers_prompts_analyst_common",
+        "skills_diagnosing_superpowers_references_context_safety"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\session-discovery.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

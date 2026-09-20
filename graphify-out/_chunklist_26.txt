@@ -1,0 +1,3 @@
+C:\Users\Comp\superpowers\docs\superpowers\specs\2026-05-05-platform-neutral-prose-design.md
+C:\Users\Comp\superpowers\docs\superpowers\specs\2026-05-05-platform-neutral-readme-design.md
+C:\Users\Comp\superpowers\docs\superpowers\specs\2026-05-06-lift-drill-into-evals-design.md

@@ -1,0 +1,395 @@
+{
+  "nodes": [
+    {
+      "id": "agents",
+      "label": "Superpowers Contributor Guidelines (AGENTS.md)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_pr_template",
+      "label": "PR Template (.github/PULL_REQUEST_TEMPLATE.md)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L13,L24,L112",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_dev_branch",
+      "label": "dev branch as PR target (main is released)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L32",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_harness_acceptance_test",
+      "label": "New-harness acceptance test (bootstrap auto-triggers brainstorming)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L72-L91",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_brainstorming_skill",
+      "label": "brainstorming skill (must auto-trigger before code is written)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L82,L89",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_eval_harness",
+      "label": "superpowers-evals / Quorum eval harness",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L102-L104",
+      "source_url": "https://github.com/prime-radiant-inc/superpowers-evals/",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_human_partner",
+      "label": "\"your human partner\" terminology (deliberate project voice)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L108",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude",
+      "label": "CLAUDE.md (Claude Code entry pointing to AGENTS.md)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "code_of_conduct",
+      "label": "Prime Radiant Community Code of Conduct",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "code_of_conduct_encouraged_behaviors",
+      "label": "Encouraged behaviors (kindness, responsibility, feedback, repair)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L11-L23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "code_of_conduct_restricted_behaviors",
+      "label": "Restricted behaviors (harassment, character attacks, spam, etc.)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L25-L48",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "code_of_conduct_reporting",
+      "label": "Reporting and followup process (24h ack, one-week resolution)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L50-L93",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "code_of_conduct_enforcement_ladder",
+      "label": "Enforcement ladder (warning, cooldown, suspension, ban)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L95-L116",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "code_of_conduct_contributor_covenant",
+      "label": "Contributor Covenant v3.0 (source of the CoC)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L124-L130",
+      "source_url": "https://www.contributor-covenant.org/version/3/0/",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gemini",
+      "label": "GEMINI.md (Gemini entry importing using-superpowers skill)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\GEMINI.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "using_superpowers_skill",
+      "label": "using-superpowers bootstrap skill (auto-loads at session start)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\GEMINI.md",
+      "source_location": "L1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gemini_gemini_tools",
+      "label": "gemini-tools.md reference doc (Gemini-specific tools)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\GEMINI.md",
+      "source_location": "L2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "claude",
+      "target": "agents",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\CLAUDE.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "agents",
+      "target": "agents_pr_template",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L13,L24,L112",
+      "weight": 1.0
+    },
+    {
+      "source": "agents",
+      "target": "agents_dev_branch",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "agents",
+      "target": "agents_harness_acceptance_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L72-L91",
+      "weight": 1.0
+    },
+    {
+      "source": "agents",
+      "target": "agents_brainstorming_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_harness_acceptance_test",
+      "target": "agents_brainstorming_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L78-L89",
+      "weight": 1.0
+    },
+    {
+      "source": "agents",
+      "target": "agents_eval_harness",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L102-L104",
+      "weight": 1.0
+    },
+    {
+      "source": "agents",
+      "target": "agents_human_partner",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "agents",
+      "target": "using_superpowers_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "gemini",
+      "target": "using_superpowers_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\GEMINI.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "gemini",
+      "target": "gemini_gemini_tools",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\GEMINI.md",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "gemini",
+      "target": "agents",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\GEMINI.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "code_of_conduct",
+      "target": "code_of_conduct_encouraged_behaviors",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L11-L23",
+      "weight": 1.0
+    },
+    {
+      "source": "code_of_conduct",
+      "target": "code_of_conduct_restricted_behaviors",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L25-L48",
+      "weight": 1.0
+    },
+    {
+      "source": "code_of_conduct",
+      "target": "code_of_conduct_reporting",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L50-L93",
+      "weight": 1.0
+    },
+    {
+      "source": "code_of_conduct",
+      "target": "code_of_conduct_enforcement_ladder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L95-L116",
+      "weight": 1.0
+    },
+    {
+      "source": "code_of_conduct",
+      "target": "code_of_conduct_contributor_covenant",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "code_of_conduct_reporting",
+      "target": "code_of_conduct_enforcement_ladder",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+      "source_location": "L72-L97",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "harness_agent_instruction_docs",
+      "label": "Per-harness agent instruction docs (AGENTS/CLAUDE/GEMINI)",
+      "nodes": ["agents", "claude", "gemini"],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\CLAUDE.md"
+    },
+    {
+      "id": "coc_reporting_enforcement_flow",
+      "label": "CoC reporting-to-enforcement flow",
+      "nodes": ["code_of_conduct", "code_of_conduct_reporting", "code_of_conduct_enforcement_ladder"],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

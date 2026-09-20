@@ -1,0 +1,10 @@
+C:\Users\Comp\superpowers\.github\FUNDING.yml
+C:\Users\Comp\superpowers\.github\ISSUE_TEMPLATE\bug_report.md
+C:\Users\Comp\superpowers\.github\ISSUE_TEMPLATE\config.yml
+C:\Users\Comp\superpowers\.github\ISSUE_TEMPLATE\diagnosis_report.md
+C:\Users\Comp\superpowers\.github\ISSUE_TEMPLATE\feature_request.md
+C:\Users\Comp\superpowers\.github\ISSUE_TEMPLATE\platform_support.md
+C:\Users\Comp\superpowers\.github\PULL_REQUEST_TEMPLATE.md
+C:\Users\Comp\superpowers\.hermes-plugin\plugin.yaml
+C:\Users\Comp\superpowers\.opencode\INSTALL.md
+C:\Users\Comp\superpowers\.pre-commit-config.yaml

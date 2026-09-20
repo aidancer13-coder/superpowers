@@ -1,0 +1,3 @@
+C:\Users\Comp\superpowers\skills\writing-skills\examples\CLAUDE_MD_TESTING.md
+C:\Users\Comp\superpowers\skills\writing-skills\persuasion-principles.md
+C:\Users\Comp\superpowers\skills\writing-skills\testing-skills-with-subagents.md

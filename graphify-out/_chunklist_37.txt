@@ -1,0 +1,4 @@
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\templates\case.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\templates\issue.md
+C:\Users\Comp\superpowers\skills\diagnosing-superpowers\templates\report.md
+C:\Users\Comp\superpowers\skills\dispatching-parallel-agents\SKILL.md

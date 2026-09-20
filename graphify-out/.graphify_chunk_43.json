@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "skills_systematic_debugging_test_pressure_3",
+      "label": "Systematic Debugging Pressure Test 3: Authority + Social Pressure",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\test-pressure-3.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_test_driven_development_skill",
+      "label": "Test-Driven Development (TDD) Skill",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\test-driven-development\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_test_driven_development_writing_good_tests",
+      "label": "Writing Good Tests (TDD Reference)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\test-driven-development\\writing-good-tests.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "skills_systematic_debugging_test_pressure_3",
+      "target": "skills_systematic_debugging_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\test-pressure-3.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_test_driven_development_skill",
+      "target": "skills_test_driven_development_writing_good_tests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\test-driven-development\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_test_driven_development_skill",
+      "target": "skills_systematic_debugging_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\test-driven-development\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_subagent_driven_development_skill",
+      "target": "skills_test_driven_development_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\implementer-prompt.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_test_driven_development_writing_good_tests",
+      "target": "skills_writing_skills_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\test-driven-development\\writing-good-tests.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "tdd_test_discipline_cluster",
+      "label": "TDD Test Discipline Cluster",
+      "nodes": [
+        "skills_test_driven_development_skill",
+        "skills_test_driven_development_writing_good_tests",
+        "skills_subagent_driven_development_skill"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\test-driven-development\\SKILL.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

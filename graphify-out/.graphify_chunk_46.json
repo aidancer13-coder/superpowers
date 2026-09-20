@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "id": "skills_writing_skills_skill",
+      "label": "Writing Skills (meta-skill for skill authoring)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_tdd_mapping",
+      "label": "TDD / RED-GREEN-REFACTOR Mapped to Skills",
+      "file_type": "concept",
+      "rationale": "Skill creation follows the full RED-GREEN-REFACTOR cycle: run a baseline pressure scenario and watch the agent fail (RED), write the minimal skill that fixes those exact failures (GREEN), then close newly found loopholes (REFACTOR).",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_testing_skills_with_subagents",
+      "label": "Testing Skills With Subagents (pressure scenarios)",
+      "file_type": "concept",
+      "rationale": "You must watch an agent fail without the skill (baseline) before writing it, so you know the exact rationalizations to counter; subagent pressure scenarios (time, sunk cost, authority, exhaustion) are the RED phase of skill TDD.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_skill_discovery_optimization",
+      "label": "Skill Discovery Optimization (SDO)",
+      "file_type": "concept",
+      "rationale": "The description field must state only triggering conditions, never summarize the workflow, because testing revealed agents will follow a workflow-summarizing description as a shortcut and skip the full skill body.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_iron_law",
+      "label": "The Iron Law — No Skill Without a Failing Test First",
+      "file_type": "concept",
+      "rationale": "Writing skills IS Test-Driven Development applied to process documentation; if you did not watch an agent fail without the skill, you do not know the skill teaches the right thing. Applies to new skills and edits, no exceptions.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_match_form_to_failure",
+      "label": "Match the Form to the Failure",
+      "file_type": "concept",
+      "rationale": "The form that bulletproofs one baseline-failure type measurably backfires on another (e.g., prohibition lists backfire on wrong-shaped-output problems), so classify the baseline failure before choosing the guidance form.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_bulletproofing",
+      "label": "Bulletproofing Skills Against Rationalization",
+      "file_type": "concept",
+      "rationale": "Discipline-enforcing skills must resist rationalization: explicitly forbid specific workarounds, state a spirit-vs-letter principle, build a rationalization table from baseline tests, and add a red-flags list so agents can self-check under pressure.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "skills_writing_skills_skill",
+      "target": "skills_writing_skills_tdd_mapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_skill",
+      "target": "skills_writing_skills_testing_skills_with_subagents",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_skill",
+      "target": "skills_writing_skills_skill_discovery_optimization",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_skill",
+      "target": "skills_writing_skills_iron_law",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_skill",
+      "target": "skills_writing_skills_match_form_to_failure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_skill",
+      "target": "skills_writing_skills_bulletproofing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_skill",
+      "target": "skills_test_driven_development_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_tdd_mapping",
+      "target": "skills_test_driven_development_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_iron_law",
+      "target": "skills_test_driven_development_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_iron_law",
+      "target": "skills_writing_skills_tdd_mapping",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents",
+      "target": "skills_writing_skills_tdd_mapping",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_bulletproofing",
+      "target": "skills_writing_skills_match_form_to_failure",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_skill_discovery_optimization",
+      "target": "skills_writing_skills_testing_skills_with_subagents",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "skills_writing_skills_tdd_cycle",
+      "label": "RED-GREEN-REFACTOR cycle applied to skill authoring",
+      "nodes": [
+        "skills_writing_skills_skill",
+        "skills_writing_skills_tdd_mapping",
+        "skills_writing_skills_iron_law",
+        "skills_writing_skills_testing_skills_with_subagents"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

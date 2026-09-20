@@ -1,0 +1,10 @@
+C:\Users\Comp\superpowers\tests\claude-code\README.md
+C:\Users\Comp\superpowers\tests\explicit-skill-requests\prompts\action-oriented.txt
+C:\Users\Comp\superpowers\tests\explicit-skill-requests\prompts\after-planning-flow.txt
+C:\Users\Comp\superpowers\tests\explicit-skill-requests\prompts\claude-suggested-it.txt
+C:\Users\Comp\superpowers\tests\explicit-skill-requests\prompts\i-know-what-sdd-means.txt
+C:\Users\Comp\superpowers\tests\explicit-skill-requests\prompts\mid-conversation-execute-plan.txt
+C:\Users\Comp\superpowers\tests\explicit-skill-requests\prompts\please-use-brainstorming.txt
+C:\Users\Comp\superpowers\tests\explicit-skill-requests\prompts\skip-formalities.txt
+C:\Users\Comp\superpowers\tests\explicit-skill-requests\prompts\subagent-driven-development-please.txt
+C:\Users\Comp\superpowers\tests\explicit-skill-requests\prompts\use-systematic-debugging.txt

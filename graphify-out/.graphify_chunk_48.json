@@ -1,0 +1,547 @@
+{
+  "nodes": [
+    {
+      "id": "skills_writing_skills_examples_claude_md_testing",
+      "label": "Testing CLAUDE.md Skills Documentation",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles",
+      "label": "Persuasion Principles for Skill Design",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_testing_skills_with_subagents",
+      "label": "Testing Skills With Subagents",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_authority",
+      "label": "Authority (Persuasion Principle)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Imperative, non-negotiable language (\"YOU MUST\", \"No exceptions\") eliminates decision fatigue and rationalization, so discipline-enforcing and safety-critical practices get followed even under pressure."
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_commitment",
+      "label": "Commitment (Persuasion Principle)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Requiring announcements and explicit choices binds the agent to prior statements, ensuring skills are actually followed and creating accountability in multi-step processes."
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_scarcity",
+      "label": "Scarcity (Persuasion Principle)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Time-bound requirements and sequential dependencies (\"Before proceeding\", \"Immediately after X\") create urgency that prevents the 'I'll do it later' postponement of verification steps."
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_social_proof",
+      "label": "Social Proof (Persuasion Principle)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Universal patterns (\"Every time\") and failure-mode framing (\"X without Y = failure\") establish norms and warn about common failures, reinforcing standards."
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_unity",
+      "label": "Unity (Persuasion Principle)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Collaborative language and shared goals (\"we're colleagues\", \"we both want quality\") build in-group belonging, suited to collaborative and non-hierarchical workflows."
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_reciprocity",
+      "label": "Reciprocity (Persuasion Principle)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Use sparingly - it can feel manipulative and is rarely needed in skills because other principles are more effective."
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_liking",
+      "label": "Liking (Persuasion Principle)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Don't use for compliance: it conflicts with an honest feedback culture and creates sycophancy, so it is avoided whenever discipline is being enforced."
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_parahuman_model",
+      "label": "Parahuman Model of LLM Behavior",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "LLMs respond to the same persuasion principles as humans because they are trained on human text where authority language precedes compliance, commitment sequences are frequently modeled, and social-proof patterns establish norms."
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_meincke_2025",
+      "label": "Meincke et al. 2025: Call Me A Jerk - Persuading AI to Comply",
+      "file_type": "paper",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_persuasion_principles_cialdini_2021",
+      "label": "Cialdini 2021: Influence - The Psychology of Persuasion (New and Expanded)",
+      "file_type": "paper",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skills_writing_skills_testing_skills_with_subagents_tdd_mapping",
+      "label": "TDD Mapping for Skill Testing (RED-GREEN-REFACTOR)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Skill creation is just TDD applied to process documentation: run scenarios without the skill (RED - watch it fail), write a skill addressing those specific failures (GREEN), then close loopholes (REFACTOR). If you never watched an agent fail without the skill, you don't know if the skill prevents the right failures."
+    },
+    {
+      "id": "skills_writing_skills_testing_skills_with_subagents_pressure_scenarios",
+      "label": "Pressure Scenarios for Skill Testing",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Combine 3+ pressures (time, sunk cost, authority, economic, exhaustion, social, pragmatic) with concrete A/B/C options so the agent WANTS to violate the rule - agents resist a single pressure but break under multiple, and only then do you learn what the skill must prevent."
+    },
+    {
+      "id": "skills_writing_skills_testing_skills_with_subagents_rationalization_table",
+      "label": "Rationalization Table",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Capture every agent excuse verbatim and plug each hole with an explicit negation in the rule plus a table entry and red-flag entry, because generic counters (\"don't cheat\") don't work - each specific rationalization needs a specific counter."
+    },
+    {
+      "id": "skills_writing_skills_examples_claude_md_testing_documentation_variants",
+      "label": "CLAUDE.md Skills Documentation Variants (A-D)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Tested to find which CLAUDE.md wording actually makes agents discover and use skills under pressure: NULL baseline, A soft suggestion, B directive, C emphatic (Claude.AI style), D process-oriented - variants escalate from suggestion to non-negotiable imperative."
+    },
+    {
+      "id": "skills_writing_skills_examples_claude_md_testing_test_scenarios",
+      "label": "CLAUDE.md Test Scenarios (4 pressure scenarios)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Four scenarios - time pressure + confidence, sunk cost + works already, authority + speed bias, familiarity + efficiency - each pit the 'check the skills library first' behavior against a strong incentive to skip it."
+    }
+  ],
+  "edges": [
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_authority",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_commitment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_scarcity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_social_proof",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_unity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_reciprocity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_liking",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_meincke_2025",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_cialdini_2021",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles",
+      "target": "skills_writing_skills_persuasion_principles_parahuman_model",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles_authority",
+      "target": "skills_writing_skills_persuasion_principles_commitment",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles_commitment",
+      "target": "skills_writing_skills_persuasion_principles_social_proof",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles_authority",
+      "target": "skills_writing_skills_persuasion_principles_social_proof",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles_meincke_2025",
+      "target": "skills_writing_skills_persuasion_principles_cialdini_2021",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_persuasion_principles_meincke_2025",
+      "target": "skills_writing_skills_persuasion_principles_parahuman_model",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents",
+      "target": "skills_writing_skills_testing_skills_with_subagents_tdd_mapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents",
+      "target": "skills_writing_skills_testing_skills_with_subagents_pressure_scenarios",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents",
+      "target": "skills_writing_skills_testing_skills_with_subagents_rationalization_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents",
+      "target": "skills_writing_skills_examples_claude_md_testing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents_pressure_scenarios",
+      "target": "skills_writing_skills_persuasion_principles",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents_pressure_scenarios",
+      "target": "skills_writing_skills_persuasion_principles_authority",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents_pressure_scenarios",
+      "target": "skills_writing_skills_persuasion_principles_scarcity",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents_pressure_scenarios",
+      "target": "skills_writing_skills_persuasion_principles_commitment",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents_tdd_mapping",
+      "target": "skills_writing_skills_bulletproofing",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_testing_skills_with_subagents",
+      "target": "skills_writing_skills_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_examples_claude_md_testing",
+      "target": "skills_writing_skills_examples_claude_md_testing_documentation_variants",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_examples_claude_md_testing",
+      "target": "skills_writing_skills_examples_claude_md_testing_test_scenarios",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_examples_claude_md_testing_documentation_variants",
+      "target": "skills_writing_skills_persuasion_principles",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_examples_claude_md_testing_test_scenarios",
+      "target": "skills_writing_skills_testing_skills_with_subagents_pressure_scenarios",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skills_writing_skills_examples_claude_md_testing",
+      "target": "skills_writing_skills_skill",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.55,
+      "source_file": "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "nodes": [
+        "skills_writing_skills_persuasion_principles_authority",
+        "skills_writing_skills_persuasion_principles_commitment",
+        "skills_writing_skills_persuasion_principles_social_proof"
+      ],
+      "rationale": "The recommended principle combination for discipline-enforcing skills (e.g. TDD), per the skill-type table in persuasion-principles.md"
+    },
+    {
+      "nodes": [
+        "skills_writing_skills_testing_skills_with_subagents",
+        "skills_writing_skills_testing_skills_with_subagents_tdd_mapping",
+        "skills_writing_skills_testing_skills_with_subagents_pressure_scenarios",
+        "skills_writing_skills_testing_skills_with_subagents_rationalization_table"
+      ],
+      "rationale": "RED-GREEN-REFACTOR cycle applied to skill documentation: baseline failure, minimal skill, then loophole closing via verbatim rationalization capture"
+    },
+    {
+      "nodes": [
+        "skills_writing_skills_examples_claude_md_testing",
+        "skills_writing_skills_examples_claude_md_testing_test_scenarios",
+        "skills_writing_skills_examples_claude_md_testing_documentation_variants",
+        "skills_writing_skills_testing_skills_with_subagents_pressure_scenarios"
+      ],
+      "rationale": "The CLAUDE.md test campaign is a worked example of the pressure-scenario methodology: 4 pressure scenarios crossed against documentation variants A-D"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

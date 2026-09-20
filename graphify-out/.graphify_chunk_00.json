@@ -1,0 +1,266 @@
+{
+  "nodes": [
+    {
+      "id": "release_notes",
+      "label": "Superpowers Release Notes",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "superpowers_project",
+      "label": "Superpowers Project",
+      "file_type": "concept",
+      "rationale": "The overall subject of RELEASE-NOTES.md: an open-source collection of skills for AI coding agents (obra/superpowers). Treated as a named project concept because the release notes track its releases, skills, and harness integrations.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "subagent_driven_development",
+      "label": "Subagent-Driven Development (SDD) Skill",
+      "file_type": "concept",
+      "rationale": "Named skill repeatedly featured across releases (review redesign, plan-scoped workspaces, native vs subagent execution). A core named skill of the project, so extracted as a concept.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brainstorming",
+      "label": "Brainstorming Skill",
+      "file_type": "concept",
+      "rationale": "Named core skill (design/requirements phase, visual companion, hard gates). Extracted as a named concept; it is the entry point of the skill pipeline.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "writing_plans",
+      "label": "Writing Plans Skill",
+      "file_type": "concept",
+      "rationale": "Named core skill that produces implementation plans (Review Focus section, self-review loops). Part of the brainstorm -> plan -> execute pipeline.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "executing_plans",
+      "label": "Executing Plans Skill",
+      "file_type": "concept",
+      "rationale": "Named core skill for running a plan inline; rebuilt as a 'Native' execution mode in v6.4.1. Part of the plan -> execute pipeline.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "using_superpowers",
+      "label": "Using Superpowers Bootstrap Skill",
+      "file_type": "concept",
+      "rationale": "Named bootstrap skill injected into every session (size trimmed in v6.1.0, rationalization tables, SUBAGENT-STOP gate). It is the project's entry/bootstrap mechanism.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "test_driven_development",
+      "label": "Test-Driven Development (TDD) Skill",
+      "file_type": "concept",
+      "rationale": "Named core skill (green = project suite, testing-anti-patterns reference, 'Why Order Matters' rationalization rows). Extracted as a named concept.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "systematic_debugging",
+      "label": "Systematic Debugging Skill",
+      "file_type": "concept",
+      "rationale": "Named core skill (bundles root-cause-tracing, defense-in-depth, condition-based-waiting, find-polluter.sh). Extracted as a named concept.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_app_icon",
+      "label": "Superpowers App Icon (black line-art glyph on white)",
+      "file_type": "image",
+      "rationale": "Visually: a 2134x2134 RGBA PNG that is almost entirely white with a thin black line-art symbol centered in the frame — an upper-right hook sweeping into a diagonal stroke down to a small lower-left loop (a stylized S/serpent-like brand glyph). It is the project's app icon (assets/app-icon.png).",
+      "source_file": "C:\\Users\\Comp\\superpowers\\assets\\app-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_superpowers_small",
+      "label": "Superpowers Small Logo (two-blade pinwheel mark with center dot)",
+      "file_type": "image",
+      "rationale": "Visually (from SVG source + shape): a 512x512 black monochrome mark of two symmetric curved blade/paisley shapes rotated 180 degrees around a filled central circle — a pinwheel/atom-like brand mark on transparent/white. It is the project's small logo (assets/superpowers-small.svg).",
+      "source_file": "C:\\Users\\Comp\\superpowers\\assets\\superpowers-small.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "release_notes",
+      "target": "superpowers_project",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_notes",
+      "target": "subagent_driven_development",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_notes",
+      "target": "brainstorming",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_notes",
+      "target": "writing_plans",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_notes",
+      "target": "executing_plans",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_notes",
+      "target": "using_superpowers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_notes",
+      "target": "test_driven_development",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "release_notes",
+      "target": "systematic_debugging",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_app_icon",
+      "target": "superpowers_project",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\assets\\app-icon.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_superpowers_small",
+      "target": "superpowers_project",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\assets\\superpowers-small.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_app_icon",
+      "target": "assets_superpowers_small",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Comp\\superpowers\\assets\\superpowers-small.svg",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "superpowers_core_skill_pipeline",
+      "label": "Superpowers core skill pipeline (brainstorm -> plan -> execute)",
+      "nodes": [
+        "using_superpowers",
+        "brainstorming",
+        "writing_plans",
+        "executing_plans",
+        "subagent_driven_development"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\RELEASE-NOTES.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

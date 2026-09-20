@@ -1,0 +1,359 @@
+{
+  "nodes": [
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "label": "SDD Plan-Scoped Workspace Implementation Plan",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_plan_scoped_workspace",
+      "label": "Plan-scoped SDD workspace (design)",
+      "file_type": "rationale",
+      "rationale": "Each plan gets its own .superpowers/sdd/<plan-basename>/ directory with a self-identifying ledger (first line names the plan file) and end-of-plan cleanup, so a follow-up plan can never read or overwrite another plan's briefs, reports, or ledger, and resumed controllers stop paying a forensic disambiguation tax (measured 6-13 tool calls per resume in the RED baseline).",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_workspace",
+      "label": "sdd-workspace script",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 2 Step 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_task_brief",
+      "label": "task-brief script",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 2 Step 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_review_package",
+      "label": "review-package script",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 2 Step 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_durable_progress",
+      "label": "Durable Progress section (plan-scoped ledger)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_red_baseline",
+      "label": "RED baseline eval evidence (25/25 stale-ledger refusals)",
+      "file_type": "rationale",
+      "rationale": "Three RED rounds (2026-07-06) of 5 fresh sonnet reps each showed blind stale-ledger adoption did NOT reproduce: all 25 controller reps refused the foreign ledger. The reproducible baseline harms are the forensic disambiguation tax on every resume (tool_uses 7/13/9/10/6, mean 9.0 in the compaction-resume round) and the structural cross-plan collision record in the spec. The SKILL.md change therefore proceeds on structural grounds with maintainer (Jesse) sign-off, not on a demonstrated error rate.",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_green_eval",
+      "label": "GREEN eval on truthful v3 fixture (regression + cost delta)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_skill",
+      "label": "subagent-driven-development SKILL.md",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_spec",
+      "label": "SDD plan-scoped workspace spec (2026-07-06)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_test_sdd_workspace",
+      "label": "test-sdd-workspace.sh (plan-scoped expectations)",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 2 Step 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_plan_scoped_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_task_brief",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_review_package",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_durable_progress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_red_baseline",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_green_eval",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_spec",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Architecture",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_test_sdd_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_task_brief",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_workspace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 2 Step 3 (task-brief source)",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_review_package",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_workspace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 2 Step 3 (review-package source)",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_durable_progress",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 3 Step 5",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_durable_progress",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_green_eval",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_red_baseline",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 4 Interfaces",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_green_eval",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_plan_scoped_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 4",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_test_sdd_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_workspace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 2 Step 1 (test source)",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_test_sdd_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_task_brief",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 2 Step 1 (test source)",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_test_sdd_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_review_package",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": "Task 2 Step 1 (test source)",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_plan_scoped_workspace",
+      "target": "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_red_baseline",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "sdd_plan_scoped_workspace_scripts",
+      "label": "Plan-scoped workspace shell scripts",
+      "nodes": [
+        "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_sdd_workspace",
+        "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_task_brief",
+        "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_review_package"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md"
+    },
+    {
+      "id": "sdd_plan_scoped_workspace_eval_program",
+      "label": "SDD plan-scoped workspace eval program (RED then GREEN)",
+      "nodes": [
+        "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_red_baseline",
+        "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_green_eval",
+        "docs_superpowers_plans_2026_07_06_sdd_plan_scoped_workspace_plan_scoped_workspace"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md"
+    }
+  ],
+  "input_tokens": 9500,
+  "output_tokens": 3200
+}

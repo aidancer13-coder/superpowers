@@ -1,0 +1,477 @@
+[
+ {
+  "chunk": 1,
+  "files": 1,
+  "words": 10538,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-27-diagnosing-superpowers.md"
+  ]
+ },
+ {
+  "chunk": 2,
+  "files": 1,
+  "words": 10456,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-15-sdd-fix-loop-redesign.md"
+  ]
+ },
+ {
+  "chunk": 3,
+  "files": 10,
+  "words": 2660,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\.github\\FUNDING.yml",
+   "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\bug_report.md",
+   "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\config.yml",
+   "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\diagnosis_report.md",
+   "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\feature_request.md",
+   "C:\\Users\\Comp\\superpowers\\.github\\ISSUE_TEMPLATE\\platform_support.md",
+   "C:\\Users\\Comp\\superpowers\\.github\\PULL_REQUEST_TEMPLATE.md",
+   "C:\\Users\\Comp\\superpowers\\.hermes-plugin\\plugin.yaml",
+   "C:\\Users\\Comp\\superpowers\\.opencode\\INSTALL.md",
+   "C:\\Users\\Comp\\superpowers\\.pre-commit-config.yaml"
+  ]
+ },
+ {
+  "chunk": 4,
+  "files": 4,
+  "words": 3399,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\AGENTS.md",
+   "C:\\Users\\Comp\\superpowers\\CLAUDE.md",
+   "C:\\Users\\Comp\\superpowers\\CODE_OF_CONDUCT.md",
+   "C:\\Users\\Comp\\superpowers\\GEMINI.md"
+  ]
+ },
+ {
+  "chunk": 5,
+  "files": 3,
+  "words": 3493,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\README.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\README.kimi.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\README.opencode.md"
+  ]
+ },
+ {
+  "chunk": 6,
+  "files": 1,
+  "words": 1070,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\plans\\2025-11-22-opencode-support-design.md"
+  ]
+ },
+ {
+  "chunk": 7,
+  "files": 1,
+  "words": 3237,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\plans\\2025-11-22-opencode-support-implementation.md"
+  ]
+ },
+ {
+  "chunk": 8,
+  "files": 1,
+  "words": 2939,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\plans\\2025-11-28-skills-improvements-from-user-feedback.md"
+  ]
+ },
+ {
+  "chunk": 9,
+  "files": 1,
+  "words": 1713,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\plans\\2026-01-17-visual-brainstorming.md"
+  ]
+ },
+ {
+  "chunk": 10,
+  "files": 1,
+  "words": 7798,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\porting-to-a-new-harness.md"
+  ]
+ },
+ {
+  "chunk": 11,
+  "files": 2,
+  "words": 3594,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-01-22-document-review-system.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-02-19-visual-brainstorming-refactor.md"
+  ]
+ },
+ {
+  "chunk": 12,
+  "files": 1,
+  "words": 1749,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-03-11-zero-dep-brainstorm-server.md"
+  ]
+ },
+ {
+  "chunk": 13,
+  "files": 1,
+  "words": 2632,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-03-23-codex-app-compatibility.md"
+  ]
+ },
+ {
+  "chunk": 14,
+  "files": 1,
+  "words": 4156,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-04-06-worktree-rototill.md"
+  ]
+ },
+ {
+  "chunk": 15,
+  "files": 1,
+  "words": 6117,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-06-lift-drill-into-evals.md"
+  ]
+ },
+ {
+  "chunk": 16,
+  "files": 1,
+  "words": 703,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-05-07-pi-extension-and-evals.md"
+  ]
+ },
+ {
+  "chunk": 17,
+  "files": 1,
+  "words": 3710,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-09-sdd-task-scoped-review-dispatch.md"
+  ]
+ },
+ {
+  "chunk": 18,
+  "files": 1,
+  "words": 2719,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-09-visual-companion-issues.md"
+  ]
+ },
+ {
+  "chunk": 19,
+  "files": 1,
+  "words": 2665,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-10-visual-companion-auth-hardening.md"
+  ]
+ },
+ {
+  "chunk": 20,
+  "files": 1,
+  "words": 4290,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-06-11-visual-companion-final-hardening-fixup.md"
+  ]
+ },
+ {
+  "chunk": 21,
+  "files": 1,
+  "words": 6443,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-06-sdd-plan-scoped-workspace.md"
+  ]
+ },
+ {
+  "chunk": 22,
+  "files": 1,
+  "words": 7362,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-07-30-codex-efficiency-fixes.md"
+  ]
+ },
+ {
+  "chunk": 23,
+  "files": 3,
+  "words": 3145,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\plans\\2026-08-06-hermes-version-bump-wiring.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-01-22-document-review-system-design.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-02-19-visual-brainstorming-refactor-design.md"
+  ]
+ },
+ {
+  "chunk": 24,
+  "files": 2,
+  "words": 2777,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-03-11-zero-dep-brainstorm-server-design.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-03-23-codex-app-compatibility-design.md"
+  ]
+ },
+ {
+  "chunk": 25,
+  "files": 2,
+  "words": 3665,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-04-06-worktree-rototill-design.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-config-refs-design.md"
+  ]
+ },
+ {
+  "chunk": 26,
+  "files": 3,
+  "words": 3820,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-prose-design.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-05-platform-neutral-readme-design.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-05-06-lift-drill-into-evals-design.md"
+  ]
+ },
+ {
+  "chunk": 27,
+  "files": 2,
+  "words": 3986,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-06-09-sdd-task-scoped-review-dispatch-design.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-06-10-positive-instruction-redesign-design.md"
+  ]
+ },
+ {
+  "chunk": 28,
+  "files": 2,
+  "words": 3378,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-06-10-strict-cost-sdd-design.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-06-10-visual-companion-auth-hardening-design.md"
+  ]
+ },
+ {
+  "chunk": 29,
+  "files": 1,
+  "words": 1834,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-06-11-visual-companion-final-hardening-fixup-design.md"
+  ]
+ },
+ {
+  "chunk": 30,
+  "files": 1,
+  "words": 3426,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace-eval-results.md"
+  ]
+ },
+ {
+  "chunk": 31,
+  "files": 2,
+  "words": 3003,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-06-sdd-plan-scoped-workspace.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-15-sdd-fix-loop-redesign-design.md"
+  ]
+ },
+ {
+  "chunk": 32,
+  "files": 2,
+  "words": 2000,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-07-30-codex-efficiency-fixes-design.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-08-05-hermes-version-bump-wiring-design.md"
+  ]
+ },
+ {
+  "chunk": 33,
+  "files": 1,
+  "words": 3958,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\superpowers\\specs\\2026-08-27-diagnosing-superpowers-design.md"
+  ]
+ },
+ {
+  "chunk": 34,
+  "files": 3,
+  "words": 3912,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\docs\\testing.md",
+   "C:\\Users\\Comp\\superpowers\\docs\\windows\\polyglot-hooks.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\SKILL.md"
+  ]
+ },
+ {
+  "chunk": 35,
+  "files": 4,
+  "words": 3952,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\scripts\\frame-template.html",
+   "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\spec-document-reviewer-prompt.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\brainstorming\\visual-companion.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\SKILL.md"
+  ]
+ },
+ {
+  "chunk": 36,
+  "files": 16,
+  "words": 3977,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\analyst-common.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\cost-and-time.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\plan-adherence.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\quality-evidence.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\repeated-work.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\request-conflicts.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\scrub-audit.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\scrub.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\similar-session.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\skill-timeline.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\prompts\\stumbles.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\context-safety.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\github-issues.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\redaction-policy.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\references\\session-discovery.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\bundle-README.md"
+  ]
+ },
+ {
+  "chunk": 37,
+  "files": 4,
+  "words": 1943,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\case.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\issue.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\diagnosing-superpowers\\templates\\report.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\dispatching-parallel-agents\\SKILL.md"
+  ]
+ },
+ {
+  "chunk": 38,
+  "files": 1,
+  "words": 3267,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\executing-plans\\SKILL.md"
+  ]
+ },
+ {
+  "chunk": 39,
+  "files": 4,
+  "words": 3521,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\finishing-a-development-branch\\SKILL.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\receiving-code-review\\SKILL.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\requesting-code-review\\SKILL.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\requesting-code-review\\code-reviewer.md"
+  ]
+ },
+ {
+  "chunk": 40,
+  "files": 1,
+  "words": 4871,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\SKILL.md"
+  ]
+ },
+ {
+  "chunk": 41,
+  "files": 4,
+  "words": 3612,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\implementer-prompt.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\re-review-prompt.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\subagent-driven-development\\task-reviewer-prompt.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\CREATION-LOG.md"
+  ]
+ },
+ {
+  "chunk": 42,
+  "files": 7,
+  "words": 3963,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\SKILL.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\condition-based-waiting.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\defense-in-depth.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\root-cause-tracing.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\test-academic.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\test-pressure-1.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\test-pressure-2.md"
+  ]
+ },
+ {
+  "chunk": 43,
+  "files": 3,
+  "words": 3215,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\systematic-debugging\\test-pressure-3.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\test-driven-development\\SKILL.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\test-driven-development\\writing-good-tests.md"
+  ]
+ },
+ {
+  "chunk": 44,
+  "files": 8,
+  "words": 3907,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\using-git-worktrees\\SKILL.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\using-superpowers\\SKILL.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\using-superpowers\\references\\antigravity-tools.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\using-superpowers\\references\\claude-code-tools.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\using-superpowers\\references\\codex-tools.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\using-superpowers\\references\\gemini-tools.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\using-superpowers\\references\\hermes-tools.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\using-superpowers\\references\\muse-tools.md"
+  ]
+ },
+ {
+  "chunk": 45,
+  "files": 4,
+  "words": 2432,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\using-superpowers\\references\\pi-tools.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\verification-before-completion\\SKILL.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\writing-plans\\SKILL.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\writing-plans\\plan-document-reviewer-prompt.md"
+  ]
+ },
+ {
+  "chunk": 46,
+  "files": 1,
+  "words": 3814,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\SKILL.md"
+  ]
+ },
+ {
+  "chunk": 47,
+  "files": 1,
+  "words": 5803,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\anthropic-best-practices.md"
+  ]
+ },
+ {
+  "chunk": 48,
+  "files": 3,
+  "words": 3592,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\persuasion-principles.md",
+   "C:\\Users\\Comp\\superpowers\\skills\\writing-skills\\testing-skills-with-subagents.md"
+  ]
+ },
+ {
+  "chunk": 49,
+  "files": 10,
+  "words": 939,
+  "path": [
+   "C:\\Users\\Comp\\superpowers\\tests\\claude-code\\README.md",
+   "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\action-oriented.txt",
+   "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\after-planning-flow.txt",
+   "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\claude-suggested-it.txt",
+   "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\i-know-what-sdd-means.txt",
+   "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\mid-conversation-execute-plan.txt",
+   "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\please-use-brainstorming.txt",
+   "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\skip-formalities.txt",
+   "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\subagent-driven-development-please.txt",
+   "C:\\Users\\Comp\\superpowers\\tests\\explicit-skill-requests\\prompts\\use-systematic-debugging.txt"
+  ]
+ }
+]
