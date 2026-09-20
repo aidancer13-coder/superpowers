@@ -8,8 +8,7 @@
   "only_edge": "contains <-> Visual Companion Auth Hardening Implementation Plan",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
-  "human": "correct_leaf",
-  "human_note": "doc task-section; only contains+references to the plan file; no cross-file target"
+  "human": ""
  },
  {
   "gid": "231717f4eed19b14",
@@ -20,8 +19,7 @@
   "only_edge": "references <-> Skill authoring best practices",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc section; references best-practices file; correct leaf"
+  "human": ""
  },
  {
   "gid": "09b92165f1c7dabb",
@@ -32,8 +30,7 @@
   "only_edge": "contains <-> test-session-bootstrap.mjs",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_opencode_test_session_bootstrap",
-  "human": "correct_leaf",
-  "human_note": "local async fn makeHarness, called 8x but all INTRA-file (test-session-bootstrap.mjs); symbol linker is cross-file by design -> correct leaf"
+  "human": ""
  },
  {
   "gid": "e7a4107468cfbd19",
@@ -44,8 +41,7 @@
   "only_edge": "references <-> Zero-Dependency Brainstorm Server Design Spec",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc section; references zero-dep spec; correct leaf"
+  "human": ""
  },
  {
   "gid": "5a4a124fea5f4df2",
@@ -53,11 +49,10 @@
   "label": "STOP",
   "file": "tests/brainstorm-server/lifecycle.test.js",
   "loc": "L20",
-  "only_edge": "contains <-> lifecycle.test.js",
+  "only_edge": "references <-> stop-server.sh",
   "auto_class": "missing_edge",
-  "note": "post-pass added: contains -> tests_brainstorm_server_lifecycle_test",
-  "human": "missing_edge",
-  "human_note": "STOP = path.join(...,'stop-server.sh'), used at L185; target file node skills_brainstorming_scripts_stop_server EXISTS; path-string ref unmodeled -> missed references edge"
+  "note": "post-pass added: references -> skills_brainstorming_scripts_stop_server",
+  "human": ""
  },
  {
   "gid": "50330a1c49d998e8",
@@ -68,8 +63,7 @@
   "only_edge": "contains <-> superpowers.ts",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> pi_extensions_superpowers",
-  "human": "correct_leaf",
-  "human_note": "skillsDir = resolve(packageRoot,'skills') dir path, intra-file; 2-level resolve to SKILL.md not modeled -> correct leaf"
+  "human": ""
  },
  {
   "gid": "4865e7bbc92219dd",
@@ -77,11 +71,10 @@
   "label": "Systematic Debugging Skill",
   "file": "RELEASE-NOTES.md",
   "loc": null,
-  "only_edge": "references <-> Superpowers Release Notes",
-  "auto_class": "correct_leaf",
-  "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "RELEASE-NOTES section naming 'Systematic Debugging Skill'; target file node skills_systematic_debugging_skill_file ABSENT -> no mentions possible (good negative)"
+  "only_edge": "mentions <-> Systematic Debugging Skill",
+  "auto_class": "missing_edge",
+  "note": "post-pass added: mentions -> skills_systematic_debugging_skill",
+  "human": ""
  },
  {
   "gid": "2a474e6881b9772e",
@@ -89,11 +82,10 @@
   "label": "Executing Plans Skill",
   "file": "RELEASE-NOTES.md",
   "loc": null,
-  "only_edge": "references <-> Superpowers Release Notes",
-  "auto_class": "correct_leaf",
-  "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "missing_edge",
-  "human_note": "RELEASE-NOTES section naming 'Executing Plans Skill'; target file node skills_executing_plans_skill_file EXISTS but no release_notes->skill_file mentions edge -> missed doc->file mentions"
+  "only_edge": "mentions <-> SKILL.md",
+  "auto_class": "missing_edge",
+  "note": "post-pass added: mentions -> skills_executing_plans_skill_file",
+  "human": ""
  },
  {
   "gid": "e680697fc0057d76",
@@ -104,8 +96,7 @@
   "only_edge": "references <-> diagnosing-superpowers skill",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc analysis-dimension section; references diagnosing spec; correct leaf"
+  "human": ""
  },
  {
   "gid": "211594245d37f663",
@@ -116,8 +107,7 @@
   "only_edge": "contains <-> setup.sh",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_opencode_setup",
-  "human": "correct_leaf",
-  "human_note": "setup.sh ENTRY section node; the 3 test->setup.sh `source` edges belong to the FILE node tests_opencode_setup (not sampled), so this section node is a correct leaf"
+  "human": ""
  },
  {
   "gid": "d29f862a7bf8dbc8",
@@ -128,8 +118,7 @@
   "only_edge": "contains <-> test-bootstrap-caching.mjs",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_opencode_test_bootstrap_caching",
-  "human": "correct_leaf",
-  "human_note": "assertMappingConstants local fn, called intra-file at L37; the V1/V2 validates edges attach to the test FILE, not to this symbol -> correct leaf"
+  "human": ""
  },
  {
   "gid": "b1641f425cdc2bd8",
@@ -140,8 +129,7 @@
   "only_edge": "references <-> Superpowers Release Notes",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "RELEASE-NOTES section naming 'Using Superpowers'; target file node skills_using_superpowers_skill_file ABSENT -> correct leaf (good negative)"
+  "human": ""
  },
  {
   "gid": "1be31ad5aac347f0",
@@ -152,8 +140,7 @@
   "only_edge": "contains <-> Prime Radiant Community Code of Conduct",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> code_of_conduct",
-  "human": "correct_leaf",
-  "human_note": "CoC section L25-48; contains+references to code_of_conduct file; correct leaf"
+  "human": ""
  },
  {
   "gid": "bcfbe6049f9f77ea",
@@ -164,8 +151,7 @@
   "only_edge": "references <-> OpenCode Support Design",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc section; references opencode-support-design; correct leaf"
+  "human": ""
  },
  {
   "gid": "8d1ec2113210f7c2",
@@ -176,8 +162,7 @@
   "only_edge": "references <-> OpenCode Support Implementation Plan",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc section; references implementation plan; correct leaf"
+  "human": ""
  },
  {
   "gid": "10e90533d65fda6b",
@@ -185,11 +170,10 @@
   "label": "src",
   "file": "tests/brainstorm-server/helper.test.js",
   "loc": "L15",
-  "only_edge": "contains <-> helper.test.js",
+  "only_edge": "references <-> helper.js",
   "auto_class": "missing_edge",
-  "note": "post-pass added: contains -> tests_brainstorm_server_helper_test",
-  "human": "missing_edge",
-  "human_note": "src = fs.readFileSync(HELPER), HELPER=helper.js; target file node skills_brainstorming_scripts_helper EXISTS; path-string ref unmodeled -> missed references edge"
+  "note": "post-pass added: references -> skills_brainstorming_scripts_helper",
+  "human": ""
  },
  {
   "gid": "10c974d192e59721",
@@ -200,8 +184,7 @@
   "only_edge": "references <-> Persuasion Principles for Skill Design",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc persuasion-principle section; correct leaf"
+  "human": ""
  },
  {
   "gid": "1e054a2e4a024004",
@@ -212,8 +195,7 @@
   "only_edge": "imports <-> test_plugin.py",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "stdlib import shutil; has imports->test_plugin.py; correct leaf"
+  "human": ""
  },
  {
   "gid": "467070e59e6beebe",
@@ -224,8 +206,7 @@
   "only_edge": "references <-> Lift drill into superpowers as evals/ — implementation plan",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc task-section; references lift-drill plan; correct leaf"
+  "human": ""
  },
  {
   "gid": "4e01b5d8f064cbc8",
@@ -236,8 +217,7 @@
   "only_edge": "references <-> Strict-Cost SDD Design Spec",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc spec section; references strict-cost spec; correct leaf"
+  "human": ""
  },
  {
   "gid": "a5c8636f30234d7b",
@@ -248,8 +228,7 @@
   "only_edge": "cites <-> Zero-Dependency Brainstorm Server Implementation Plan",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc section; cites zero-dep spec; correct leaf"
+  "human": ""
  },
  {
   "gid": "c0722861a13a0ba4",
@@ -260,8 +239,7 @@
   "only_edge": "calls <-> handleUpgrade (WebSocket connection)",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc node for decodeFrame; calls->handle_upgrade (doc). doc->code-symbol link is out of doc->file scope -> correct leaf for the linker"
+  "human": ""
  },
  {
   "gid": "0a5ee14b9570e079",
@@ -272,8 +250,7 @@
   "only_edge": "references <-> Positive-Instruction Redesign of Skill Guidance Design Spec",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc doctrine-rule section; references redesign spec; correct leaf"
+  "human": ""
  },
  {
   "gid": "b3f3bbcc5cd6a31b",
@@ -284,8 +261,7 @@
   "only_edge": "contains <-> run-all.sh script",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_explicit_skill_requests_run_all_sh__entry",
-  "human": "correct_leaf",
-  "human_note": "run-all.sh entry; no cross-file target -> correct leaf"
+  "human": ""
  },
  {
   "gid": "3c77a8474e92ff2c",
@@ -293,11 +269,10 @@
   "label": "cleanup_test_env()",
   "file": "tests/opencode/setup.sh",
   "loc": "L77",
-  "only_edge": "contains <-> setup.sh",
+  "only_edge": "references <-> test-bootstrap-caching.sh",
   "auto_class": "missing_edge",
-  "note": "post-pass added: contains -> tests_opencode_setup",
-  "human": "missing_edge",
-  "human_note": "cleanup_test_env() sh fn in setup.sh, `source`d + `trap cleanup_test_env EXIT` in 3 test files (test-bootstrap-caching/plugin-loading/priority.sh); cross-file sh usage unmodeled -> missed references/calls edges"
+  "note": "post-pass added: references -> tests_opencode_test_bootstrap_caching_file",
+  "human": ""
  },
  {
   "gid": "de94989c2cfebe98",
@@ -308,8 +283,7 @@
   "only_edge": "contains <-> test-session-bootstrap.mjs",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_opencode_test_session_bootstrap",
-  "human": "correct_leaf",
-  "human_note": "unknownChild local const, intra-file test -> correct leaf"
+  "human": ""
  },
  {
   "gid": "cad711fe63f0918c",
@@ -320,8 +294,7 @@
   "only_edge": "references <-> Superpowers for OpenCode README",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc section; references README.opencode; correct leaf"
+  "human": ""
  },
  {
   "gid": "db66ecf43bbf00c4",
@@ -332,8 +305,7 @@
   "only_edge": "contains <-> auth.test.js",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_brainstorm_server_auth_test",
-  "human": "correct_leaf",
-  "human_note": "CONTENT_DIR local test const (intra-file /tmp path) -> correct leaf"
+  "human": ""
  },
  {
   "gid": "8c3522e01536c16d",
@@ -344,8 +316,7 @@
   "only_edge": "contains <-> server.cjs",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> skills_brainstorming_scripts_server",
-  "human": "correct_leaf",
-  "human_note": "debounceTimers local Map in server.cjs, used only intra-file (L593-595) -> correct leaf"
+  "human": ""
  },
  {
   "gid": "46e68f21822d4e61",
@@ -356,8 +327,7 @@
   "only_edge": "contains <-> run-multiturn-test.sh script",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_explicit_skill_requests_run_multiturn_test_sh__entry",
-  "human": "correct_leaf",
-  "human_note": "run-multiturn-test.sh entry; no cross-file target -> correct leaf"
+  "human": ""
  },
  {
   "gid": "944098303536d61d",
@@ -368,8 +338,7 @@
   "only_edge": "references <-> SDD Task-Scoped Review Dispatch Implementation Plan",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc task-section; references task-scoped plan; correct leaf"
+  "human": ""
  },
  {
   "gid": "bb7c30410508aeaf",
@@ -380,8 +349,7 @@
   "only_edge": "references <-> Systematic Debugging Skill",
   "auto_class": "correct_leaf",
   "note": "single edge; no detectable missing link (auto-pre-label)",
-  "human": "correct_leaf",
-  "human_note": "doc pressure-test section; references systematic-debugging skill; correct leaf"
+  "human": ""
  },
  {
   "gid": "5ab23faf93d301fe",
@@ -392,8 +360,7 @@
   "only_edge": "references <-> diagnosing-superpowers skill",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc analysis-dimension section; correct leaf"
+  "human": ""
  },
  {
   "gid": "fa3a2709a927746e",
@@ -404,8 +371,7 @@
   "only_edge": "semantically_similar_to <-> Visual Companion Final Hardening Fixup Implementation Plan",
   "auto_class": "correct_leaf",
   "note": "single edge; no detectable missing link (auto-pre-label)",
-  "human": "correct_leaf",
-  "human_note": "doc plan title; semantically_similar_to fixup node; correct leaf"
+  "human": ""
  },
  {
   "gid": "03ddb029a9061aed",
@@ -416,8 +382,7 @@
   "only_edge": "contains <-> lifecycle.test.js",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_brainstorm_server_lifecycle_test",
-  "human": "correct_leaf",
-  "human_note": "stdlib require('path') -> correct leaf"
+  "human": ""
  },
  {
   "gid": "ec67dbe218f2b95a",
@@ -428,8 +393,7 @@
   "only_edge": "contains <-> test-pi-extension.mjs",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_pi_test_pi_extension",
-  "human": "missing_edge",
-  "human_note": "packageJsonPath = resolve(repoRoot,'package.json'); root node `package` EXISTS; path-string ref unmodeled -> missed references edge"
+  "human": ""
  },
  {
   "gid": "f78b53d2e3d6c0b7",
@@ -440,8 +404,7 @@
   "only_edge": "references <-> mock_ctx()",
   "auto_class": "correct_leaf",
   "note": "single edge; no detectable missing link (auto-pre-label)",
-  "human": "correct_leaf",
-  "human_note": "doc/rationale 'fixture'; references conftest mock_ctx; correct leaf"
+  "human": ""
  },
  {
   "gid": "2e7e11bf13a93817",
@@ -452,8 +415,7 @@
   "only_edge": "rationale_for <-> Systematic Debugging Skill",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc SKILL.md section; rationale_for systematic-debugging; correct leaf"
+  "human": ""
  },
  {
   "gid": "da54d09591f27f8c",
@@ -464,8 +426,7 @@
   "only_edge": "contains <-> test-plugin-manifest.sh script",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_kimi_test_plugin_manifest_sh__entry",
-  "human": "correct_leaf",
-  "human_note": "test-plugin-manifest.sh entry; no cross-file target -> correct leaf"
+  "human": ""
  },
  {
   "gid": "70fb2f682a96d2f7",
@@ -476,8 +437,7 @@
   "only_edge": "contains <-> server.cjs",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> skills_brainstorming_scripts_server",
-  "human": "correct_leaf",
-  "human_note": "SUPERPOWERS_VERSION used only intra-file (L243,249) in server.cjs -> correct leaf (test-priority's PRIORITY_MARKER_SUPERPOWERS_VERSION is a different string)"
+  "human": ""
  },
  {
   "gid": "2da29ccc7aa45a80",
@@ -488,8 +448,7 @@
   "only_edge": "contains <-> server.cjs",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> skills_brainstorming_scripts_server",
-  "human": "correct_leaf",
-  "human_note": "stdlib require('crypto') -> correct leaf"
+  "human": ""
  },
  {
   "gid": "46592d0f34f22b21",
@@ -500,8 +459,7 @@
   "only_edge": "contains <-> test-session-bootstrap.mjs",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_opencode_test_session_bootstrap",
-  "human": "correct_leaf",
-  "human_note": "pluginURL local const (pathToFileURL of argv), intra-file -> correct leaf"
+  "human": ""
  },
  {
   "gid": "ed0c3e08caa38805",
@@ -512,8 +470,7 @@
   "only_edge": "contains <-> setup.sh",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> tests_opencode_setup",
-  "human": "missing_edge",
-  "human_note": "OPENCODE_CONFIG_DIR sh var exported by setup.sh, used by test-plugin-loading.sh + test-priority.sh; cross-file sh var usage unmodeled -> missed references edges"
+  "human": ""
  },
  {
   "gid": "6d95e8df154fca49",
@@ -524,8 +481,7 @@
   "only_edge": "contains <-> package.json",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> package",
-  "human": "correct_leaf",
-  "human_note": "package.json 'keywords' JSON key; contains->package; correct leaf"
+  "human": ""
  },
  {
   "gid": "80faf9062135aa22",
@@ -536,8 +492,7 @@
   "only_edge": "references <-> Skill authoring best practices",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc best-practices section; correct leaf"
+  "human": ""
  },
  {
   "gid": "1f938886cc8a423b",
@@ -548,8 +503,7 @@
   "only_edge": "contains <-> Visual Companion Auth Hardening Implementation Plan",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> docs_superpowers_plans_2026_06_10_visual_companion_auth_hardening",
-  "human": "correct_leaf",
-  "human_note": "doc task-section (Task 7); contains+references to plan file; correct leaf"
+  "human": ""
  },
  {
   "gid": "7836a934a258ac31",
@@ -560,8 +514,7 @@
   "only_edge": "references <-> subagent-driven-development SKILL.md",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc SKILL.md section (Model Selection); references subagent skill; correct leaf"
+  "human": ""
  },
  {
   "gid": "723de7bde260598a",
@@ -572,8 +525,7 @@
   "only_edge": "contains <-> Diagnosing Superpowers Skill",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> skills_diagnosing_superpowers_skill",
-  "human": "correct_leaf",
-  "human_note": "doc SKILL.md section (Workflow step 3); contains+references to diagnosing skill; correct leaf"
+  "human": ""
  },
  {
   "gid": "c17a8f938d655add",
@@ -584,8 +536,7 @@
   "only_edge": "contains <-> Worktree Rototill Implementation Plan",
   "auto_class": "missing_edge",
   "note": "post-pass added: contains -> docs_superpowers_plans_2026_04_06_worktree_rototill",
-  "human": "correct_leaf",
-  "human_note": "doc task-section (Submodule Guard); contains+implements to rototill plan; correct leaf"
+  "human": ""
  },
  {
   "gid": "56a71b4802b571ed",
@@ -596,7 +547,6 @@
   "only_edge": "references <-> Visual Companion Auth Hardening Design",
   "auto_class": "correct_leaf",
   "note": "concept/rationale leaf; no cross-file symbol to link",
-  "human": "correct_leaf",
-  "human_note": "doc spec section (/files/* containment); references auth-hardening design; correct leaf"
+  "human": ""
  }
 ]

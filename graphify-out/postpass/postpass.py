@@ -180,7 +180,8 @@ def add_edge(src_gid, dst_gid, relation, source, lines, tag=TAG, weight=1.0, con
          "gid_source": src_gid, "gid_target": dst_gid,
          "relation": relation, "confidence": conf, "confidence_score": score,
          "weight": weight, "source_file": source, "source_location": lines,
-         "provenance": prov(source, lines, tag), "context": context}
+         "provenance": {"extractor": EXTRACTOR, "version": int(tag.rsplit(":", 1)[-1]) if tag.rsplit(":", 1)[-1].isdigit() else VERSION,
+                        "source": source, "lines": lines, "sha": SHA}, "context": context}
     edge_map[key] = e
     additions[relation].append(e)
     return True
@@ -580,6 +581,134 @@ for n in sorted(doc_nodes, key=lambda x: x["id"]):
         mentions_added += add_edge(src_gid, tgt_gid, "mentions", n.get("source_file") or n["id"], "L1",
                                    context=f"label: {(n.get('label') or '')[:60]}") or 0
 
+# ---------- 8b. v2: path-string file references (const X = path.join(..) / fs.readFileSync(X) -> target file) ----------
+# Closes gaps where a test holds a file path in a named const and reads/executes it.
+NAME = r"[A-Za-z_$][A-Za-z0-9_$]*"
+TAG2 = f"{EXTRACTOR}:2"   # v2 provenance version
+pathrefs_added = 0
+for sf in sorted(files):
+    if not sf.endswith((".js", ".mjs", ".cjs", ".ts")):
+        continue
+    t = text_of(sf)
+    if not t:
+        continue
+    d = os.path.dirname(sf)
+    const_file = {}   # const name -> target file (absolute)
+    const_line = {}
+    # const X = path.join(__dirname, 'rel') / path.resolve / path.dirname
+    for m in re.finditer(r"(?:const|let|var)\s+(" + NAME + r")\s*=\s*(?:path\.)?(?:join|resolve|dirname)\s*\(\s*([A-Za-z_$][\w$]*|__dirname|__filename)\s*,\s*['\"]([^'\"]+)['\"]\s*\)", t):
+        cn, base, relp = m.groups()
+        full = os.path.normpath(os.path.join(d if base == "__dirname" else REPO, relp)).replace("\\", "/")
+        tgt = None
+        for cand in (full, full + ".js", full + ".cjs", full + ".mjs", os.path.join(full, "index.js")):
+            if cand in files:
+                tgt = cand
+                break
+        if tgt is None and os.path.isfile(full):   # isfile -> skip directory targets (noise)
+            tgt = full
+        if tgt and tgt != sf and cn not in const_file:
+            const_file[cn] = tgt
+            const_line[cn] = t[:m.start()].count("\n") + 1
+    # const X = fs.readFileSync(Y) -> propagate to Y if Y is a known path const
+    for m in re.finditer(r"(?:const|let|var)\s+(" + NAME + r")\s*=\s*fs\.(?:readFileSync|createReadStream|existsSync|statSync)\s*\(\s*(" + NAME + r")\b", t):
+        x, sc = m.groups()
+        if sc in const_file and x not in const_file:
+            const_file[x] = const_file[sc]
+            const_line[x] = t[:m.start()].count("\n") + 1
+    for cn in sorted(const_file):
+        tgt = const_file[cn]
+        sn = None
+        for n in by_file.get(sf, []):
+            if n.get("file_type") == "code" and n["id"].endswith("_" + norm_id(cn)):
+                sn = n
+                break
+        if sn is None:
+            continue  # require a symbol node (noise-free)
+        tgt_gid = ensure_file_node(tgt)
+        if tgt_gid == sn["gid"]:
+            continue
+        pathrefs_added += add_edge(sn["gid"], tgt_gid, "references", sf, f"L{const_line[cn]}", tag=TAG2,
+                                   context=f"const {cn} = path -> {rel(tgt)}") or 0
+
+# ---------- 8c. v2: shell cross-file references (source X.sh + used symbol -> target symbol node) ----------
+sh_added = 0
+sh_syms = {}   # target .sh file -> defined symbols (functions + vars)
+for sf in sorted(files):
+    if not sf.endswith(".sh"):
+        continue
+    t = text_of(sf)
+    if not t:
+        continue
+    sy = set()
+    for m in re.finditer(r"^([A-Za-z_][A-Za-z0-9_]*)\s*\(\)\s*\{", t, re.M):
+        sy.add(m.group(1))
+    for m in re.finditer(r"^\s*(?:export\s+)?([A-Z][A-Z0-9_]*)\s*=", t, re.M):
+        sy.add(m.group(1))
+    sh_syms[sf] = sy
+for sf in sorted(files):
+    if not sf.endswith(".sh"):
+        continue
+    t = text_of(sf)
+    if not t:
+        continue
+    d = os.path.dirname(sf)
+    for m in re.finditer(r"^\s*(?:source|\.)\s+([\"']?)([^\"'\s]+)\1", t, re.M):
+        pe = m.group(2)
+        if not pe.endswith(".sh"):
+            continue
+        tgt = None
+        if "$" in pe:
+            base = pe.rsplit("/", 1)[-1]
+            cands = [f for f in files if f.endswith(".sh") and f.rsplit("/", 1)[-1] == base]
+            if len(cands) == 1:
+                tgt = cands[0]
+        else:
+            full = os.path.normpath(os.path.join(d, pe)).replace("\\", "/")
+            if full in files:
+                tgt = full
+        if not tgt or tgt == sf:
+            continue
+        sln = t[:m.start()].count("\n") + 1
+        src_gid = ensure_file_node(sf)
+        for sym in sorted(sh_syms.get(tgt, set())):
+            if not re.search(r"(?<![A-Za-z0-9_])" + re.escape(sym) + r"(?![A-Za-z0-9_])", t):
+                continue
+            sn = None
+            for n in by_file.get(tgt, []):
+                if n.get("file_type") == "code" and n["id"].endswith("_" + norm_id(sym)):
+                    sn = n
+                    break
+            if sn is None or sn["gid"] == src_gid:
+                continue
+            sh_added += add_edge(src_gid, sn["gid"], "references", sf, f"L{sln}", tag=TAG2,
+                                 context=f"source {rel(tgt)} -> {sym}") or 0
+
+# ---------- 8d. v2: concept node -> EXISTING file node mentions (strict: no new file nodes, no phantoms) ----------
+concept_added = 0
+def existing_file_gid(sf):
+    sf = abs_of(sf)
+    for n in by_file.get(sf, []):
+        if n["id"] == stem_full(sf) or n["id"] == stem_full(sf) + "_file":
+            return n["gid"]
+    return None
+for n in sorted([x for x in nodes if x.get("file_type") == "concept"], key=lambda x: x["id"]):
+    lbl = re.sub(r"[^a-z0-9 .-]+", " ", (n.get("label") or "").lower()).strip().replace(" ", "-")
+    if not lbl:
+        continue
+    my_sf = abs_of(n.get("source_file"))
+    hits = set()
+    for key, sf in sorted(stem_lookup.items()):
+        if sf == my_sf or len(key) < 12:
+            continue
+        if re.search(r"(?<![a-z0-9])" + re.escape(key) + r"(?![a-z0-9])", lbl):
+            hits.add(sf)
+    for sf in sorted(hits)[:5]:
+        tgt_gid = existing_file_gid(sf)
+        if tgt_gid is None or tgt_gid == n["gid"]:
+            continue
+        concept_added += add_edge(n["gid"], tgt_gid, "mentions", n.get("source_file") or n["id"], "L1", tag=TAG2,
+                                  context=f"label: {(n.get('label') or '')[:60]}") or 0
+
 # ---------- 9. golden set ----------
 def gid_of_legacy(nid):
     return gid_of.get(nid)
@@ -627,6 +756,17 @@ G("N1", "negative", doc_skill and not any(e["relation"] == "same_as" and doc_ski
 G("N2", "negative", v1 and not edge_exists(plugin_leg, v1["id"], "same_as"), "file node NOT same_as section node (only contains)")
 G("N3", "negative", all(v <= 5 for v in Counter(e["gid_source"] for e in edge_map.values() if e["relation"] == "mentions").values()), f"mentions out-degree per doc node <= 5 (max={max((v for v in Counter(e['gid_source'] for e in edge_map.values() if e['relation'] == 'mentions').values()), default=0)})")
 G("N4", "negative", not any(e["relation"] == "validates" and e["gid_source"] == e["gid_target"] for e in edge_map.values()), "no self-validates edge (local symbol not cross-validated)")
+# --- v2 golden (path-refs / sh-source / strict concept-mentions) ---
+stop_sh = "C:/Users/Comp/superpowers/skills/brainstorming/scripts/stop-server.sh"
+helper_js = "C:/Users/Comp/superpowers/skills/brainstorming/scripts/helper.js"
+pkg_json = "C:/Users/Comp/superpowers/package.json"
+tbc_sh = "C:/Users/Comp/superpowers/tests/opencode/test-bootstrap-caching.sh"
+setup_sh = "C:/Users/Comp/superpowers/tests/opencode/setup.sh"
+G("P7", "positive", edge_exists("tests_brainstorm_server_lifecycle_test_stop", "skills_brainstorming_scripts_stop_server", "references"), "STOP (lifecycle.test.js L20) --references--> stop-server.sh file-node (path-string const)")
+G("P8", "positive", edge_exists("tests_brainstorm_server_helper_test_src", "skills_brainstorming_scripts_helper", "references"), "src (helper.test.js L15) --references--> helper.js file-node (fs.readFileSync)")
+G("P9", "positive", edge_exists("tests_opencode_setup_cleanup_test_env", "tests_opencode_test_bootstrap_caching_file", "references"), "test-bootstrap-caching.sh --references--> cleanup_test_env (setup.sh L77) via source setup.sh")
+G("N5", "negative", not edge_exists("executing_plans", stem_full("C:/Users/Comp/superpowers/skills/executing-plans/SKILL.md") + "_file", "references"), "concept 'executing plans' --NOT--> references (mentions only, never references)")
+G("N6", "negative", not any(e["relation"] == "references" and e["source"].endswith("_reporoot") for e in edge_map.values()), "no references edge from a const pointing at a directory (repoRoot -> REPO dir, skipped)")
 golden_neg5 = None  # idempotency checked after re-run
 
 # ---------- 10. write output ----------
@@ -655,6 +795,10 @@ for r in sorted(additions):
         lines.append(f"- {e['source']} -> {e['target']}  [{e['source_file'].split('superpowers/')[-1]} {e['source_location']}] {e.get('context','')[:70]}")
     if len(additions[r]) > 6:
         lines.append(f"- ... +{len(additions[r])-6} more")
+lines.append("\n## v2 passes (path-refs / sh-source / strict concept-mentions)")
+lines.append(f"- path-refs (const X = path.join/fs.readFileSync -> file node): {pathrefs_added}")
+lines.append(f"- sh-source (source X.sh + used symbol -> symbol node): {sh_added}")
+lines.append(f"- concept-mentions (concept node -> EXISTING file node only, no phantoms): {concept_added}")
 lines.append("\n## Created file-level nodes")
 for n in created_nodes:
     lines.append(f"- {n['id']}  ({rel(n['source_file'])})")
@@ -671,7 +815,7 @@ open(os.path.join(OUT, "diff_report.md"), "w", encoding="utf-8").write("\n".join
 gl = ["# golden set results\n"]
 for x in golden:
     gl.append(f"{'PASS' if x['ok'] else 'FAIL'}  {x['name']} ({x['kind']}): {x['detail']}")
-gl.append("\nIdempotency (N5): re-run required -> see diff2_report.md")
+gl.append("\nIdempotency: re-run required -> see diff2_report.md (zero-diff check)")
 open(os.path.join(OUT, "golden_results.md"), "w", encoding="utf-8").write("\n".join(gl))
 
 # ---------- 13. 50 deg=1 labeling (stable across runs: original degree, non-postpass edges only) ----------

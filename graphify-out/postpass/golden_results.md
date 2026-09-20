@@ -10,5 +10,10 @@ PASS  N1 (negative): doc node (path=rototill.md) NOT same_as anything (mentions 
 PASS  N2 (negative): file node NOT same_as section node (only contains)
 PASS  N3 (negative): mentions out-degree per doc node <= 5 (max=1)
 PASS  N4 (negative): no self-validates edge (local symbol not cross-validated)
+PASS  P7 (positive): STOP (lifecycle.test.js L20) --references--> stop-server.sh file-node (path-string const)
+PASS  P8 (positive): src (helper.test.js L15) --references--> helper.js file-node (fs.readFileSync)
+PASS  P9 (positive): test-bootstrap-caching.sh --references--> cleanup_test_env (setup.sh L77) via source setup.sh
+PASS  N5 (negative): concept 'executing plans' --NOT--> references (mentions only, never references)
+PASS  N6 (negative): no references edge from a const pointing at a directory (repoRoot -> REPO dir, skipped)
 
-Idempotency (N5): re-run required -> see diff2_report.md
+Idempotency: re-run required -> see diff2_report.md (zero-diff check)

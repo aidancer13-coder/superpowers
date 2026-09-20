@@ -6,10 +6,10 @@
 | 2 | skills_writing_skills_anthropic_best_practices_workflows_with_checklists | skills/writing-skills/anthropic-best-practices.md:None | references <-> Skill authoring best practices | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
 | 3 | tests_opencode_test_session_bootstrap_makeharness | tests/opencode/test-session-bootstrap.mjs:L31 | contains <-> test-session-bootstrap.mjs | missing_edge | post-pass added: contains -> tests_opencode_test_session_bootstrap |
 | 4 | docs_superpowers_specs_2026_03_11_zero_dep_brainstorm_server_design_testing_plan | docs/superpowers/specs/2026-03-11-zero-dep-brainstorm-server-design.md:None | references <-> Zero-Dependency Brainstorm Server Design Spec | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
-| 5 | tests_brainstorm_server_lifecycle_test_stop | tests/brainstorm-server/lifecycle.test.js:L20 | contains <-> lifecycle.test.js | missing_edge | post-pass added: contains -> tests_brainstorm_server_lifecycle_test |
+| 5 | tests_brainstorm_server_lifecycle_test_stop | tests/brainstorm-server/lifecycle.test.js:L20 | references <-> stop-server.sh | missing_edge | post-pass added: references -> skills_brainstorming_scripts_stop_server |
 | 6 | pi_extensions_superpowers_skillsdir | .pi/extensions/superpowers.ts:L11 | contains <-> superpowers.ts | missing_edge | post-pass added: contains -> pi_extensions_superpowers |
-| 7 | systematic_debugging | RELEASE-NOTES.md:None | references <-> Superpowers Release Notes | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
-| 8 | executing_plans | RELEASE-NOTES.md:None | references <-> Superpowers Release Notes | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
+| 7 | systematic_debugging | RELEASE-NOTES.md:None | mentions <-> Systematic Debugging Skill | missing_edge | post-pass added: mentions -> skills_systematic_debugging_skill |
+| 8 | executing_plans | RELEASE-NOTES.md:None | mentions <-> SKILL.md | missing_edge | post-pass added: mentions -> skills_executing_plans_skill_file |
 | 9 | docs_superpowers_specs_2026_08_27_diagnosing_superpowers_design_plan_adherence | docs/superpowers/specs/2026-08-27-diagnosing-superpowers-design.md:None | references <-> diagnosing-superpowers skill | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
 | 10 | tests_opencode_setup_sh__entry | tests/opencode/setup.sh:L1 | contains <-> setup.sh | missing_edge | post-pass added: contains -> tests_opencode_setup |
 | 11 | tests_opencode_test_bootstrap_caching_assertmappingconstants | tests/opencode/test-bootstrap-caching.mjs:L169 | contains <-> test-bootstrap-caching.mjs | missing_edge | post-pass added: contains -> tests_opencode_test_bootstrap_caching |
@@ -17,7 +17,7 @@
 | 13 | code_of_conduct_restricted_behaviors | CODE_OF_CONDUCT.md:L25-L48 | contains <-> Prime Radiant Community Code of Conduct | missing_edge | post-pass added: contains -> code_of_conduct |
 | 14 | docs_plans_2025_11_22_opencode_support_design_skill_directories | docs/plans/2025-11-22-opencode-support-design.md:None | references <-> OpenCode Support Design | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
 | 15 | docs_plans_2025_11_22_opencode_support_implementation_installation_guide | docs/plans/2025-11-22-opencode-support-implementation.md:None | references <-> OpenCode Support Implementation Plan | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
-| 16 | tests_brainstorm_server_helper_test_src | tests/brainstorm-server/helper.test.js:L15 | contains <-> helper.test.js | missing_edge | post-pass added: contains -> tests_brainstorm_server_helper_test |
+| 16 | tests_brainstorm_server_helper_test_src | tests/brainstorm-server/helper.test.js:L15 | references <-> helper.js | missing_edge | post-pass added: references -> skills_brainstorming_scripts_helper |
 | 17 | skills_writing_skills_persuasion_principles_liking | skills/writing-skills/persuasion-principles.md:None | references <-> Persuasion Principles for Skill Design | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
 | 18 | shutil | :None | imports <-> test_plugin.py | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
 | 19 | docs_superpowers_plans_2026_05_06_lift_drill_into_evals_adversarial_review_pair | docs/superpowers/plans/2026-05-06-lift-drill-into-evals.md:Task 14 | references <-> Lift drill into superpowers as evals/ — implementation plan | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
@@ -26,7 +26,7 @@
 | 22 | docs_superpowers_plans_2026_03_11_zero_dep_brainstorm_server_decode_frame | docs/superpowers/plans/2026-03-11-zero-dep-brainstorm-server.md:None | calls <-> handleUpgrade (WebSocket connection) | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
 | 23 | docs_superpowers_specs_2026_06_10_positive_instruction_redesign_design_doctrine_tripwires_work | docs/superpowers/specs/2026-06-10-positive-instruction-redesign-design.md:None | references <-> Positive-Instruction Redesign of Skill Guidance Design Spec | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
 | 24 | tests_explicit_skill_requests_run_all | tests/explicit-skill-requests/run-all.sh:L1 | contains <-> run-all.sh script | missing_edge | post-pass added: contains -> tests_explicit_skill_requests_run_all_sh__entry |
-| 25 | tests_opencode_setup_cleanup_test_env | tests/opencode/setup.sh:L77 | contains <-> setup.sh | missing_edge | post-pass added: contains -> tests_opencode_setup |
+| 25 | tests_opencode_setup_cleanup_test_env | tests/opencode/setup.sh:L77 | references <-> test-bootstrap-caching.sh | missing_edge | post-pass added: references -> tests_opencode_test_bootstrap_caching_file |
 | 26 | tests_opencode_test_session_bootstrap_unknownchild | tests/opencode/test-session-bootstrap.mjs:L184 | contains <-> test-session-bootstrap.mjs | missing_edge | post-pass added: contains -> tests_opencode_test_session_bootstrap |
 | 27 | docs_readme_opencode_bootstrap_injection | docs/README.opencode.md:None | references <-> Superpowers for OpenCode README | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
 | 28 | tests_brainstorm_server_auth_test_content_dir | tests/brainstorm-server/auth.test.js:L25 | contains <-> auth.test.js | missing_edge | post-pass added: contains -> tests_brainstorm_server_auth_test |
@@ -53,4 +53,4 @@
 | 49 | docs_superpowers_plans_2026_04_06_worktree_rototill_submodule_guard | docs/superpowers/plans/2026-04-06-worktree-rototill.md:Task 2, Step 1 (new SKILL.md) | contains <-> Worktree Rototill Implementation Plan | missing_edge | post-pass added: contains -> docs_superpowers_plans_2026_04_06_worktree_rototill |
 | 50 | docs_superpowers_specs_2026_06_10_visual_companion_auth_hardening_design_files_containment | docs/superpowers/specs/2026-06-10-visual-companion-auth-hardening-design.md:None | references <-> Visual Companion Auth Hardening Design | correct_leaf | concept/rationale leaf; no cross-file symbol to link |
 
-Counts: {'missing_edge': 25, 'correct_leaf': 25}. Precision/recall: after human fill of `human` column, run `python postpass.py score` (not implemented — counts above are the denominator).
+Counts: {'missing_edge': 27, 'correct_leaf': 23}. Precision/recall: after human fill of `human` column, run `python postpass.py score` (not implemented — counts above are the denominator).

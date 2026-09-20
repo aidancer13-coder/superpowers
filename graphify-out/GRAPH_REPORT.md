@@ -1,4 +1,4 @@
-# Graph Report - superpowers  (2026-09-20)
+# Graph Report - superpowers  (2026-09-21)
 
 ## Corpus Check
 - 225 files · ~252,998 words
@@ -6,7 +6,7 @@
 - Unclassified: 5 file(s) not represented in the graph (top: (none) 3, .cmd 1, .dot 1)
 
 ## Summary
-- 1361 nodes · 2333 edges · 108 communities (84 shown, 24 thin omitted)
+- 1361 nodes · 2395 edges · 108 communities (84 shown, 24 thin omitted)
 - Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 184 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
@@ -124,14 +124,16 @@
 2. `Codex Efficiency Fixes Implementation Plan` - 39 edges
 3. `Visual Brainstorming Companion — Issue & Change Catalog` - 29 edges
 4. `main()` - 27 edges
-5. `Skill authoring best practices` - 24 edges
-6. `Diagnosing Superpowers Skill` - 23 edges
-7. `Skills Improvements from User Feedback (plan)` - 20 edges
-8. `SDD Task-Scoped Review Dispatch Implementation Plan` - 20 edges
-9. `Worktree Rototill Implementation Plan` - 19 edges
-10. `diagnosing-superpowers skill` - 17 edges
+5. `Diagnosing Superpowers Skill` - 26 edges
+6. `Skill authoring best practices` - 24 edges
+7. `Brainstorming Ideas Into Designs (skill)` - 21 edges
+8. `Skills Improvements from User Feedback (plan)` - 20 edges
+9. `SDD Task-Scoped Review Dispatch Implementation Plan` - 20 edges
+10. `Worktree Rototill Implementation Plan` - 19 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `piToolsPath` --references--> `Pi Tool Mapping (using-superpowers reference)`  [EXTRACTED]
+  tests/pi/test-pi-extension.mjs → skills/using-superpowers/references/pi-tools.md
 - `GitHub Funding Platforms (Sponsors: obra)` --semantically_similar_to--> `Hermes Plugin Manifest (superpowers v6.4.1, pre_llm_call hook)`  [INFERRED] [semantically similar]
   .github/FUNDING.yml → .hermes-plugin/plugin.yaml
 - `Superpowers Project` --references--> `Superpowers App Icon (black line-art glyph on white)`  [INFERRED]
@@ -140,8 +142,6 @@
   RELEASE-NOTES.md → assets/superpowers-small.svg
 - `Superpowers for Kimi Code README` --semantically_similar_to--> `Superpowers README`  [INFERRED] [semantically similar]
   docs/README.kimi.md → README.md
-- `Superpowers for OpenCode README` --semantically_similar_to--> `Superpowers README`  [INFERRED] [semantically similar]
-  docs/README.opencode.md → README.md
 
 ## Import Cycles
 - None detected.
@@ -330,8 +330,8 @@ Nodes (3): ref_assert, assert, {
 }
 
 ### Community 11 - "OpenCode Plugin Tests"
-Cohesion: 0.11
-Nodes (17): HOME, OPENCODE_CONFIG_DIR, setup.sh script, XDG_CONFIG_HOME, run_missing_file_check(), run_present_file_check(), test-bootstrap-caching.sh script, test-plugin-loading.sh script (+9 more)
+Cohesion: 0.14
+Nodes (18): cleanup_test_env(), HOME, OPENCODE_CONFIG_DIR, setup.sh script, XDG_CONFIG_HOME, run_missing_file_check(), run_present_file_check(), test-bootstrap-caching.sh script (+10 more)
 
 ### Community 18 - "Codex Plugin Sync Script"
 Cohesion: 0.21
@@ -410,7 +410,7 @@ Cohesion: 0.53
 Nodes (4): fail(), main(), pass(), test-sdd-workspace.sh script
 
 ### Community 8 - "Worktree Skill Testing"
-Cohesion: 0.11
+Cohesion: 0.13
 Nodes (22): Worktree Rototill Implementation Plan, Task 5: End-to-End Validation, Step 1b Git Worktree Fallback, Hooks Symlink After Manual Worktree Creation, Step 0 Existing Isolation Detection (GIT_DIR != GIT_COMMON), Step 1a Native Worktree Tool Preference, Provenance-Based Worktree Cleanup, Task 1 GATE: RED/GREEN Validation of Native Tool Preference (+14 more)
 
 ### Community 83 - "Version Bump Script Tests"
@@ -438,7 +438,7 @@ Cohesion: 0.07
 Nodes (57): Visual Brainstorming Companion — Issue & Change Catalog, A1 — per-session secret key on /, /files/*, and WS (chosen approach; supersedes Host allowlist), A2 — Host allowlist dropped; browser WS Origin check retained after auth, A3 — server crashes on null / non-object WS payload, A4 — frame-length bound in decodeFrame (already fixed; verify/close #1446), B1 — macOS resource-fork dotfiles (._*.html) served as screen content, B2 — stop-server.sh can kill a reused/stale PID, B3 — WS client silent reconnect and stale 'Connected' status (+49 more)
 
 ### Community 14 - "Skill Feedback Improvements"
-Cohesion: 0.17
+Cohesion: 0.16
 Nodes (21): Skills Improvements from User Feedback (plan), Improvement 1: verification-before-completion adds configuration change verification, Improvement 2: subagent-driven-development adds process hygiene for E2E tests, Improvement 5: requesting-code-review adds explicit file reading, Improvement 8: subagent-driven-development allows implementer to fix self-identified issues, Improvement 3: subagent-driven-development adds lean context option, Improvement 6: testing-anti-patterns adds mock-interface drift anti-pattern, Improvement 4: subagent-driven-development adds self-reflection step (+13 more)
 
 ### Community 15 - "Task-Scoped Review Dispatch"
@@ -454,7 +454,7 @@ Cohesion: 0.11
 Nodes (21): Skill authoring best practices, Set appropriate degrees of freedom, Checklist for effective Skills, Concise is key, Provide a default, don't offer too many options, Writing effective descriptions (third person), Build evaluations first, Implement feedback loops (validate-fix-repeat) (+13 more)
 
 ### Community 19 - "Plan Execution and Review"
-Cohesion: 0.15
+Cohesion: 0.18
 Nodes (18): Task 4: One-Line Integration Updates to Three Skills, Hermes YAML Manifest Registration (.hermes-plugin/plugin.yaml), Manifest Format Dispatch (jq for JSON, yq for YAML), Hermes Version-Bump Wiring Implementation Plan, Bump-Only Manifest Preflight, Chunk-by-Chunk Plan Review with Spec Alignment, Iterative Review Loop Pattern, Plan Document Reviewer Stage (+10 more)
 
 ### Community 2 - "Codex Efficiency Fixes"
@@ -526,7 +526,7 @@ Cohesion: 0.27
 Nodes (11): Visual Companion Auth Hardening Implementation Plan, Bootstrap Keyed Root Loads (Task 1), /files/* Realpath Containment (Task 5), Full Automated Verification (Task 9), Gitignore Durable Companion State (Task 8), Helper Uses Stored Key For Reconnect (Task 3), Lifecycle Hang Fix And Shell Lint (Task 7), Restart Reconnect Regression Test (Task 6) (+3 more)
 
 ### Community 45 - "SDD Workspace Implementation"
-Cohesion: 0.32
+Cohesion: 0.36
 Nodes (11): SDD Plan-Scoped Workspace Implementation Plan, Durable Progress section (plan-scoped ledger), GREEN eval on truthful v3 fixture (regression + cost delta), Plan-scoped SDD workspace (design), RED baseline eval evidence (25/25 stale-ledger refusals), review-package script, subagent-driven-development SKILL.md, sdd-workspace script (+3 more)
 
 ### Community 47 - "Branch Finishing and Code Review"
@@ -586,28 +586,28 @@ Cohesion: 1.00
 Nodes (3): Cross-Platform Polyglot Hooks for Claude Code, Extensionless hook scripts, run-hook.cmd polyglot dispatcher
 
 ### Community 9 - "README and Platform Testing"
-Cohesion: 0.10
+Cohesion: 0.09
 Nodes (26): Superpowers for Kimi Code README, Kimi Code plugin manifest (.kimi-plugin/plugin.json), Kimi Code tool mapping (AskUserQuestion, TodoList, Agent, Skill, Read/Write/Edit, Bash, Grep, Glob, FetchURL, WebSearch), Superpowers for OpenCode README, OpenCode bootstrap injection (controller session, compaction handling), OpenCode V1/V2 tool mapping (task->subagent, apply_patch->patch, bash->shell, todo dropped in V2), Lift drill into superpowers as evals/ — design spec, Per-bash-test deletion gate: verifiable drill coverage of every assertion (+18 more)
 
 ## Knowledge Gaps
-- **275 isolated node(s):** `clients`, `CONTENT_DIR`, `crypto`, `debounceTimers`, `frameTemplate` (+270 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 356 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **246 isolated node(s):** `clients`, `CONTENT_DIR`, `crypto`, `debounceTimers`, `frameTemplate` (+241 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 324 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **24 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `subagent-driven-development SKILL.md` connect `SDD Skill and Fixtures` to `Codex Efficiency Fixes`, `Review Prompt Templates`, `Worktree Skill Testing`, `Superpowers Tool Mappings`, `SDD Workspace Implementation`, `Writing Skills Meta-Skill`, `Branch Finishing and Code Review`, `Positive-Instruction Redesign`, `Plan Execution and Review`, `SDD Plan-Scoped Workspace`, `SDD Fix-Loop Design`?**
-  _High betweenness centrality (0.040) - this node is a cross-community bridge._
-- **Why does `Visual Brainstorming Refactor Design Spec (Browser Displays, Terminal Commands)` connect `Visual Brainstorming Companion` to `Codex Efficiency Fixes`, `Plan Execution and Review`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Why does `Using Superpowers Skill (meta-skill / central index)` connect `Superpowers Tool Mappings` to `Systematic Debugging Skill`, `Contributor Guidelines and Entry`, `Codex Efficiency Fixes`, `Platform-Neutral Prose Phases`?**
+  _High betweenness centrality (0.248) - this node is a cross-community bridge._
+- **Why does `Pi Tool Mapping (using-superpowers reference)` connect `Superpowers Tool Mappings` to `Pi Extension Plan`, `Pi Extension Bootstrap`?**
+  _High betweenness centrality (0.231) - this node is a cross-community bridge._
+- **Why does `piToolsPath` connect `Pi Extension Bootstrap` to `Superpowers Tool Mappings`?**
+  _High betweenness centrality (0.228) - this node is a cross-community bridge._
 - **Are the 4 inferred relationships involving `subagent-driven-development SKILL.md` (e.g. with `writing-plans SKILL.md` and `SDD Fix-Loop Redesign design spec`) actually correct?**
   _`subagent-driven-development SKILL.md` has 4 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 3 inferred relationships involving `Skill authoring best practices` (e.g. with `Testing Skills With Subagents (pressure scenarios)` and `Bulletproofing Skills Against Rationalization`) actually correct?**
-  _`Skill authoring best practices` has 3 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 21 inferred relationships involving `Diagnosing Superpowers Skill` (e.g. with `Quality evidence analyst dimension` and `Dispatching Parallel Agents Skill`) actually correct?**
+  _`Diagnosing Superpowers Skill` has 21 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `clients`, `CONTENT_DIR`, `crypto` to the rest of the system?**
-  _275 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _246 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Brainstorm Server Core` be split into smaller, more focused modules?**
   _Cohesion score 0.05658381808566896 - nodes in this community are weakly interconnected._
-- **Should `Pi Extension Bootstrap` be split into smaller, more focused modules?**
-  _Cohesion score 0.06648936170212766 - nodes in this community are weakly interconnected._
