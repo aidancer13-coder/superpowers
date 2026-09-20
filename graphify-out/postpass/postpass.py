@@ -143,12 +143,14 @@ def ensure_file_node(sf, ftype="code"):
 
 # ---------- 3. edge store with upsert ----------
 edge_map = {}   # (legacy_src, legacy_dst, relation, tag) -> edge
+rel_triples = set()   # (src, dst, relation) present in loaded graph -> suppress parallel dupes
 merged_existing = 0
 skipped_dangling = 0
 for e in links:
     if e["source"] not in gid_of or e["target"] not in gid_of:
         skipped_dangling += 1
         continue
+    rel_triples.add((e["source"], e["target"], e["relation"]))
     s, t = gid_of[e["source"]], gid_of[e["target"]]
     pr = e.get("provenance") or {}
     if pr.get("extractor") == EXTRACTOR:
@@ -168,13 +170,17 @@ for e in links:
 
 additions = defaultdict(list)
 upsert_skips = 0
+suppressed_dupes = 0
 def add_edge(src_gid, dst_gid, relation, source, lines, tag=TAG, weight=1.0, conf="EXTRACTED", score=1.0, context=""):
-    global upsert_skips
+    global upsert_skips, suppressed_dupes
     if src_gid == dst_gid:
         return False  # no self-edges
     key = (legacy_by_gid[src_gid], legacy_by_gid[dst_gid], relation, tag)  # key on legacy ids -> idempotent
     if key in edge_map:
         upsert_skips += 1
+        return False
+    if (legacy_by_gid[src_gid], legacy_by_gid[dst_gid], relation) in rel_triples:
+        suppressed_dupes += 1   # same (src,dst,relation) already exists (e.g. graphify already extracted contains/imports) -> no parallel edge
         return False
     e = {"source": legacy_by_gid[src_gid], "target": legacy_by_gid[dst_gid],
          "gid_source": src_gid, "gid_target": dst_gid,
@@ -787,6 +793,7 @@ lines.append(f"- input nodes: {len([n for n in nodes if n.get('_origin') != 'pos
 lines.append(f"- input edges: {len(links)} (+{merged_existing} duplicate-key merges)")
 lines.append(f"- total edges after: {len(edge_map)}")
 lines.append(f"- upsert skips (duplicate keys within this run): {upsert_skips}")
+lines.append(f"- suppressed parallel duplicates (src,dst,relation already in graph): {suppressed_dupes}")
 lines.append("")
 lines.append("## Added edges by relation")
 for r in sorted(additions):
@@ -864,7 +871,7 @@ cnt = C(x["auto_class"] for x in lab)
 lm.append(f"\nCounts: {dict(cnt)}. Precision/recall: after human fill of `human` column, run `python postpass.py score` (not implemented — counts above are the denominator).")
 open(os.path.join(OUT, "label50.md"), "w", encoding="utf-8").write("\n".join(lm))
 
-print(f"nodes: {len(nodes)} (created {len(created_nodes)})  edges: {len(edge_map)} (added imports={len(additions.get('imports',[]))} references={len(additions.get('references',[]))} validates={len(additions.get('validates',[]))} contains={len(additions.get('contains',[]))} mentions={len(additions.get('mentions',[]))} same_as={len(additions.get('same_as',[]))}) upsert_skips={upsert_skips}")
+print(f"nodes: {len(nodes)} (created {len(created_nodes)})  edges: {len(edge_map)} (added imports={len(additions.get('imports',[]))} references={len(additions.get('references',[]))} validates={len(additions.get('validates',[]))} contains={len(additions.get('contains',[]))} mentions={len(additions.get('mentions',[]))} same_as={len(additions.get('same_as',[]))}) upsert_skips={upsert_skips} suppressed_dupes={suppressed_dupes}")
 print("golden:", sum(1 for x in golden if x['ok']), "/", len(golden), "pass")
 for x in golden:
     if not x['ok']:

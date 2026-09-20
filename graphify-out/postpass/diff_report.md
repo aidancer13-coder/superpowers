@@ -4,9 +4,10 @@
 - sha: 5bf4e78011075bcfc0dc295f0724994cd123ee71
 - extractor: postpass-ast:1
 - input nodes: 1348 + created: 0
-- input edges: 2934 (+0 duplicate-key merges)
-- total edges after: 2934
-- upsert skips (duplicate keys within this run): 810
+- input edges: 2663 (+0 duplicate-key merges)
+- total edges after: 2663
+- upsert skips (duplicate keys within this run): 539
+- suppressed parallel duplicates (src,dst,relation already in graph): 271
 
 ## Added edges by relation
 
